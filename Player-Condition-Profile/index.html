@@ -1,0 +1,1083 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://raidfire85.github.io/MES-WebWiki/Player-Condition-Profile/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Player Conditions (New) - Modular Encounters System (Community Wiki)</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../style.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Player Conditions (New)";
+        var mkdocs_page_input_path = "Player-Condition-Profile.md";
+        var mkdocs_page_url = "/MES-WebWiki/Player-Condition-Profile/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Modular Encounters System (Community Wiki)
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Player Support</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../Encounter-Guide/">Encounter Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Frequently-Asked-Questions/">FAQs</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Troubleshooting/">Troubleshooting</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Bugs%2C-Issues%2C-or-Crashes/">Bugs, Issues, or Crashes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Economy-Stations-FAQ/">Economy Stations FAQ</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Mod-Republishing-and-Reuse/">Mod Republishing Guidelines</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Admin & Configuration</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_General/">General Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Grid/">Grid Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Combat/">Combat Settings</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Space%20Cargo%20Ships/">Space Cargo Ships</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Random%20Encounters/">Random Encounters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Planetary%20Cargo%20Ships/">Planetary Cargo Ships</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Planetary%20Installations/">Planetary Installations</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Boss%20Encounters/">Boss Encounters</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Creatures/">Creatures</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_AiEnabled%20Bot%20Spawning/">AiEnabled Bot Spawning</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Wave%20Spawner/">Wave Spawners</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Clean-Up/">Clean-Up</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Spawn%20Filtering/">Spawn Filtering</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_Timeout/">Timeout</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../AdminConfig_AdminDebugOptions/">Admin & Debug Options</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modding</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >Spawning</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../SpawnGroup/">SpawnGroup</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Spawn-Conditions/">Spawning Conditions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Zone-Conditions-Profile/">Zone Conditions</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Spawn-Conditions-Groups/">Spawning Conditions Groups</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Manipulation</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Block-Replacement/">Block Replacement</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Dereliction/">Dereliction</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Loot/">Loot</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Loot-Profile-Group/">Loot Profile Group</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Weapon-Mod-Rules/">Weapon Mod Rules</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Manipulation-Groups/">Manipulation Groups</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Prefab-Data/">Prefab Data</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Replenishment/">Replenishment</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Prefab-Gravity-Profile/">Prefab Gravity</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Behaviors (Getting Started)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" >Core Behavior</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Core-Behavior/">Behavior</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Autopilot/">Autopilot</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Command/">Command</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Datapad/">Datapad</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Target/">Target</a>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" >Triggers</a>
+    <ul>
+                <li class="toctree-l3"><a class="reference internal" href="../Trigger/">Trigger</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" href="../Condition/">Condition</a>
+                </li>
+                <li class="toctree-l3"><a class="reference internal" >Actions</a>
+    <ul>
+                <li class="toctree-l4"><a class="reference internal" href="../Action/">Actions</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Bot-Spawn/">Bot Spawn</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Chat/">Chat</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../Spawn/">Spawn</a>
+                </li>
+                <li class="toctree-l4"><a class="reference internal" href="../TextTemplate/">TextTemplate</a>
+                </li>
+    </ul>
+                </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Trigger-Group/">Trigger Group</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Waypoint/">Waypoint</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Weapons/">Weapons</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Events (Getting Started)</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Event/">Event</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Event-Conditions/">Event Condition</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Event-Action/">Event Action</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Custom-Event-Actions-and-ScenarioTools/">Custom Event Actions</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Player Conditions (New)</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#player-tags">Player Tags</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#referenced-by">Referenced by:</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#additional-tags">Additional Tags</a>
+    </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Zone-Profile/">Zone</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Suit-Upgrades-Profile/">Suit Upgrades</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >Economy & Station Blocks</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../Contract-Block-Profile/">Contract Block</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Mission-Profile/">Mission</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Safezone-Profile/">Safezone</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Shipyard-Profile/">Shipyard</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../Store-Profile/">Store</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Template / Example Files</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/1ae743505ec489d31e6ac17edf16e5e0?ts=2">SpawnGroup.sbc</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/cd9b4decb58dea335290a05b728a7276?ts=2">Factions.sbc</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Modder Resources</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="" href="../Armor-Modules">Armor Modules Included with MES (Page Unavailable)</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/415b45b53174c608c6486ce06bb58e2c">Block Replacement Profiles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Encounter-Attributes/">Encounter Attributes</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Loot-Profiles/">Loot Profiles</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="Modding:-Tutorial-&-Guidelines:-NPC-Grid-Setup-Guidelines">NPC Grid Setup Guidelines</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/8888bbc06a623cac90f8362dd948033c">Random Name Generator Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Scripting-API/">Scripting API</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Troubleshooting-Tips/">Troubleshooting Tips</a>
+                  </li>
+                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/52fbf5679e67107a8cf37706205b5812">Threat Score Guide</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Tutorials/">Tutorials</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../Faction-Icon-Profile/">Faction Icon Profiles</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Modular Encounters System (Community Wiki)</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Modding</li>
+      <li class="breadcrumb-item active">Player Conditions (New)</li>
+    <li class="wy-breadcrumbs-aside">
+          <a href="https://github.com/Raidfire85/MES-WebWiki/edit/main/docs/Player-Condition-Profile.md">Edit on Raidfire85/MES-WebWiki</a>
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="player-condition-profilemd">Player-Condition-Profile.md</h1>
+<p>On it self it doesn't do anything, check where it is being referenced below.</p>
+<p>For most cases, it loops through all the players and for each player it checks if the player passes all conditions, if that is the case the action, chat, spawncondition will only activate for that player. Handy for MP situations. </p>
+<h3 id="player-tags">Player Tags</h3>
+<p>You can add Tags to certain players, what can be added by <a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Action#PlayerTags">Behavior Actions</a> and <a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Action#Players">Event Actions</a>, and be used as an extra condition for this condition profile. Examples on what you can make:</p>
+<p>-Player attacks a factions ship -&gt; Player gets tag ("Attacked_GC_recently") -&gt; Retribution Spawngroup becomes eligible only for that player</p>
+<p>-Make an Event that checks which SpawnOption the player chooses. -&gt; What happens: Player chooses SpawnoptionA -&gt; Event will trigger that activates some chat message -&gt; using PlayerCondition again the message will only be visible  for the player</p>
+<p>-Some custom behaviour/chat messages from NPC based which tags player have.</p>
+<h3 id="referenced-by">Referenced by:</h3>
+<p><a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Conditions#Player">Event Conditions</a><br />
+<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Action#Players">Event Actions</a> <br />
+<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Action#PlayerTags">Behavior Actions</a><br />
+<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Chat#sendtospecificplayers">Chat Profiles</a><br />
+<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Spawn-Conditions#Players">SpawnConditions</a></p>
+<p>Here's an example of how a Player Condition Profile definition is setup:</p>
+<pre><code>&lt;EntityComponent xsi:type=&quot;MyObjectBuilder_InventoryComponentDefinition&quot;&gt;
+      &lt;Id&gt;
+          &lt;TypeId&gt;Inventory&lt;/TypeId&gt;
+          &lt;SubtypeId&gt;PlayerConditionProfile-AHESpecialMessage&lt;/SubtypeId&gt;
+      &lt;/Id&gt;
+      &lt;Description&gt;
+    [MES Player Condition]
+
+    [CheckPlayerReputation:true]
+    [CheckReputationwithFaction:AHE]
+    [MinPlayerReputation:500]
+    [MaxPlayerReputation:1500]
+
+        [CheckPlayerTags:true]
+    [IncludedPlayerTag:RecentyAttackedGCVessel]
+
+      &lt;/Description&gt; 
+    &lt;/EntityComponent&gt;
+</code></pre>
+<!--AllowOverrides  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">AllowOverrides</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[AllowOverrides:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--AllPlayersMatchThisCondition  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">AllPlayersMatchThisCondition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[AllPlayersMatchThisCondition:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--UseFailCondition  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">UseFailCondition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[UseFailCondition:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--UseAnyPassingCondition  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">UseAnyPassingCondition</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[UseAnyPassingCondition:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--CheckPlayerReputation  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">CheckPlayerReputation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckPlayerReputation:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--CheckReputationwithFaction  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">CheckReputationwithFaction</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckReputationwithFaction:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any name string excluding <code>:</code>, <code>[</code>, <code>]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">yes</td>
+</tr>
+</tbody>
+</table>
+<!--MinPlayerReputation  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">MinPlayerReputation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[MinPlayerReputation:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any interger</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">yes</td>
+</tr>
+</tbody>
+</table>
+<!--MaxPlayerReputation  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">MaxPlayerReputation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[MaxPlayerReputation:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any interger</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">yes</td>
+</tr>
+</tbody>
+</table>
+<!--CheckLastRespawnShipName  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">CheckLastRespawnShipName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckLastRespawnShipName:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--LastRespawnShipName  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">LastRespawnShipName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[LastRespawnShipName:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any name string excluding <code>:</code>, <code>[</code>, <code>]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--CheckPlayerTags  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">CheckPlayerTags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckPlayerTags:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--IncludedPlayerTag  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">IncludedPlayerTag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[IncludedPlayerTag:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any name string excluding <code>:</code>, <code>[</code>, <code>]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">yes</td>
+</tr>
+</tbody>
+</table>
+<!--ExcludedPlayerTag  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">ExcludedPlayerTag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[ExcludedPlayerTag:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any name string excluding <code>:</code>, <code>[</code>, <code>]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">yes</td>
+</tr>
+</tbody>
+</table>
+<!--CheckPlayerNear  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">CheckPlayerNear</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckPlayerNear:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;"><code>true</code><br><code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--PlayerNearCoords  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">PlayerNearCoords</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[PlayerNearCoords:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">A Vector3D Value in the following format:<br /><code>{X:# Y:# Z:#}</code><br />.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--PlayerNearDistanceFromCoords  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">PlayerNearDistanceFromCoords</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[PlayerNearDistanceFromCoords:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any interger equal or greater than 0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!--PlayerNearMinDistanceFromCoords  -->
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+<th style="text-align: left;">PlayerNearMinDistanceFromCoords</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[PlayerNearMinDistanceFromCoords:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">nan</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Values:</td>
+<td style="text-align: left;">Any interger equal or greater than 0</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tag Allowed:</td>
+<td style="text-align: left;">no</td>
+</tr>
+</tbody>
+</table>
+<!-- MES-WEBWIKI-SOURCE-SYNC-START -->
+<h2 id="additional-tags">Additional Tags</h2>
+<p>These tags add player-state checks and requirements for Player Condition profiles.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">AllowAnyExcludedPlayerTag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[AllowAnyExcludedPlayerTag:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures allow any excluded player tag.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;"><code>true</code> <code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">AllowAnyIncludedPlayerTag</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[AllowAnyIncludedPlayerTag:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures allow any included player tag.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;"><code>true</code> <code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">CheckPlayerCreditBalance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckPlayerCreditBalance:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures check player credit balance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;"><code>true</code> <code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">CheckPlayerInActiveZone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckPlayerInActiveZone:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures check player in active zone.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;"><code>true</code> <code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">CheckPlayerInZone</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[CheckPlayerInZone:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures check player in zone.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;"><code>true</code> <code>false</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">ExcludedPlayerTags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[ExcludedPlayerTags:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures excluded player tags.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;">Comma-separated list of values</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">IncludedPlayerTags</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[IncludedPlayerTags:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures included player tags.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;">Comma-separated list of values</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">MaxPlayerCreditBalance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[MaxPlayerCreditBalance:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures max player credit balance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;">Any Integer Value</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">MinPlayerCreditBalance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[MinPlayerCreditBalance:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures min player credit balance.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;">Any Integer Value</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">No</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tag:</th>
+<th style="text-align: left;">ZoneName</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tag Format:</td>
+<td style="text-align: left;"><code>[ZoneName:Value]</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">Description:</td>
+<td style="text-align: left;">Configures zone name.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Allowed Value(s):</td>
+<td style="text-align: left;">Comma-separated list of values</td>
+</tr>
+<tr>
+<td style="text-align: left;">Multiple Tags Allowed:</td>
+<td style="text-align: left;">Yes</td>
+</tr>
+</tbody>
+</table>
+<!-- MES-WEBWIKI-SOURCE-SYNC-END -->
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Custom-Event-Actions-and-ScenarioTools/" class="btn btn-neutral float-left" title="Custom Event Actions"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Zone-Profile/" class="btn btn-neutral float-right" title="Zone">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+        <span>
+          <a href="https://github.com/Raidfire85/MES-WebWiki" class="fa fa-code-fork" style="color: #fcfcfc"> Raidfire85/MES-WebWiki</a>
+        </span>
+    
+    
+      <span><a href="../Custom-Event-Actions-and-ScenarioTools/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Zone-Profile/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
