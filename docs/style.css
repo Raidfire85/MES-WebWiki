@@ -137,6 +137,58 @@ h6,
   color: var(--mes-amber-bright);
 }
 
+/* ReadTheDocs theme sets nested nav links to #404040 — unreadable on dark sidebar. */
+.wy-menu-vertical li.toctree-l2 a,
+.wy-menu-vertical li.toctree-l3 a,
+.wy-menu-vertical li.toctree-l4 a,
+.wy-menu-vertical li.toctree-l5 a,
+.wy-menu-vertical li.toctree-l6 a,
+.wy-menu-vertical li.toctree-l7 a,
+.wy-menu-vertical li.toctree-l8 a,
+.wy-menu-vertical li.toctree-l9 a,
+.wy-menu-vertical li.toctree-l10 a {
+  color: var(--mes-text-muted) !important;
+}
+
+.wy-menu-vertical li.toctree-l2 a:hover,
+.wy-menu-vertical li.toctree-l3 a:hover,
+.wy-menu-vertical li.toctree-l4 a:hover,
+.wy-menu-vertical li.toctree-l5 a:hover,
+.wy-menu-vertical li.toctree-l6 a:hover,
+.wy-menu-vertical li.toctree-l7 a:hover,
+.wy-menu-vertical li.toctree-l8 a:hover,
+.wy-menu-vertical li.toctree-l9 a:hover,
+.wy-menu-vertical li.toctree-l10 a:hover {
+  color: var(--mes-text) !important;
+}
+
+/* RTD paints expanded nested sections with light gray backgrounds. */
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a,
+.wy-menu-vertical li.toctree-l3.current > a,
+.wy-menu-vertical li.toctree-l3.current li.toctree-l4 > a,
+.wy-menu-vertical li.toctree-l4.current > a,
+.wy-menu-vertical li.toctree-l4.current li.toctree-l5 > a,
+.wy-menu-vertical li.toctree-l5.current > a,
+.wy-menu-vertical li.toctree-l5.current li.toctree-l6 > a {
+  background: transparent !important;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a,
+.wy-menu-vertical li.toctree-l3.current > a,
+.wy-menu-vertical li.toctree-l4.current > a,
+.wy-menu-vertical li.toctree-l5.current > a {
+  color: var(--mes-amber-bright) !important;
+}
+
+.wy-menu-vertical li.toctree-l2 button.toctree-expand,
+.wy-menu-vertical li.toctree-l3 button.toctree-expand,
+.wy-menu-vertical li.toctree-l4 button.toctree-expand,
+.wy-menu-vertical li.toctree-l5 button.toctree-expand {
+  color: var(--mes-text-muted) !important;
+  opacity: 0.85;
+}
+
 /* MkDocs captions: Player Support, Admin & Configuration, Modding, … */
 .wy-menu-vertical p.caption {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -169,13 +221,6 @@ h6,
 .wy-menu-vertical li.toctree-l1:has(> ul) > a:hover {
   color: var(--mes-amber);
   background: transparent;
-}
-
-.wy-menu-vertical li.toctree-l2 > a,
-.wy-menu-vertical li.toctree-l3 > a,
-.wy-menu-vertical li.toctree-l4 > a,
-.wy-menu-vertical li.toctree-l5 > a {
-  color: var(--mes-text-muted);
 }
 
 .wy-menu-vertical li.toctree-l2 > a {
