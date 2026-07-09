@@ -1,4 +1,8 @@
 site_name: Modular Encounters System (Community Wiki)
+site_description: >-
+  Unofficial community wiki for Modular Encounters System (MES). Auto-synced profiles,
+  tags, and modding docs — plus player support and troubleshooting. Kept up to date
+  from the MES source repo.
 site_url: https://raidfire85.github.io/MES-WebWiki/
 repo_url: https://github.com/Raidfire85/MES-WebWiki
 repo_name: Raidfire85/MES-WebWiki
