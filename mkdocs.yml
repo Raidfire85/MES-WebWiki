@@ -123,3 +123,6 @@ extra:
 extra_css:
   - style.css
 
+extra_javascript:
+  - js/sidebar-nav-fix.js
+
