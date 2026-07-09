@@ -9,7 +9,7 @@ If you are having issues with the mod framework, or any of the mods that utilize
 <div class="mes-wiki-updates">
 <p class="mes-wiki-updates-label">What's new</p>
 <p class="mes-wiki-updates-summary">Recent changes to profile pages, tags, and sidebar navigation from the MES framework.</p>
-<p class="mes-wiki-updates-meta"><strong>Last synced:</strong> July 9, 2026 — GitHub master</p>
+<p class="mes-wiki-updates-meta"><strong>Last synced:</strong> July 9, 2026 — MES master branch</p>
 <p class="mes-wiki-updates-meta"><strong>Last updated:</strong> July 9, 2026</p>
 <ul class="mes-wiki-updates-latest">
 <li>Sidebar navigation updated for new profile pages.</li>
