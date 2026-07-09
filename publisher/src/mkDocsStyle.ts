@@ -3,52 +3,50 @@ import * as path from 'path';
 import { contentEquals } from './syncBridge';
 import { WEBWIKI_STYLE_SYNC_END, WEBWIKI_STYLE_SYNC_START } from './constants';
 
-/** Hide MkDocs footer prev/next + style the home-page updates embed. */
+/** Hide MkDocs footer prev/next + style the home-page updates embed (Theme C palette). */
 const STYLE_SYNC_BLOCK = `${WEBWIKI_STYLE_SYNC_START}
-/* Match live WebWiki: no footer Previous/Next buttons (newer MkDocs adds them by default). */
 .rst-footer-buttons,
 footer .rst-footer-buttons {
   display: none !important;
 }
 
-/* Home page — wiki updates callout (MES-WEBWIKI-UPDATES-SYNC block in index.md). */
 .mes-wiki-updates {
-  border: 1px solid #3d6f8f;
-  border-left: 4px solid #55a5d9;
-  background: linear-gradient(135deg, #2a3238 0%, #1f2a30 100%);
+  border: 1px solid var(--mes-border-strong, #3d4654);
+  border-left: 4px solid var(--mes-amber, #f0a030);
+  background: var(--mes-bg-elevated, #1a1e26);
   padding: 1em 1.25em;
   margin: 1.5em 0 2em;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
 .mes-wiki-updates-label {
   margin: 0 0 0.35em;
-  font-size: 0.85em;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #55a5d9;
+  color: var(--mes-amber, #f0a030);
 }
 
 .mes-wiki-updates-summary {
   margin: 0 0 0.75em;
-  color: #c8d4dc;
+  color: var(--mes-text-muted, #9aa3b2);
 }
 
 .mes-wiki-updates-meta {
   margin: 0 0 0.25em;
-  color: #d9d9d9;
+  color: var(--mes-text, #e4e8ed);
 }
 
 .mes-wiki-updates-source {
   margin: 0 0 0.75em;
   font-size: 0.92em;
-  color: #9eb3c2;
+  color: var(--mes-text-muted, #9aa3b2);
 }
 
 .mes-wiki-updates a {
-  color: #7ec8ff;
+  color: var(--mes-amber-bright, #ffb347);
   text-decoration: none;
 }
 
@@ -69,12 +67,12 @@ footer .rst-footer-buttons {
 .mes-wiki-updates-history-date {
   margin: 0 0 0.35em;
   font-weight: 600;
-  color: #c8d4dc;
+  color: var(--mes-text-muted, #9aa3b2);
 }
 
 .mes-wiki-updates-history summary {
   cursor: pointer;
-  color: #55a5d9;
+  color: var(--mes-amber, #f0a030);
   margin-bottom: 0.5em;
 }
 ${WEBWIKI_STYLE_SYNC_END}`;

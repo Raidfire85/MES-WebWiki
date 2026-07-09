@@ -1,21 +1,74 @@
-.wy-body-for-nav {
-    background: #343131;
+/* Theme C — Space Industrial (community MES WebWiki) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500;600;700&display=swap');
+
+:root {
+  --mes-bg-deep: #0a0c0f;
+  --mes-bg-panel: #12151a;
+  --mes-bg-elevated: #1a1e26;
+  --mes-bg-hover: #222830;
+  --mes-border: #2e3540;
+  --mes-border-strong: #3d4654;
+  --mes-text: #e4e8ed;
+  --mes-text-muted: #9aa3b2;
+  --mes-amber: #f0a030;
+  --mes-amber-bright: #ffb347;
+  --mes-amber-dim: #c47a18;
+  --mes-amber-glow: rgba(240, 160, 48, 0.15);
+  --mes-code-bg: #0f1218;
+  --mes-sidebar-width: 320px;
+  --mes-content-max: 960px;
+}
+
+/* --- Shell & layout --- */
+.wy-body-for-nav,
+.wy-nav-content-wrap,
+.wy-nav-content {
+  background: var(--mes-bg-deep);
 }
 
 .wy-nav-content {
-    background: #343131;
-}
-
-.wy-side-nav-search {
-    background: #125a89;
+  max-width: var(--mes-content-max);
+  color: var(--mes-text);
+  padding: 1.75rem 2.5rem 3rem;
 }
 
 .wy-nav-side {
-    background: #201e1e;
+  background: var(--mes-bg-panel);
+  border-right: 1px solid var(--mes-border);
+  width: var(--mes-sidebar-width);
 }
 
-body {
-    color: #d9d9d9;
+.wy-side-nav-search {
+  background: linear-gradient(180deg, #1e2229 0%, var(--mes-bg-panel) 100%);
+  border-bottom: 2px solid var(--mes-amber-dim);
+}
+
+.wy-side-nav-search > a {
+  color: var(--mes-amber-bright) !important;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.wy-side-nav-search .wy-dropdown > a,
+.wy-side-nav-search input[type='text'] {
+  border: 1px solid var(--mes-border-strong) !important;
+  background: var(--mes-bg-deep) !important;
+  color: var(--mes-text) !important;
+  border-radius: 4px;
+}
+
+.wy-side-nav-search input[type='text']::placeholder {
+  color: var(--mes-text-muted);
+}
+
+body,
+.rst-content {
+  color: var(--mes-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
 }
 
 h1,
@@ -23,90 +76,237 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-    font-family: 'Saira';
+h6,
+.rst-content h1,
+.rst-content h2,
+.rst-content h3,
+.rst-content h4,
+.rst-content h5,
+.rst-content h6 {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-weight: 600;
+  color: var(--mes-text);
+  letter-spacing: 0.01em;
 }
 
+.rst-content h1 {
+  border-bottom: 2px solid var(--mes-amber-dim);
+  padding-bottom: 0.35em;
+  margin-bottom: 0.75em;
+}
+
+.rst-content h2 {
+  border-bottom: 1px solid var(--mes-border);
+  padding-bottom: 0.25em;
+  margin-top: 1.75em;
+}
+
+.rst-content a {
+  color: var(--mes-amber-bright);
+}
+
+.rst-content a:hover {
+  color: #ffd080;
+}
+
+/* --- Sidebar navigation --- */
+.wy-menu-vertical a {
+  color: var(--mes-text-muted);
+  font-size: 0.92rem;
+  border-left: 3px solid transparent;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.wy-menu-vertical a:hover {
+  background: var(--mes-bg-hover);
+  color: var(--mes-text);
+  border-left-color: var(--mes-amber-dim);
+}
+
+.wy-menu-vertical li.current > a {
+  background: var(--mes-amber-glow);
+  color: var(--mes-amber-bright);
+  border-left-color: var(--mes-amber);
+  font-weight: 600;
+}
+
+.wy-menu-vertical li.on a,
+.wy-menu-vertical li.current > a:hover {
+  background: var(--mes-amber-glow);
+  color: var(--mes-amber-bright);
+}
+
+.wy-menu-vertical li.toctree-l1 > a,
+.wy-menu-vertical li.toctree-l1 > p.caption {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--mes-amber);
+  margin-top: 0.75em;
+}
+
+.wy-menu-vertical li.toctree-l1 > a:hover {
+  color: var(--mes-amber-bright);
+}
+
+/* Expand nested nav by default (ReadTheDocs collapses sections). */
+.wy-menu-vertical li ul {
+  display: block !important;
+}
+
+.wy-menu-vertical li ul li a {
+  padding-left: 1.75em;
+}
+
+/* --- Breadcrumbs & header links --- */
+.wy-breadcrumbs li a {
+  color: var(--mes-amber);
+}
+
+.wy-breadcrumbs li.wy-breadcrumbs-aside a {
+  color: var(--mes-text-muted);
+  font-size: 0.85rem;
+}
+
+/* --- Code & tables --- */
 .rst-content code,
-.rst-content pre code,
+.rst-content tt,
 code {
-    background: #312e2e;
-    border: 1px solid #4d4848;
-    color: #55a5d9;
-    font-size: inherit;
+  background: var(--mes-code-bg);
+  border: 1px solid var(--mes-border);
+  color: var(--mes-amber-bright);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.88em;
+  border-radius: 3px;
+  padding: 0.1em 0.35em;
+}
+
+.rst-content pre {
+  background: var(--mes-code-bg);
+  border: 1px solid var(--mes-border-strong);
+  border-left: 3px solid var(--mes-amber-dim);
+  border-radius: 4px;
+}
+
+.rst-content pre code {
+  border: none;
+  background: transparent;
+  color: #d4dae4;
 }
 
 .rst-content table.docutils thead {
-    color: white;
+  color: var(--mes-amber-bright);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 th {
-    border: 1px solid #4d4848 !important;
+  background: var(--mes-bg-elevated) !important;
+  border: 1px solid var(--mes-border-strong) !important;
 }
 
 .rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td,
 td {
-    border: 1px solid #4d4848 !important;
-    background-color: #343131;
+  border: 1px solid var(--mes-border) !important;
+  background-color: var(--mes-bg-panel);
+  color: var(--mes-text);
+}
+
+.rst-content table.docutils tr:nth-child(2n) td {
+  background-color: var(--mes-bg-deep);
 }
 
 .rst-content table.docutils th {
-    word-wrap: normal;
+  word-wrap: normal;
 }
 
-.wy-table-responsive table td, .wy-table-responsive table th {
-    white-space: normal !important;
+.wy-table-responsive table td,
+.wy-table-responsive table th {
+  white-space: normal !important;
 }
 
 .wy-table-responsive {
-    overflow : visible !important;
+  overflow: visible !important;
+}
+
+/* --- Mobile top bar --- */
+.wy-nav-top {
+  background: var(--mes-bg-panel);
+  border-bottom: 2px solid var(--mes-amber-dim);
+}
+
+.wy-nav-top a {
+  color: var(--mes-amber-bright);
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+/* --- Admonitions / notes --- */
+.rst-content .note,
+.rst-content .warning,
+.rst-content .important {
+  background: var(--mes-bg-elevated);
+  border: 1px solid var(--mes-border-strong);
+  border-left: 4px solid var(--mes-amber);
+  border-radius: 4px;
+}
+
+/* --- Footer --- */
+footer,
+footer .rst-footer-buttons {
+  color: var(--mes-text-muted);
+}
+
+footer a {
+  color: var(--mes-amber-dim);
 }
 
 /* MES-WEBWIKI-STYLE-SYNC-START */
-/* Match live WebWiki: no footer Previous/Next buttons (newer MkDocs adds them by default). */
 .rst-footer-buttons,
 footer .rst-footer-buttons {
   display: none !important;
 }
 
-/* Home page — wiki updates callout (MES-WEBWIKI-UPDATES-SYNC block in index.md). */
 .mes-wiki-updates {
-  border: 1px solid #3d6f8f;
-  border-left: 4px solid #55a5d9;
-  background: linear-gradient(135deg, #2a3238 0%, #1f2a30 100%);
+  border: 1px solid var(--mes-border-strong);
+  border-left: 4px solid var(--mes-amber);
+  background: var(--mes-bg-elevated);
   padding: 1em 1.25em;
   margin: 1.5em 0 2em;
-  border-radius: 6px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
 }
 
 .mes-wiki-updates-label {
   margin: 0 0 0.35em;
-  font-size: 0.85em;
-  font-weight: 700;
-  letter-spacing: 0.06em;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #55a5d9;
+  color: var(--mes-amber);
 }
 
 .mes-wiki-updates-summary {
   margin: 0 0 0.75em;
-  color: #c8d4dc;
+  color: var(--mes-text-muted);
 }
 
 .mes-wiki-updates-meta {
   margin: 0 0 0.25em;
-  color: #d9d9d9;
+  color: var(--mes-text);
 }
 
 .mes-wiki-updates-source {
   margin: 0 0 0.75em;
   font-size: 0.92em;
-  color: #9eb3c2;
+  color: var(--mes-text-muted);
 }
 
 .mes-wiki-updates a {
-  color: #7ec8ff;
+  color: var(--mes-amber-bright);
   text-decoration: none;
 }
 
@@ -127,12 +327,12 @@ footer .rst-footer-buttons {
 .mes-wiki-updates-history-date {
   margin: 0 0 0.35em;
   font-weight: 600;
-  color: #c8d4dc;
+  color: var(--mes-text-muted);
 }
 
 .mes-wiki-updates-history summary {
   cursor: pointer;
-  color: #55a5d9;
+  color: var(--mes-amber);
   margin-bottom: 0.5em;
 }
 /* MES-WEBWIKI-STYLE-SYNC-END */
