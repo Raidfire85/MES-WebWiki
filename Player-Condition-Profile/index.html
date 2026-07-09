@@ -217,30 +217,30 @@
               </ul>
               <p class="caption"><span class="caption-text">Template / Example Files</span></p>
               <ul>
-                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/1ae743505ec489d31e6ac17edf16e5e0?ts=2">SpawnGroup.sbc</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../SpawnGroup.sbc/">SpawnGroup.sbc</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/cd9b4decb58dea335290a05b728a7276?ts=2">Factions.sbc</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Factions.sbc/">Factions.sbc</a>
                   </li>
               </ul>
               <p class="caption"><span class="caption-text">Modder Resources</span></p>
               <ul>
                   <li class="toctree-l1"><a class="" href="../Armor-Modules">Armor Modules Included with MES (Page Unavailable)</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/415b45b53174c608c6486ce06bb58e2c">Block Replacement Profiles</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Block-Replacement-Profiles/">Block Replacement Profiles</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Encounter-Attributes/">Encounter Attributes</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Loot-Profiles/">Loot Profiles</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="Modding:-Tutorial-&-Guidelines:-NPC-Grid-Setup-Guidelines">NPC Grid Setup Guidelines</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../NPC-Grid-Setup-Guidelines/">NPC Grid Setup Guidelines</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/8888bbc06a623cac90f8362dd948033c">Random Name Generator Guide</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Random-Name-Generator-Guide/">Random Name Generator Guide</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Scripting-API/">Scripting API</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Troubleshooting-Tips/">Troubleshooting Tips</a>
                   </li>
-                  <li class="toctree-l1"><a class="" href="https://gist.github.com/MeridiusIX/52fbf5679e67107a8cf37706205b5812">Threat Score Guide</a>
+                  <li class="toctree-l1"><a class="reference internal" href="../Threat-Score-Guide/">Threat Score Guide</a>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Tutorials/">Tutorials</a>
                   </li>
@@ -276,16 +276,16 @@
 <p>On it self it doesn't do anything, check where it is being referenced below.</p>
 <p>For most cases, it loops through all the players and for each player it checks if the player passes all conditions, if that is the case the action, chat, spawncondition will only activate for that player. Handy for MP situations. </p>
 <h3 id="player-tags">Player Tags</h3>
-<p>You can add Tags to certain players, what can be added by <a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Action#PlayerTags">Behavior Actions</a> and <a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Action#Players">Event Actions</a>, and be used as an extra condition for this condition profile. Examples on what you can make:</p>
+<p>You can add Tags to certain players, what can be added by <a href="../Action/#PlayerTags">Behavior Actions</a> and <a href="Event.md-Action#Players">Event Actions</a>, and be used as an extra condition for this condition profile. Examples on what you can make:</p>
 <p>-Player attacks a factions ship -&gt; Player gets tag ("Attacked_GC_recently") -&gt; Retribution Spawngroup becomes eligible only for that player</p>
 <p>-Make an Event that checks which SpawnOption the player chooses. -&gt; What happens: Player chooses SpawnoptionA -&gt; Event will trigger that activates some chat message -&gt; using PlayerCondition again the message will only be visible  for the player</p>
 <p>-Some custom behaviour/chat messages from NPC based which tags player have.</p>
 <h3 id="referenced-by">Referenced by:</h3>
-<p><a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Conditions#Player">Event Conditions</a><br />
-<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Action#Players">Event Actions</a> <br />
-<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Action#PlayerTags">Behavior Actions</a><br />
-<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Chat#sendtospecificplayers">Chat Profiles</a><br />
-<a href="https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Spawn-Conditions#Players">SpawnConditions</a></p>
+<p><a href="Event.md-Conditions#Player">Event Conditions</a><br />
+<a href="Event.md-Action#Players">Event Actions</a> <br />
+<a href="../Action/#PlayerTags">Behavior Actions</a><br />
+<a href="../Chat/#sendtospecificplayers">Chat Profiles</a><br />
+<a href="../Spawn-Conditions/#Players">SpawnConditions</a></p>
 <p>Here's an example of how a Player Condition Profile definition is setup:</p>
 <pre><code>&lt;EntityComponent xsi:type=&quot;MyObjectBuilder_InventoryComponentDefinition&quot;&gt;
       &lt;Id&gt;
