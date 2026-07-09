@@ -163,6 +163,25 @@ h6,
 }
 
 /* RTD paints expanded nested sections with light gray backgrounds. */
+.wy-menu-vertical li.current,
+.wy-menu-vertical li.on,
+.wy-menu-vertical li.toctree-l1.current,
+.wy-menu-vertical li.toctree-l2.current,
+.wy-menu-vertical li.toctree-l3.current,
+.wy-menu-vertical li.toctree-l4.current,
+.wy-menu-vertical li.toctree-l5.current {
+  background: transparent !important;
+}
+
+.wy-menu-vertical li.current > ul,
+.wy-menu-vertical li.on > ul,
+.wy-menu-vertical li.toctree-l1.current > ul,
+.wy-menu-vertical li.toctree-l2.current > ul,
+.wy-menu-vertical li.toctree-l3.current > ul,
+.wy-menu-vertical li.toctree-l4.current > ul {
+  background: transparent !important;
+}
+
 .wy-menu-vertical li.toctree-l2.current > a,
 .wy-menu-vertical li.toctree-l2.current li.toctree-l3 > a,
 .wy-menu-vertical li.toctree-l3.current > a,
@@ -221,6 +240,11 @@ h6,
 .wy-menu-vertical li.toctree-l1:has(> ul) > a:hover {
   color: var(--mes-amber);
   background: transparent;
+}
+
+.wy-menu-vertical li.toctree-l1.current:has(> ul) > a {
+  color: var(--mes-amber-dim) !important;
+  background: transparent !important;
 }
 
 .wy-menu-vertical li.toctree-l2 > a {
