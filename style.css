@@ -251,14 +251,30 @@ h6,
   color: var(--mes-amber) !important;
 }
 
-/* Hide expand toggles when there are no nested nav items (empty ul.current doesn't count). */
-.wy-menu-vertical li:not(:has(> ul > li)) > button.toctree-expand {
+/* Hide expand toggles when there are no nested nav items (empty ul doesn't count).
+   RTD/MkDocs place the button inside the <a>, not as a direct child of li. */
+.wy-menu-vertical li:not(:has(> ul > li)) button.toctree-expand {
   display: none !important;
 }
 
-/* MkDocs emits an empty ul.current on leaf pages — suppress it entirely. */
+/* MkDocs emits an empty ul on leaf pages — suppress it entirely. */
+.wy-menu-vertical li.current > ul:not(:has(> li)),
 .wy-menu-vertical li.current > ul.current:not(:has(> li)) {
   display: none !important;
+}
+
+/* Leaf pages must not show a separator line before the next nav item. */
+.wy-menu-vertical li.toctree-l1.current:not(:has(> ul > li)) + li.toctree-l1 {
+  border-top: none !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+/* No TOC separator after leaf pages (only when real in-page sections exist). */
+.wy-menu-vertical ul.current > li.toctree-l1.current:has(> ul > li) + li.toctree-l1 {
+  margin-top: 0.65em;
+  padding-top: 0.55em;
+  border-top: 1px solid var(--mes-border);
 }
 
 /* Subsection group labels (Spawning, Behaviors, …) — nav items without a page href */
@@ -333,12 +349,6 @@ h6,
   border-left-color: var(--mes-amber) !important;
 }
 
-/* Visual break between in-page TOC and the next sibling nav page */
-.wy-menu-vertical ul.current > li.toctree-l1.current:has(> ul.current > li) + li.toctree-l1 {
-  margin-top: 0.65em;
-  padding-top: 0.55em;
-  border-top: 1px solid var(--mes-border);
-}
 
 /* Current page title stays normal nav styling even when it has an in-page TOC */
 .wy-menu-vertical li.toctree-l1.current > a.current,
