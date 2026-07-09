@@ -251,8 +251,13 @@ h6,
   color: var(--mes-amber) !important;
 }
 
-/* Subsection group labels (Spawning, Behaviors, …) — parent l1 items with nested ul */
-.wy-menu-vertical li.toctree-l1:has(> ul) > a {
+/* Hide useless expand toggles on leaf nav items (no nested ul). */
+.wy-menu-vertical li:not(:has(> ul)) > button.toctree-expand {
+  display: none !important;
+}
+
+/* Subsection group labels (Spawning, Behaviors, …) — nav items without a page href */
+.wy-menu-vertical li.toctree-l1 > a:not([href]) {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.8rem;
   font-weight: 600;
@@ -264,21 +269,83 @@ h6,
   border-left-color: transparent;
 }
 
-.wy-menu-vertical li.toctree-l1:has(> ul) > a:hover {
+.wy-menu-vertical li.toctree-l1 > a:not([href]):hover {
   color: var(--mes-amber);
   background: transparent;
 }
 
-.wy-menu-vertical li.toctree-l1.current:has(> ul) > a,
-.wy-menu-vertical li.toctree-l1.on > a {
+.wy-menu-vertical li.toctree-l1.on > a:not([href]) {
   color: var(--mes-amber-dim) !important;
   background: transparent !important;
 }
 
-.wy-menu-vertical li.toctree-l1.on > a:hover,
-.wy-menu-vertical li.toctree-l1.current:has(> ul) > a:hover {
+.wy-menu-vertical li.toctree-l1.on > a:not([href]):hover {
   color: var(--mes-amber) !important;
   background: transparent !important;
+}
+
+/* In-page TOC (anchor links) under the current page — distinct from sibling nav pages */
+.wy-menu-vertical li.toctree-l1.current > ul.current {
+  margin: 0.35em 0 0.5em 0.85em;
+  padding: 0.15em 0 0.45em 0.65em;
+  border-left: 2px solid var(--mes-amber-dim);
+  background: var(--mes-bg-deep);
+  border-radius: 0 3px 3px 0;
+}
+
+.wy-menu-vertical li.toctree-l1.current > ul.current::before {
+  content: 'On this page';
+  display: block;
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--mes-text-muted);
+  padding: 0.15em 0 0.4em 0.35em;
+}
+
+.wy-menu-vertical li.toctree-l1.current > ul.current a {
+  font-size: 0.78rem !important;
+  font-weight: 400 !important;
+  font-family: 'Inter', system-ui, sans-serif !important;
+  letter-spacing: normal !important;
+  text-transform: none !important;
+  color: var(--mes-text-muted) !important;
+  padding-left: 0.5em !important;
+  border-left-color: transparent !important;
+}
+
+.wy-menu-vertical li.toctree-l1.current > ul.current a:hover {
+  color: var(--mes-text) !important;
+  background: var(--mes-bg-hover) !important;
+}
+
+.wy-menu-vertical li.toctree-l1.current > ul.current li.toctree-l2.current > a {
+  color: var(--mes-amber-bright) !important;
+  font-weight: 500 !important;
+  background: rgba(240, 160, 48, 0.08) !important;
+  border-left-color: var(--mes-amber) !important;
+}
+
+/* Visual break between in-page TOC and the next sibling nav page */
+.wy-menu-vertical ul.current > li.toctree-l1.current + li.toctree-l1 {
+  margin-top: 0.65em;
+  padding-top: 0.55em;
+  border-top: 1px solid var(--mes-border);
+}
+
+/* Current page title stays normal nav styling even when it has an in-page TOC */
+.wy-menu-vertical li.toctree-l1.current > a.current,
+.wy-menu-vertical li.toctree-l1.current > a[href='#'] {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 0.92rem;
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--mes-amber-bright) !important;
+  background: rgba(240, 160, 48, 0.08) !important;
+  border-left-color: var(--mes-amber) !important;
 }
 
 .wy-menu-vertical li.toctree-l2 > a {
