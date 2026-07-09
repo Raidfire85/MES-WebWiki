@@ -113,6 +113,7 @@ h6,
 .wy-menu-vertical a {
   color: var(--mes-text-muted);
   font-size: 0.92rem;
+  line-height: 1.45;
   border-left: 3px solid transparent;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
 }
@@ -136,23 +137,45 @@ h6,
   color: var(--mes-amber-bright);
 }
 
-/* Section headers: top-level groups that contain sub-pages (not leaf links like Home). */
-.wy-menu-vertical li.toctree-l1:has(> ul) > a,
-.wy-menu-vertical li.toctree-l1 > p.caption {
+/* MkDocs captions: Player Support, Admin & Configuration, Modding, … */
+.wy-menu-vertical p.caption {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--mes-amber);
-  margin-top: 0.75em;
+  color: var(--mes-amber) !important;
+  margin: 1em 0 0.35em;
+  padding: 0 0 0 1em;
+}
+
+.wy-menu-vertical p.caption .caption-text {
+  color: var(--mes-amber) !important;
+}
+
+/* Subsection group labels (Spawning, Behaviors, …) — parent l1 items with nested ul */
+.wy-menu-vertical li.toctree-l1:has(> ul) > a {
+  font-family: 'JetBrains Mono', ui-monospace, monospace;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--mes-amber-dim);
+  margin-top: 0.35em;
   background: transparent;
   border-left-color: transparent;
 }
 
 .wy-menu-vertical li.toctree-l1:has(> ul) > a:hover {
-  color: var(--mes-amber-bright);
-  background: var(--mes-bg-hover);
+  color: var(--mes-amber);
+  background: transparent;
+}
+
+.wy-menu-vertical li.toctree-l2 > a,
+.wy-menu-vertical li.toctree-l3 > a,
+.wy-menu-vertical li.toctree-l4 > a,
+.wy-menu-vertical li.toctree-l5 > a {
+  color: var(--mes-text-muted);
 }
 
 .wy-menu-vertical li.toctree-l2 > a {
