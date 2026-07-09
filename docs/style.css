@@ -160,6 +160,24 @@ h6,
 .wy-menu-vertical li.toctree-l9 a:hover,
 .wy-menu-vertical li.toctree-l10 a:hover {
   color: var(--mes-text) !important;
+  background: var(--mes-bg-hover) !important;
+  border-left-color: var(--mes-amber-dim) !important;
+}
+
+/* RTD li.on a / li.current a (descendant) paints #fcfcfc on every link in expanded branches. */
+.wy-menu-vertical li.on a,
+.wy-menu-vertical li.current a {
+  background: transparent !important;
+  font-weight: inherit !important;
+  border-top: none !important;
+  border-bottom: none !important;
+}
+
+.wy-menu-vertical li.on a:hover,
+.wy-menu-vertical li.current a:hover {
+  background: var(--mes-bg-hover) !important;
+  color: var(--mes-text) !important;
+  border-left-color: var(--mes-amber-dim) !important;
 }
 
 /* RTD paints expanded nested sections with light gray backgrounds. */
@@ -198,6 +216,15 @@ h6,
 .wy-menu-vertical li.toctree-l4.current > a,
 .wy-menu-vertical li.toctree-l5.current > a {
   color: var(--mes-amber-bright) !important;
+}
+
+.wy-menu-vertical li.toctree-l2.current > a:hover,
+.wy-menu-vertical li.toctree-l3.current > a:hover,
+.wy-menu-vertical li.toctree-l4.current > a:hover,
+.wy-menu-vertical li.toctree-l5.current > a:hover,
+.wy-menu-vertical li.current > a:hover {
+  color: var(--mes-amber-bright) !important;
+  background: rgba(240, 160, 48, 0.12) !important;
 }
 
 .wy-menu-vertical li.toctree-l2 button.toctree-expand,
@@ -242,8 +269,15 @@ h6,
   background: transparent;
 }
 
-.wy-menu-vertical li.toctree-l1.current:has(> ul) > a {
+.wy-menu-vertical li.toctree-l1.current:has(> ul) > a,
+.wy-menu-vertical li.toctree-l1.on > a {
   color: var(--mes-amber-dim) !important;
+  background: transparent !important;
+}
+
+.wy-menu-vertical li.toctree-l1.on > a:hover,
+.wy-menu-vertical li.toctree-l1.current:has(> ul) > a:hover {
+  color: var(--mes-amber) !important;
   background: transparent !important;
 }
 
