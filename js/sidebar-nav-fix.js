@@ -1,6 +1,11 @@
 jQuery(function ($) {
   var nav = SphinxRtdTheme.Navigation;
 
+  // Disable sidebar ↔ main-content scroll sync.
+  nav.onScroll = function () {
+    this.winScroll = false;
+  };
+
   nav.reset = function () {
     var hash = encodeURI(window.location.hash) || '#';
     try {
@@ -25,14 +30,12 @@ jQuery(function ($) {
           link.closest('li.toctree-l' + i).addClass('current').attr('aria-expanded', 'true');
         }
 
+        // Restore user scroll position after navigation; never auto-scroll.
         var sidebar = document.querySelector('.wy-side-scroll');
         var saved = sessionStorage.getItem('mes-sidebar-scroll');
-
         if (saved !== null && sidebar) {
           sidebar.scrollTop = parseInt(saved, 10);
           sessionStorage.removeItem('mes-sidebar-scroll');
-        } else if (link[0]) {
-          link[0].scrollIntoView({ block: 'nearest', inline: 'nearest' });
         }
       }
     } catch (err) {
@@ -40,13 +43,11 @@ jQuery(function ($) {
     }
   };
 
+  // Preserve sidebar position on any nav click.
   $(document).on('click', '.wy-menu-vertical a[href]', function () {
-    var href = $(this).attr('href');
-    if (href && href !== '#' && !href.startsWith('#')) {
-      var sidebar = document.querySelector('.wy-side-scroll');
-      if (sidebar) {
-        sessionStorage.setItem('mes-sidebar-scroll', String(sidebar.scrollTop));
-      }
+    var sidebar = document.querySelector('.wy-side-scroll');
+    if (sidebar) {
+      sessionStorage.setItem('mes-sidebar-scroll', String(sidebar.scrollTop));
     }
   });
 });
