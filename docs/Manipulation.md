@@ -52,7 +52,7 @@ Below are several types of tags you can include in your Manipulation Profile:
 [Conditions](#Conditions)
 
 [General](#General)  
-[Armor-Modules](#Armor-Modules)  
+[Armor-Modules](Armor-Modules.md)  
 [Block-Replacement](#Block-Replacement)  
 [Block-Settings](#Block-Settings)  
 [Build-States](#Build-States)  

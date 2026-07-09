@@ -70,7 +70,7 @@
   * [Factions.sbc](Factions.sbc.md)	
 
 # Modder Resources
-  * [Armor Modules Included with MES (Page Unavailable)](Armor-Modules)  
+  * [Armor Modules Included with MES](Armor-Modules.md)
   * [Block Replacement Profiles](Block-Replacement-Profiles.md)
   * [Encounter Attributes](Encounter-Attributes.md)
   * [Loot Profiles](Loot-Profiles.md)
