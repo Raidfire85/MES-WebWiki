@@ -124,19 +124,20 @@ h6,
 }
 
 .wy-menu-vertical li.current > a {
-  background: var(--mes-amber-glow);
+  background: rgba(240, 160, 48, 0.08);
   color: var(--mes-amber-bright);
   border-left-color: var(--mes-amber);
   font-weight: 600;
 }
 
-.wy-menu-vertical li.on a,
+.wy-menu-vertical li.on > a,
 .wy-menu-vertical li.current > a:hover {
-  background: var(--mes-amber-glow);
+  background: rgba(240, 160, 48, 0.08);
   color: var(--mes-amber-bright);
 }
 
-.wy-menu-vertical li.toctree-l1 > a,
+/* Section headers: top-level groups that contain sub-pages (not leaf links like Home). */
+.wy-menu-vertical li.toctree-l1:has(> ul) > a,
 .wy-menu-vertical li.toctree-l1 > p.caption {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
   font-size: 0.78rem;
@@ -145,19 +146,29 @@ h6,
   text-transform: uppercase;
   color: var(--mes-amber);
   margin-top: 0.75em;
+  background: transparent;
+  border-left-color: transparent;
 }
 
-.wy-menu-vertical li.toctree-l1 > a:hover {
+.wy-menu-vertical li.toctree-l1:has(> ul) > a:hover {
   color: var(--mes-amber-bright);
+  background: var(--mes-bg-hover);
 }
 
-/* Expand nested nav by default (ReadTheDocs collapses sections). */
-.wy-menu-vertical li ul {
-  display: block !important;
+.wy-menu-vertical li.toctree-l2 > a {
+  padding-left: 1.25em;
 }
 
-.wy-menu-vertical li ul li a {
+.wy-menu-vertical li.toctree-l3 > a {
   padding-left: 1.75em;
+}
+
+.wy-menu-vertical li.toctree-l4 > a {
+  padding-left: 2.25em;
+}
+
+.wy-menu-vertical li.toctree-l5 > a {
+  padding-left: 2.75em;
 }
 
 /* --- Breadcrumbs & header links --- */
