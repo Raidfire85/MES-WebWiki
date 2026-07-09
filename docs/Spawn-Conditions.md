@@ -1756,7 +1756,7 @@ There is no need for these tags anymore.
 |Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|UseThreatLevelCheck|
 |:----|:----|
 |Tag Format:|`[UseThreatLevelCheck:Value]`|
-|Description:|This tag will restrict the SpawnGroup to only spawn if the threat level near a player is within specified parameters. Threat score is specified in `ThreatScoreMinimum` and `ThreatScoreMaximum`. For more information on how Threat Scoring works, [Click Here](https://gist.github.com/MeridiusIX/52fbf5679e67107a8cf37706205b5812).|
+|Description:|This tag will restrict the SpawnGroup to only spawn if the threat level near a player is within specified parameters. Threat score is specified in `ThreatScoreMinimum` and `ThreatScoreMaximum`. For more information on how Threat Scoring works, [Click Here](Threat-Score-Guide.md).|
 |Allowed Values:|`true`<br>`false`|
 |Default Value(s):|`false`|
 |Multiple Tag Allowed:|No|
@@ -1920,7 +1920,7 @@ There is no need for these tags anymore.
 |Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|CustomApiConditions|
 |:----|:----|
 |Tag Format:|`[CustomApiConditions:Value]`|
-|Description:|This tag allows you to specify the name of a custom method that is executed when this encounter tries to spawn. The custom method is defined in the MES API. Click [here](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Scripting-API) to learn more about the API and how to register your custom method.|
+|Description:|This tag allows you to specify the name of a custom method that is executed when this encounter tries to spawn. The custom method is defined in the MES API. Click [here](Scripting-API.md) to learn more about the API and how to register your custom method.|
 |Allowed Value(s):|Any Registered Custom Method Name|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|

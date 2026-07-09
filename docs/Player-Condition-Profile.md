@@ -6,7 +6,7 @@ For most cases, it loops through all the players and for each player it checks i
 
 
 ### Player Tags
-You can add Tags to certain players, what can be added by [Behavior Actions](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Action#PlayerTags) and [Event Actions](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Action#Players), and be used as an extra condition for this condition profile. Examples on what you can make:
+You can add Tags to certain players, what can be added by [Behavior Actions](Action.md#PlayerTags) and [Event Actions](Event.md-Action#Players), and be used as an extra condition for this condition profile. Examples on what you can make:
 
 -Player attacks a factions ship -> Player gets tag ("Attacked_GC_recently") -> Retribution Spawngroup becomes eligible only for that player
 
@@ -19,11 +19,11 @@ You can add Tags to certain players, what can be added by [Behavior Actions](htt
 
 
 ### Referenced by:
-[Event Conditions](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Conditions#Player)  
-[Event Actions](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Event-Action#Players)   
-[Behavior Actions](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Action#PlayerTags)  
-[Chat Profiles](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Chat#sendtospecificplayers)  
-[SpawnConditions](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Spawn-Conditions#Players)
+[Event Conditions](Event.md-Conditions#Player)  
+[Event Actions](Event.md-Action#Players)   
+[Behavior Actions](Action.md#PlayerTags)  
+[Chat Profiles](Chat.md#sendtospecificplayers)  
+[SpawnConditions](Spawn-Conditions.md#Players)
 
 Here's an example of how a Player Condition Profile definition is setup:
 ```

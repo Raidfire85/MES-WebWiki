@@ -418,7 +418,7 @@ Jaa events!
 
 This Secition ...
 
-[See Here](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Custom-Event-Actions-and-ScenarioTools)
+[See Here](Custom-Event-Actions-and-ScenarioTools.md)
 
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 ## Additional Tags

@@ -62,7 +62,7 @@ If you are experiencing issues that could not be resolved in the other troublesh
 
 Below is a list of some common issues you may run into, and some potential solutions:
 
- - **Issues With The Modular Encounters Systems:** If you are having issues with Modular Encounters Systems, [try following the steps in this guide](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Encounter-Guide-and-Troubleshooting), specifically in the *Troubleshooting Encounters and Other Issues* section. Many issues can be resolved with the advice found in that section.  
+ - **Issues With The Modular Encounters Systems:** If you are having issues with Modular Encounters Systems, [try following the steps in this guide](Encounter-Guide.md-and-Troubleshooting), specifically in the *Troubleshooting Encounters and Other Issues* section. Many issues can be resolved with the advice found in that section.  
 
  - **Logs Showing a Critical Error:** Anytime a mod is reporting a Critical Error, it's almost always the result of a corrupted download from Steam. Try unsubscribing from the mod, restarting Steam, and then resubscribing to the mod. If that doesn't fix it, then follow the steps above regarding clearing your mod cache.  
 

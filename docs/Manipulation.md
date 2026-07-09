@@ -263,7 +263,7 @@ Below are several types of tags you can include in your Manipulation Profile:
 |Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|UseBlockReplacerProfile|
 |:----|:----|
 |Tag Format:|`[UseBlockReplacerProfile:Value]`|
-|Description:|This tag let's you assign one or more Block Replacement Profile names to easily replace multiple blocks in your NPC Grid. [Click Here](https://gist.github.com/MeridiusIX/415b45b53174c608c6486ce06bb58e2c) for a list of existing Block Replacement Profiles.|
+|Description:|This tag let's you assign one or more Block Replacement Profile names to easily replace multiple blocks in your NPC Grid. [Click Here](Block-Replacement-Profiles.md) for a list of existing Block Replacement Profiles.|
 |Allowed Values:|`true`<br>`false`|
 |Default Value(s):|`false`|
 |Multiple Tag Allowed:|No|
@@ -836,7 +836,7 @@ Below are several types of tags you can include in your Manipulation Profile:
 |Tag:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|RandomGridNamePattern|
 |:----|:----|
 |Tag Format:|`[RandomGridNamePattern:Value]`|
-|Description:|This tag allows you to specify a pattern that the Random Name Generator should follow. [Please click here for a guide to these patterns](https://gist.github.com/MeridiusIX/8888bbc06a623cac90f8362dd948033c).|
+|Description:|This tag allows you to specify a pattern that the Random Name Generator should follow. [Please click here for a guide to these patterns](Random-Name-Generator-Guide.md).|
 |Allowed Values:|Any Grid Name Pattern|
 |Default Value(s):|`none`|
 |Multiple Tag Allowed:|No|

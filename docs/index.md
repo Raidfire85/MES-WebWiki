@@ -10,13 +10,19 @@ If you are having issues with the mod framework, or any of the mods that utilize
 <p class="mes-wiki-updates-label">What's new</p>
 <p class="mes-wiki-updates-summary">Recent changes to profile pages, tags, and sidebar navigation from the MES framework.</p>
 <p class="mes-wiki-updates-meta"><strong>Last updated:</strong> July 9, 2026</p>
-<p class="mes-wiki-updates-source">MES master branch</p>
+<p class="mes-wiki-updates-source">GitHub master</p>
 <ul class="mes-wiki-updates-latest">
-<li><a href="Shipyard-Profile/">Shipyard</a>, <a href="Mission-Profile/">Mission</a>, <a href="Safezone-Profile/">Safezone</a>, and 6 more pages — 108 new tags documented.</li>
 <li>Sidebar navigation updated for new profile pages.</li>
 </ul>
 <details class="mes-wiki-updates-history">
 <summary>Earlier updates</summary>
+<div class="mes-wiki-updates-history-entry">
+<p class="mes-wiki-updates-history-date">July 9, 2026</p>
+<ul>
+<li><a href="Shipyard-Profile/">Shipyard</a>, <a href="Mission-Profile/">Mission</a>, <a href="Safezone-Profile/">Safezone</a>, and 6 more pages — 108 new tags documented.</li>
+<li>Sidebar navigation updated for new profile pages.</li>
+</ul>
+</div>
 <div class="mes-wiki-updates-history-entry">
 <p class="mes-wiki-updates-history-date">July 9, 2026</p>
 <ul>

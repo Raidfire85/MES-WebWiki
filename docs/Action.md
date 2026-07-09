@@ -156,7 +156,7 @@ This section contains actions that relate to changes that can be made to the beh
 |:----|:----|
 |Tag Format:|`[NewBehaviorSubclass:Value]`|
 |Description:|This tag specifies the new Behavior Sub-Class that is used if `ChangeBehaviorSubclass` is set to `true`.|
-|Allowed Values:|Any Behavior Type<br>[Click Here For Eligible Types](https://github.com/MeridiusIX/Modular-Encounters-Systems/wiki/Core-Behavior)|
+|Allowed Values:|Any Behavior Type<br>[Click Here For Eligible Types](Core-Behavior.md)|
 |Multiple Tag Allowed:|No|
 
 <!--ChangeAutopilotSpeed  -->

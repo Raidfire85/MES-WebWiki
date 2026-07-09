@@ -90,7 +90,7 @@ You can find the Grids Settings Configuration File in `MySaveWorldFolder\Storage
 |XML:|`<GlobalBlockReplacerProfiles>`<br />   `<string>Value1</string>`<br />   `<string>Value2</string>`<br />`</GlobalBlockReplacerProfiles>`|
 |Chat Command (Add):|`/MES.Settings.Grids.GlobalBlockReplacerProfiles.Add.Value`|
 |Chat Command (Remove):|`/MES.Settings.Grids.GlobalBlockReplacerProfiles.Remove.Value`|
-|Description:|This setting allows you to specify one or more Block Replacement Profiles that will be used if `GlobalBlockReplacer` is enabled. To add more profiles to the list, simply create a new line between the `<GlobalBlockReplacerProfiles>` and `</GlobalBlockReplacerProfiles>` tags and enter the following `<string>Value</string>` - `Value` is replaced with the name of the Block Replacement Profile. [Profile names can be found here](https://gist.github.com/MeridiusIX/415b45b53174c608c6486ce06bb58e2c).
+|Description:|This setting allows you to specify one or more Block Replacement Profiles that will be used if `GlobalBlockReplacer` is enabled. To add more profiles to the list, simply create a new line between the `<GlobalBlockReplacerProfiles>` and `</GlobalBlockReplacerProfiles>` tags and enter the following `<string>Value</string>` - `Value` is replaced with the name of the Block Replacement Profile. [Profile names can be found here](Block-Replacement-Profiles.md).
 
 |Setting:|UseNonPhysicalAmmoForNPCs|
 |:----|:----|
