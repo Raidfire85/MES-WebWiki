@@ -251,8 +251,13 @@ h6,
   color: var(--mes-amber) !important;
 }
 
-/* Hide useless expand toggles on leaf nav items (no nested ul). */
-.wy-menu-vertical li:not(:has(> ul)) > button.toctree-expand {
+/* Hide expand toggles when there are no nested nav items (empty ul.current doesn't count). */
+.wy-menu-vertical li:not(:has(> ul > li)) > button.toctree-expand {
+  display: none !important;
+}
+
+/* MkDocs emits an empty ul.current on leaf pages — suppress it entirely. */
+.wy-menu-vertical li.current > ul.current:not(:has(> li)) {
   display: none !important;
 }
 
@@ -284,8 +289,8 @@ h6,
   background: transparent !important;
 }
 
-/* In-page TOC (anchor links) under the current page — distinct from sibling nav pages */
-.wy-menu-vertical li.toctree-l1.current > ul.current {
+/* In-page TOC (anchor links) under the current page — only when sections exist */
+.wy-menu-vertical li.toctree-l1.current > ul.current:has(> li) {
   margin: 0.35em 0 0.5em 0.85em;
   padding: 0.15em 0 0.45em 0.65em;
   border-left: 2px solid var(--mes-amber-dim);
@@ -293,7 +298,7 @@ h6,
   border-radius: 0 3px 3px 0;
 }
 
-.wy-menu-vertical li.toctree-l1.current > ul.current::before {
+.wy-menu-vertical li.toctree-l1.current > ul.current:has(> li)::before {
   content: 'On this page';
   display: block;
   font-family: 'JetBrains Mono', ui-monospace, monospace;
@@ -305,7 +310,7 @@ h6,
   padding: 0.15em 0 0.4em 0.35em;
 }
 
-.wy-menu-vertical li.toctree-l1.current > ul.current a {
+.wy-menu-vertical li.toctree-l1.current > ul.current:has(> li) a {
   font-size: 0.78rem !important;
   font-weight: 400 !important;
   font-family: 'Inter', system-ui, sans-serif !important;
@@ -316,12 +321,12 @@ h6,
   border-left-color: transparent !important;
 }
 
-.wy-menu-vertical li.toctree-l1.current > ul.current a:hover {
+.wy-menu-vertical li.toctree-l1.current > ul.current:has(> li) a:hover {
   color: var(--mes-text) !important;
   background: var(--mes-bg-hover) !important;
 }
 
-.wy-menu-vertical li.toctree-l1.current > ul.current li.toctree-l2.current > a {
+.wy-menu-vertical li.toctree-l1.current > ul.current:has(> li) li.toctree-l2.current > a {
   color: var(--mes-amber-bright) !important;
   font-weight: 500 !important;
   background: rgba(240, 160, 48, 0.08) !important;
@@ -329,7 +334,7 @@ h6,
 }
 
 /* Visual break between in-page TOC and the next sibling nav page */
-.wy-menu-vertical ul.current > li.toctree-l1.current + li.toctree-l1 {
+.wy-menu-vertical ul.current > li.toctree-l1.current:has(> ul.current > li) + li.toctree-l1 {
   margin-top: 0.65em;
   padding-top: 0.55em;
   border-top: 1px solid var(--mes-border);
@@ -346,6 +351,8 @@ h6,
   color: var(--mes-amber-bright) !important;
   background: rgba(240, 160, 48, 0.08) !important;
   border-left-color: var(--mes-amber) !important;
+  border-top: none !important;
+  border-bottom: none !important;
 }
 
 .wy-menu-vertical li.toctree-l2 > a {
