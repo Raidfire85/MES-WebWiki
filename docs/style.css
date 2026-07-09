@@ -1,0 +1,138 @@
+.wy-body-for-nav {
+    background: #343131;
+}
+
+.wy-nav-content {
+    background: #343131;
+}
+
+.wy-side-nav-search {
+    background: #125a89;
+}
+
+.wy-nav-side {
+    background: #201e1e;
+}
+
+body {
+    color: #d9d9d9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Saira';
+}
+
+.rst-content code,
+.rst-content pre code,
+code {
+    background: #312e2e;
+    border: 1px solid #4d4848;
+    color: #55a5d9;
+    font-size: inherit;
+}
+
+.rst-content table.docutils thead {
+    color: white;
+}
+
+th {
+    border: 1px solid #4d4848 !important;
+}
+
+.rst-content table.docutils:not(.field-list) tr:nth-child(2n-1) td,
+td {
+    border: 1px solid #4d4848 !important;
+    background-color: #343131;
+}
+
+.rst-content table.docutils th {
+    word-wrap: normal;
+}
+
+.wy-table-responsive table td, .wy-table-responsive table th {
+    white-space: normal !important;
+}
+
+.wy-table-responsive {
+    overflow : visible !important;
+}
+
+/* MES-WEBWIKI-STYLE-SYNC-START */
+/* Match live WebWiki: no footer Previous/Next buttons (newer MkDocs adds them by default). */
+.rst-footer-buttons,
+footer .rst-footer-buttons {
+  display: none !important;
+}
+
+/* Home page — wiki updates callout (MES-WEBWIKI-UPDATES-SYNC block in index.md). */
+.mes-wiki-updates {
+  border: 1px solid #3d6f8f;
+  border-left: 4px solid #55a5d9;
+  background: linear-gradient(135deg, #2a3238 0%, #1f2a30 100%);
+  padding: 1em 1.25em;
+  margin: 1.5em 0 2em;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.mes-wiki-updates-label {
+  margin: 0 0 0.35em;
+  font-size: 0.85em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #55a5d9;
+}
+
+.mes-wiki-updates-summary {
+  margin: 0 0 0.75em;
+  color: #c8d4dc;
+}
+
+.mes-wiki-updates-meta {
+  margin: 0 0 0.25em;
+  color: #d9d9d9;
+}
+
+.mes-wiki-updates-source {
+  margin: 0 0 0.75em;
+  font-size: 0.92em;
+  color: #9eb3c2;
+}
+
+.mes-wiki-updates a {
+  color: #7ec8ff;
+  text-decoration: none;
+}
+
+.mes-wiki-updates a:hover {
+  text-decoration: underline;
+}
+
+.mes-wiki-updates-latest,
+.mes-wiki-updates-history ul {
+  margin: 0 0 0.75em 1.1em;
+  padding: 0;
+}
+
+.mes-wiki-updates-history-entry {
+  margin-bottom: 0.85em;
+}
+
+.mes-wiki-updates-history-date {
+  margin: 0 0 0.35em;
+  font-weight: 600;
+  color: #c8d4dc;
+}
+
+.mes-wiki-updates-history summary {
+  cursor: pointer;
+  color: #55a5d9;
+  margin-bottom: 0.5em;
+}
+/* MES-WEBWIKI-STYLE-SYNC-END */

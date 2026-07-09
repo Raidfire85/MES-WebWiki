@@ -1,0 +1,89 @@
+# Community MES wiki — sync docs from MeridiusIX MES source and deploy to GitHub Pages.
+# Live site: https://raidfire85.github.io/MES-WebWiki/
+# Requires repo Settings → Pages → Deploy from branch gh-pages
+
+name: WebWiki sync and deploy
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 8 * * 0'
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'publisher/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/webwiki-sync-deploy.yml'
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: webwiki-deploy
+  cancel-in-progress: false
+
+jobs:
+  sync-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: '24'
+
+      - name: Fetch latest MES C# source (MeridiusIX)
+        run: |
+          git clone --depth 1 --filter=blob:none --sparse \
+            https://github.com/MeridiusIX/Modular-Encounters-Systems.git mes-upstream
+          cd mes-upstream
+          git sparse-checkout set Data/Scripts/ModularEncountersSystems
+
+      - name: Build sync tool
+        working-directory: publisher
+        run: |
+          npm install --no-save
+          npx tsc -p tsconfig.json
+
+      - name: Sync wiki docs from MES source
+        run: |
+          node publisher/publish.cjs \
+            --docs docs \
+            --mkdocs mkdocs.yml \
+            --mes-source mes-upstream/Data/Scripts/ModularEncountersSystems \
+            --tag-descriptions publisher/TagDescriptions.json \
+            --write
+
+      - name: Commit doc updates
+        run: |
+          git config user.name "Raidfire85"
+          git config user.email "55119360+Raidfire85@users.noreply.github.com"
+          git add docs mkdocs.yml docs/style.css
+          if git diff --staged --quiet; then
+            echo "No doc changes to commit."
+          else
+            git commit -m "chore(wiki): sync docs from MES source"
+            git pull --rebase origin main
+            git push
+          fi
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+
+      - name: Build MkDocs site
+        run: |
+          pip install mkdocs
+          mkdocs build
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v4.1.0
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: site
+          publish_branch: gh-pages
+          user_name: 'Raidfire85'
+          user_email: '55119360+Raidfire85@users.noreply.github.com'

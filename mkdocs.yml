@@ -1,0 +1,125 @@
+site_name: Modular Encounters System (Community Wiki)
+site_url: https://raidfire85.github.io/MES-WebWiki/
+repo_url: https://github.com/Raidfire85/MES-WebWiki
+repo_name: Raidfire85/MES-WebWiki
+edit_uri: edit/main/docs/
+
+nav:
+  - Home: index.md
+  - Player Support:
+      - Encounter Guide: Encounter-Guide.md
+      - FAQs: Frequently-Asked-Questions.md
+      - Troubleshooting: Troubleshooting.md
+      - Bugs, Issues, or Crashes: Bugs,-Issues,-or-Crashes.md
+      - Economy Stations FAQ: Economy-Stations-FAQ.md
+      - Mod Republishing Guidelines: Mod-Republishing-and-Reuse.md
+  - Admin & Configuration:
+      - General Settings: AdminConfig_General.md
+      - Grid Settings: AdminConfig_Grid.md
+      - Combat Settings: AdminConfig_Combat.md
+      - Space Cargo Ships: AdminConfig_Space Cargo Ships.md
+      - Random Encounters: AdminConfig_Random Encounters.md
+      - Planetary Cargo Ships: AdminConfig_Planetary Cargo Ships.md
+      - Planetary Installations: AdminConfig_Planetary Installations.md
+      - Boss Encounters: AdminConfig_Boss Encounters.md
+      - Creatures: AdminConfig_Creatures.md
+      - AiEnabled Bot Spawning: AdminConfig_AiEnabled Bot Spawning.md
+      - Wave Spawners: AdminConfig_Wave Spawner.md
+      - Clean-Up: AdminConfig_Clean-Up.md
+      - Spawn Filtering: AdminConfig_Spawn Filtering.md
+      - Timeout: AdminConfig_Timeout.md
+      - Admin & Debug Options: AdminConfig_AdminDebugOptions.md
+  - Modding:
+      - Spawning:
+          - SpawnGroup: SpawnGroup.md
+          - Spawning Conditions: Spawn-Conditions.md
+          - Zone Conditions: Zone-Conditions-Profile.md
+          - Spawning Conditions Groups: Spawn-Conditions-Groups.md
+          - Manipulation:
+              - Block Replacement: Block-Replacement.md
+              - Dereliction: Dereliction.md
+              - Loot: Loot.md
+              - Loot Profile Group: Loot-Profile-Group.md
+              - Weapon Mod Rules: Weapon-Mod-Rules.md
+              - Manipulation Groups: Manipulation-Groups.md
+              - Prefab Data: Prefab-Data.md
+              - Replenishment: Replenishment.md
+# MES-WEBWIKI-NAV-MODDING-MANIPULATION-SYNC-START
+              - Prefab Gravity: Prefab-Gravity-Profile.md
+# MES-WEBWIKI-NAV-MODDING-MANIPULATION-SYNC-END
+      - Behaviors (Getting Started):
+          - Core Behavior:
+             - Behavior: Core-Behavior.md
+             - Autopilot: Autopilot.md
+             - Command: Command.md
+             - Datapad: Datapad.md
+             - Target: Target.md
+          - Triggers:
+             - Trigger: Trigger.md
+             - Condition: Condition.md
+             - Actions:
+               - Actions: Action.md
+               - Bot Spawn: Bot-Spawn.md
+               - Chat: Chat.md
+               - Spawn: Spawn.md
+               - TextTemplate: TextTemplate.md
+          - Trigger Group: Trigger-Group.md
+          - Waypoint: Waypoint.md
+          - Weapons: Weapons.md
+      - Events (Getting Started):
+          - Event: Event.md
+          - Event Condition: Event-Conditions.md
+          - Event Action: Event-Action.md
+          - Custom Event Actions: Custom-Event-Actions-and-ScenarioTools.md
+      - Player Conditions (New): Player-Condition-Profile.md
+      - Zone: Zone-Profile.md
+# MES-WEBWIKI-NAV-MODDING-PLAYER-SYNC-START
+      - Suit Upgrades: Suit-Upgrades-Profile.md
+# MES-WEBWIKI-NAV-MODDING-PLAYER-SYNC-END
+# MES-WEBWIKI-NAV-MODDING-ECONOMY-SYNC-START
+      - Economy & Station Blocks:
+          - Contract Block: Contract-Block-Profile.md
+          - Mission: Mission-Profile.md
+          - Safezone: Safezone-Profile.md
+          - Shipyard: Shipyard-Profile.md
+          - Store: Store-Profile.md
+# MES-WEBWIKI-NAV-MODDING-ECONOMY-SYNC-END
+  - Template / Example Files:
+      - SpawnGroup.sbc: https://gist.github.com/MeridiusIX/1ae743505ec489d31e6ac17edf16e5e0?ts=2
+      - Factions.sbc: https://gist.github.com/MeridiusIX/cd9b4decb58dea335290a05b728a7276?ts=2
+  - Modder Resources:
+    - Armor Modules Included with MES (Page Unavailable): Armor-Modules
+    - Block Replacement Profiles: https://gist.github.com/MeridiusIX/415b45b53174c608c6486ce06bb58e2c
+    - Encounter Attributes: Encounter-Attributes.md
+    - Loot Profiles: Loot-Profiles.md
+    - NPC Grid Setup Guidelines: Modding:-Tutorial-&-Guidelines:-NPC-Grid-Setup-Guidelines
+    - Random Name Generator Guide: https://gist.github.com/MeridiusIX/8888bbc06a623cac90f8362dd948033c
+    - Scripting API: Scripting-API.md
+    - Troubleshooting Tips: Troubleshooting-Tips.md
+    - Threat Score Guide: https://gist.github.com/MeridiusIX/52fbf5679e67107a8cf37706205b5812
+    - Tutorials: Tutorials.md
+# MES-WEBWIKI-NAV-MODDER-RESOURCES-SYNC-START
+    - Faction Icon Profiles: Faction-Icon-Profile.md
+# MES-WEBWIKI-NAV-MODDER-RESOURCES-SYNC-END
+
+# MES-WEBWIKI-SOURCE-SYNC-VALIDATION-START
+validation:
+  nav:
+    omitted_files: ignore
+    not_found: ignore
+  links:
+    not_found: ignore
+    anchors: ignore
+    unrecognized_links: ignore
+# MES-WEBWIKI-SOURCE-SYNC-VALIDATION-END
+
+theme:
+  name: readthedocs
+
+extra:
+  extra.article_nav_top: true
+  repo_icon: 'github'
+
+extra_css:
+  - style.css
+
