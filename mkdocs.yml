@@ -115,6 +115,7 @@ validation:
 
 theme:
   name: readthedocs
+  sticky_navigation: false
 
 extra:
   extra.article_nav_top: true
