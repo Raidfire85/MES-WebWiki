@@ -36,6 +36,8 @@ Triggers: push to `main` (docs/publisher), weekly schedule, or manual **Run work
 
 Requires Node 20+, Python 3, and git.
 
+# PC and Cellphone friendly
+
 ```powershell
 git clone https://github.com/Raidfire85/MES-WebWiki.git
 cd MES-WebWiki
