@@ -17,6 +17,100 @@ The community mirror was first published **July 9, 2026**. Major work through **
 - Block Replacement Profiles usage guide (server config, SpawnGroup, Shipyard)
 
 <!-- MES-WEBWIKI-LOG-SYNC-START -->
+## 2026-07-11T23:30:14Z — MES master branch
+
+**Summary:** 2 change record(s), 26 skipped, 0 error(s).
+
+### Site maintenance
+
+**`index.md`**
+- Home intro updated
+
+**`index.md`**
+- Homepage What's new / Last synced embed refreshed
+
+### Skipped (unchanged)
+
+**`Action.md`**
+- Already up to date
+
+**`Target.md`**
+- Already up to date
+
+**`Autopilot.md`**
+- Already up to date
+
+**`Condition.md`**
+- Already up to date
+
+**`Trigger.md`**
+- Already up to date
+
+**`Spawn-Conditions.md`**
+- Already up to date
+
+**`Command.md`**
+- Already up to date
+
+**`Chat.md`**
+- Already up to date
+
+**`Spawn.md`**
+- Already up to date
+
+**`Weapons.md`**
+- Already up to date
+
+**`Player-Condition-Profile.md`**
+- Already up to date
+
+**`Core-Behavior.md`**
+- Already up to date
+
+**`Event-Action.md`**
+- Already up to date
+
+**`Event-Conditions.md`**
+- Already up to date
+
+**`Bot-Spawn.md`**
+- Already up to date
+
+**`Prefab-Data.md`**
+- Already up to date
+
+**Block Replacement** (`BlockReplacementProfile.cs` → `Block-Replacement.md`)
+- Already up to date
+
+**Contract Block** (`ContractBlockProfile.cs` → `Contract-Block-Profile.md`)
+- Already up to date
+
+**Faction Icon** (`FactionIconProfile.cs` → `Faction-Icon-Profile.md`)
+- Already up to date
+
+**Mission** (`MissionProfile.cs` → `Mission-Profile.md`)
+- Already up to date
+
+**Prefab Gravity** (`PrefabGravityProfile.cs` → `Prefab-Gravity-Profile.md`)
+- Already up to date
+
+**Safezone** (`SafezoneProfile.cs` → `Safezone-Profile.md`)
+- Already up to date
+
+**Shipyard** (`ShipyardProfile.cs` → `Shipyard-Profile.md`)
+- Already up to date
+
+**Store** (`StoreProfile.cs` → `Store-Profile.md`)
+- Already up to date
+
+**Suit Upgrades** (`SuitUpgradesProfile.cs` → `Suit-Upgrades-Profile.md`)
+- Already up to date
+
+**`mkdocs.yml`**
+- Already up to date
+
+---
+
 ## 2026-07-11T23:27:32Z — Local MES source
 
 **Summary:** 3 change record(s), 25 skipped, 0 error(s).
