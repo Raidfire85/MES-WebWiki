@@ -4,6 +4,38 @@ Store profiles use the [MES Store] header in SBC Description blocks.
 
 Profile header: `[MES Store]`
 
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+Here is an example of how a Store profile definition is set up:
+
+```
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MES-ExampleStore</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES Store]
+
+      [FileSource:YourStoreData.sbc]
+      [MinOfferItems:10]
+      [MaxOfferItems:10]
+      [Offers:ExampleOffers]
+      [Orders:ExampleOrders]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
+```
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 Below are the tags you can use in your Store profiles.
 

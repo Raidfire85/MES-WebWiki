@@ -4,6 +4,36 @@ Faction Icon profiles use the [MES Faction Icon] header in SBC Description block
 
 Profile header: `[MES Faction Icon]`
 
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+Here is an example of how a Faction Icon profile definition is set up:
+
+```
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MES-ExampleFactionIcon</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES Faction Icon]
+
+      [Faction:SPRT]
+      [Color:Value]
+      [Background:Value]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
+```
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 Below are the tags you can use in your Faction Icon profiles.
 

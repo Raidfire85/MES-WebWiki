@@ -4,6 +4,39 @@ Safezone profiles use the [MES SafeZone] header in SBC Description blocks.
 
 Profile header: `[MES SafeZone]`
 
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+Here is an example of how a Safezone profile definition is set up:
+
+```
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MES-ExampleSafezone</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES SafeZone]
+
+      [Enabled:true]
+      [Radius:250]
+      [Coordinates:Value]
+      [PlayerAccess:Value]
+      [GridAccess:Value]
+      [IsVisible:false]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
+```
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 Below are the tags you can use in your Safezone profiles.
 

@@ -4,6 +4,38 @@ Suit Upgrades profiles use the [MES Suit Upgrades] header in SBC Description blo
 
 Profile header: `[MES Suit Upgrades]`
 
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+Here is an example of how a Suit Upgrades profile definition is set up:
+
+```
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MES-ExampleSuitUpgrades</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES Suit Upgrades]
+
+      [BlockName:NPC-ShipyardTerminal]
+      [AllowJetpackInhibitorMod:true]
+      [AllowHandDrillInhibitorMod:true]
+      [AllowSolarChargingMod:true]
+      [AllowDamageReductionMod:true]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
+```
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 Below are the tags you can use in your Suit Upgrades profiles.
 

@@ -4,6 +4,39 @@ Shipyard profiles configure NPC terminals for blueprint building, scrap sales, r
 
 Profile header: `[MES Shipyard]`
 
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+Here is an example of how a Shipyard profile definition is set up:
+
+```
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EntityComponents>
+
+    <EntityComponent xsi:type="MyObjectBuilder_InventoryComponentDefinition">
+      <Id>
+          <TypeId>Inventory</TypeId>
+          <SubtypeId>MES-ExampleShipyard</SubtypeId>
+      </Id>
+      <Description>
+
+      [MES Shipyard]
+
+      [BlockName:NPC-ShipyardTerminal]
+      [InteractionRadius:250]
+      [AllowBlueprintBuilding:true]
+      [AllowScrapPurchasing:true]
+      [AllowRepairAndConstruction:true]
+      [BlueprintBuildingCommissionPercentage:115]
+
+      </Description>
+      
+    </EntityComponent>
+
+  </EntityComponents>
+</Definitions>
+```
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 Below are the tags you can use in your Shipyard profiles.
 
