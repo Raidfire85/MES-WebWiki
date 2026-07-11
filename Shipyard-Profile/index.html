@@ -270,6 +270,37 @@
                 <h1 id="shipyard">Shipyard</h1>
 <p>Shipyard profiles configure NPC terminals for blueprint building, scrap sales, repairs and construction, paid block replacement, and grid takeover purchases.</p>
 <p>Profile header: <code>[MES Shipyard]</code></p>
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+<p>Here is an example of how a Shipyard profile definition is set up:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;Definitions xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+  &lt;EntityComponents&gt;
+
+    &lt;EntityComponent xsi:type=&quot;MyObjectBuilder_InventoryComponentDefinition&quot;&gt;
+      &lt;Id&gt;
+          &lt;TypeId&gt;Inventory&lt;/TypeId&gt;
+          &lt;SubtypeId&gt;MES-ExampleShipyard&lt;/SubtypeId&gt;
+      &lt;/Id&gt;
+      &lt;Description&gt;
+
+      [MES Shipyard]
+
+      [BlockName:NPC-ShipyardTerminal]
+      [InteractionRadius:250]
+      [AllowBlueprintBuilding:true]
+      [AllowScrapPurchasing:true]
+      [AllowRepairAndConstruction:true]
+      [BlueprintBuildingCommissionPercentage:115]
+
+      &lt;/Description&gt;
+
+    &lt;/EntityComponent&gt;
+
+  &lt;/EntityComponents&gt;
+&lt;/Definitions&gt;
+</code></pre>
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 <p>Below are the tags you can use in your Shipyard profiles.</p>
 <table>

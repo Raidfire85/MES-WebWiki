@@ -270,6 +270,32 @@
               
                 <h1 id="prefab-gravity">Prefab Gravity</h1>
 <p>Prefab Gravity profile tags parsed from MES source (prefab gravity).</p>
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+<p>Here is an example of how a Prefab Gravity profile definition is set up:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;Definitions xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+  &lt;EntityComponents&gt;
+
+    &lt;EntityComponent xsi:type=&quot;MyObjectBuilder_InventoryComponentDefinition&quot;&gt;
+      &lt;Id&gt;
+          &lt;TypeId&gt;Inventory&lt;/TypeId&gt;
+          &lt;SubtypeId&gt;MES-ExamplePrefabGravity&lt;/SubtypeId&gt;
+      &lt;/Id&gt;
+      &lt;Description&gt;
+
+      [PrefabIds:ExamplePrefabProfileA,ExamplePrefabProfileB]
+      [MaxGravityAtmo:0]
+      [MaxGravityVacuum:0]
+
+      &lt;/Description&gt;
+
+    &lt;/EntityComponent&gt;
+
+  &lt;/EntityComponents&gt;
+&lt;/Definitions&gt;
+</code></pre>
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 <p>Below are the tags you can use in your Prefab Gravity profiles.</p>
 <table>

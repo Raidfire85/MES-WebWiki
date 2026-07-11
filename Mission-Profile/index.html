@@ -270,6 +270,37 @@
                 <h1 id="mission">Mission</h1>
 <p>Mission profiles use the [MES Mission] header in SBC Description blocks.</p>
 <p>Profile header: <code>[MES Mission]</code></p>
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-START -->
+<p>Here is an example of how a Mission profile definition is set up:</p>
+<pre><code>&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;Definitions xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot;&gt;
+  &lt;EntityComponents&gt;
+
+    &lt;EntityComponent xsi:type=&quot;MyObjectBuilder_InventoryComponentDefinition&quot;&gt;
+      &lt;Id&gt;
+          &lt;TypeId&gt;Inventory&lt;/TypeId&gt;
+          &lt;SubtypeId&gt;MES-ExampleMission&lt;/SubtypeId&gt;
+      &lt;/Id&gt;
+      &lt;Description&gt;
+
+      [MES Mission]
+
+      [Title:Example Mission Title]
+      [Description:Example mission description text.]
+      [Duration:-1]
+      [MissionType:MissionType.Custom]
+      [Reward:10000]
+      [PlayerConditionIds:ExamplePlayerConditionProfileA,ExamplePlayerConditionProfileB]
+
+      &lt;/Description&gt;
+
+    &lt;/EntityComponent&gt;
+
+  &lt;/EntityComponents&gt;
+&lt;/Definitions&gt;
+</code></pre>
+<!-- MES-WEBWIKI-EXAMPLE-SYNC-END -->
+
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 <p>Below are the tags you can use in your Mission profiles.</p>
 <table>
