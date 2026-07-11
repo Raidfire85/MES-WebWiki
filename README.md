@@ -67,3 +67,12 @@ Open http://127.0.0.1:8000
 ## Sync tool source
 
 Developed in [MES-WebWiki-Sync](https://github.com/Raidfire85/MES-WebWiki-Sync). Copy `publisher/` updates from there when the tool changes.
+
+## License and attribution
+
+- **Sync tooling, theme, GitHub Actions, and site automation** in this repo are licensed under the [MIT License](./LICENSE) (Copyright Raidfire85, 2026).
+- **Wiki markdown under `docs/`** is derived from [MeridiusIX's WebWiki](https://github.com/MeridiusIX/Modular-Encounters-Systems/tree/master/WebWiki). Original prose and structure credit MeridiusIX and MES contributors — not relicensed as original work by this project.
+- **Tag and profile metadata** synced from [Modular Encounters Systems](https://github.com/MeridiusIX/Modular-Encounters-Systems) C# source remains attributed to MeridiusIX and upstream contributors.
+- This is an **unofficial community mirror**. Official wiki: https://meridiusix.github.io/Modular-Encounters-Systems/
+
+Same licensing approach as [MES-Reference-Library](https://github.com/Raidfire85/MES-Reference-Library): MIT for your tooling, clear credit for Meridius/MES documentation.
