@@ -17,11 +17,14 @@ The community mirror was first published **July 9, 2026**. Major work through **
 - Block Replacement Profiles usage guide (server config, SpawnGroup, Shipyard)
 
 <!-- MES-WEBWIKI-LOG-SYNC-START -->
-## 2026-07-11T23:12:47Z — MES master branch
+## 2026-07-11T23:21:27Z — Local MES source
 
-**Summary:** 2 change record(s), 26 skipped, 0 error(s).
+**Summary:** 3 change record(s), 26 skipped, 0 error(s).
 
 ### Site maintenance
+
+**`index.md`**
+- Homepage What's new history cleared (mes-wiki-updates.json)
 
 **`index.md`**
 - Home intro updated
