@@ -9,7 +9,7 @@ If you are having issues with the mod framework, or any of the mods that utilize
 <div class="mes-wiki-updates">
 <p class="mes-wiki-updates-label">What's new</p>
 <p class="mes-wiki-updates-summary">Recent changes to profile pages, tags, and sidebar navigation from the MES framework.</p>
-<p class="mes-wiki-updates-meta"><strong>Last synced:</strong> July 11, 2026 — Local MES source</p>
+<p class="mes-wiki-updates-meta"><strong>Last synced:</strong> July 11, 2026 — MES master branch</p>
 <ul class="mes-wiki-updates-latest">
 <li><a href="Faction-Icon-Profile/">Faction Icon</a> — 3 new tags documented.</li>
 <li><a href="Safezone-Profile/">Safezone</a> — 18 new tags documented.</li>
