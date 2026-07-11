@@ -220,6 +220,20 @@
                   </li>
                   <li class="toctree-l1 current"><a class="reference internal current" href="#">Block Replacement Profiles</a>
     <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#where-to-put-profile-names-so-they-take-effect">Where to put profile names (so they take effect)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#1-server-wide-global-block-replacer-most-common">1. Server-wide — Global Block Replacer (most common)</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#2-per-spawngroup-only-certain-spawns">2. Per SpawnGroup — only certain spawns</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#3-shipyard-terminal-player-paid-block-swap">3. Shipyard terminal — player-paid block swap</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#built-in-vs-custom-profiles">Built-in vs custom profiles</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#available-profiles">Available profiles</a>
+    </li>
     </ul>
                   </li>
                   <li class="toctree-l1"><a class="reference internal" href="../Encounter-Attributes/">Encounter Attributes</a>
@@ -267,7 +281,75 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="block-replacement-profiles">Block Replacement Profiles</h1>
-<p>The Modular Encounters Spawner contains several Block Replacement presets when utilizing the Global Block Replacer or SpawnGroup Block Replacer functionalities. Below is a description of what is available.</p>
+<!-- MES-WEBWIKI-BLOCK-REPLACEMENT-PROFILES-INTRO-START -->
+<p>MES ships with ready-made <strong>Block Replacement profiles</strong> — named swap rules (for example, light armor to heavy armor, or gatling turrets to missile turrets). You do <strong>not</strong> add these as SBC files in your mod. You <strong>reference the profile name</strong> wherever MES reads block-replacement settings.</p>
+<p>The table at the bottom of this page lists every built-in profile name and what it does.</p>
+<h2 id="where-to-put-profile-names-so-they-take-effect">Where to put profile names (so they take effect)</h2>
+<h3 id="1-server-wide-global-block-replacer-most-common">1. Server-wide — Global Block Replacer (most common)</h3>
+<p>This is the main server-side setting. It applies block replacement to <strong>all NPC grids spawned through MES</strong> (unless a SpawnGroup opts out).</p>
+<p><strong>File:</strong> <code>MySaveWorldFolder\Storage\1521905890.sbm_ModularEncountersSpawner\Config-Grids.xml</code></p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li>Set <code>UseGlobalBlockReplacer</code> to <code>true</code>.</li>
+<li>Add one or more profile names under <code>GlobalBlockReplacerProfiles</code>.</li>
+</ol>
+<p><strong>Example:</strong></p>
+<pre><code class="language-xml">&lt;UseGlobalBlockReplacer&gt;true&lt;/UseGlobalBlockReplacer&gt;
+&lt;GlobalBlockReplacerProfiles&gt;
+  &lt;string&gt;MES-Armor-LightToHeavy&lt;/string&gt;
+  &lt;string&gt;MES-ProprietaryValuableBlocks&lt;/string&gt;
+&lt;/GlobalBlockReplacerProfiles&gt;
+</code></pre>
+<p>You can also change these in-game with chat commands — see <a href="../AdminConfig_Grid/">Admin Config → Grid</a> (<code>UseGlobalBlockReplacer</code>, <code>GlobalBlockReplacerProfiles</code>).</p>
+<p><strong>Note:</strong> <code>GlobalBlockReplacerReference</code> is a separate option for one-off <code>OldBlock|NewBlock</code> pairs (block subtype IDs), not named profiles. Use <code>GlobalBlockReplacerProfiles</code> when you want the presets listed below.</p>
+<hr />
+<h3 id="2-per-spawngroup-only-certain-spawns">2. Per SpawnGroup — only certain spawns</h3>
+<p>Use this when only <strong>specific spawn groups</strong> should run block replacement, instead of the whole server.</p>
+<p><strong>File:</strong> Your SpawnGroup <code>.sbc</code> — tags go in the SpawnGroup <strong>Description</strong> block (Manipulation tags).</p>
+<p><strong>Example:</strong></p>
+<pre><code>[UseBlockReplacerProfile:true]
+[BlockReplacerProfileNames:MES-Armor-LightToHeavy,MES-Turret-GatlingToMissile]
+</code></pre>
+<p>See <a href="../Manipulation/#Block-Replacement">Manipulation → Block-Replacement</a> for related tags (<code>IgnoreGlobalBlockReplacer</code>, <code>RelaxReplacedBlocksSize</code>, etc.).</p>
+<p>If the global server setting is enabled, a SpawnGroup can skip it with:</p>
+<pre><code>[IgnoreGlobalBlockReplacer:true]
+</code></pre>
+<hr />
+<h3 id="3-shipyard-terminal-player-paid-block-swap">3. Shipyard terminal — player-paid block swap</h3>
+<p>For NPC shipyards that let players pay to replace blocks using preset rules:</p>
+<p><strong>File:</strong> Your Shipyard profile EntityComponent SBC (see <a href="../Shipyard-Profile/">Shipyard Profile</a>).</p>
+<p><strong>Example:</strong></p>
+<pre><code>[AllowCustomReplacement:true]
+[BlockReplacementProfileIds:MES-ProprietaryValuableBlocks]
+</code></pre>
+<hr />
+<h2 id="built-in-vs-custom-profiles">Built-in vs custom profiles</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">What you want</th>
+<th style="text-align: left;">What to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Use an MES preset from the table below</td>
+<td style="text-align: left;">Reference its <strong>Name</strong> in one of the places above — no extra SBC required.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Define your own swap rules</td>
+<td style="text-align: left;">Create a Block Replacement profile SBC with <code>[MES Block Replacement]</code> and tags like <code>OldBlock</code> / <code>NewBlock</code> / <code>Limit</code>. See <a href="../Block-Replacement/">Block Replacement</a>. Then reference your profile's <strong>SubtypeId</strong> the same way as the built-in names.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Swap one block pair on a single SpawnGroup</td>
+<td style="text-align: left;">Use <code>[UseBlockReplacer:true]</code> with <code>[ReplaceBlockOld:…]</code> and <code>[ReplaceBlockNew:…]</code> on that SpawnGroup instead of a named profile. See <a href="../Manipulation/#Block-Replacement">Manipulation</a>.</td>
+</tr>
+</tbody>
+</table>
+<!-- MES-WEBWIKI-BLOCK-REPLACEMENT-PROFILES-INTRO-END -->
+
+<hr />
+<h2 id="available-profiles">Available profiles</h2>
 <table>
 <thead>
 <tr>
