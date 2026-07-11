@@ -428,7 +428,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ActivateCustomAction|
 |:----|:----|
 |Tag Format:|`[ActivateCustomAction:Value]`|
-|Description:|Configures activate custom action.|
+|Description:|When <code>true</code>, activates custom action.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -436,7 +436,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddExcludedPlayerTag|
 |:----|:----|
 |Tag Format:|`[AddExcludedPlayerTag:Value]`|
-|Description:|Configures add excluded player tag.|
+|Description:|List of values for add excluded player tag.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -444,7 +444,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddGPSPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[AddGPSPlayerConditionIds:Value]`|
-|Description:|Configures add gps player condition ids.|
+|Description:|One or more add gps player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -452,7 +452,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddIncludedPlayerTags|
 |:----|:----|
 |Tag Format:|`[AddIncludedPlayerTags:Value]`|
-|Description:|Configures add included player tags.|
+|Description:|List of values for add included player tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -460,7 +460,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddInstanceEventGroup|
 |:----|:----|
 |Tag Format:|`[AddInstanceEventGroup:Value]`|
-|Description:|Configures add instance event group.|
+|Description:|When <code>true</code>, enables or applies instance event group.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -468,7 +468,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddItemPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[AddItemPlayerConditionIds:Value]`|
-|Description:|Configures add item player condition ids.|
+|Description:|One or more add item player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -476,7 +476,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddItemToPlayersInventory|
 |:----|:----|
 |Tag Format:|`[AddItemToPlayersInventory:Value]`|
-|Description:|Configures add item to players inventory.|
+|Description:|When <code>true</code>, enables or applies item to players inventory.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -484,7 +484,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddPlayerConditionPlayerTags|
 |:----|:----|
 |Tag Format:|`[AddPlayerConditionPlayerTags:Value]`|
-|Description:|Configures add player condition player tags.|
+|Description:|When <code>true</code>, enables or applies player condition player tags.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -492,7 +492,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|AddTagsToPlayers|
 |:----|:----|
 |Tag Format:|`[AddTagsToPlayers:Value]`|
-|Description:|Configures add tags to players.|
+|Description:|When <code>true</code>, enables or applies tags to players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -500,7 +500,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|BroadcastCommandProfiles|
 |:----|:----|
 |Tag Format:|`[BroadcastCommandProfiles:Value]`|
-|Description:|Configures broadcast command profiles.|
+|Description:|When <code>true</code>, broadcasts command profiles.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -516,7 +516,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangePlayerCredits|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCredits:Value]`|
-|Description:|Configures change player credits.|
+|Description:|When <code>true</code>, changes player credits.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -524,7 +524,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangePlayerCreditsAmount|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCreditsAmount:Value]`|
-|Description:|Configures change player credits amount.|
+|Description:|Numeric amount for change player credits amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -532,7 +532,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangePlayerCreditsPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCreditsPlayerConditionIds:Value]`|
-|Description:|Configures change player credits player condition ids.|
+|Description:|One or more change player credits player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -540,7 +540,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangeReputationBetweenFactions|
 |:----|:----|
 |Tag Format:|`[ChangeReputationBetweenFactions:Value]`|
-|Description:|Configures change reputation between factions.|
+|Description:|When <code>true</code>, changes reputation between factions.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -548,7 +548,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangeReputationFactionsAmounts|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsAmounts:Value]`|
-|Description:|Configures change reputation factions amounts.|
+|Description:|List of values for change reputation factions amounts.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -556,7 +556,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangeReputationFactionsFrom|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsFrom:Value]`|
-|Description:|Configures change reputation factions from.|
+|Description:|List of values for change reputation factions from.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -564,7 +564,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangeReputationFactionsTargets|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsTargets:Value]`|
-|Description:|Configures change reputation factions targets.|
+|Description:|List of values for change reputation factions targets.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -572,7 +572,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangeReputationFactionsTo|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsTo:Value]`|
-|Description:|Configures change reputation factions to.|
+|Description:|List of values for change reputation factions to.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -580,7 +580,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangeReputationPropagatesToPlayers|
 |:----|:----|
 |Tag Format:|`[ChangeReputationPropagatesToPlayers:Value]`|
-|Description:|Configures change reputation propagates to players.|
+|Description:|When <code>true</code>, changes reputation propagates to players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -588,7 +588,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChangeReputationWithPlayers|
 |:----|:----|
 |Tag Format:|`[ChangeReputationWithPlayers:Value]`|
-|Description:|Configures change reputation with players.|
+|Description:|When <code>true</code>, changes reputation with players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -596,7 +596,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChatBroadcastPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[ChatBroadcastPlayerConditionIds:Value]`|
-|Description:|Configures chat broadcast player condition ids.|
+|Description:|One or more chat broadcast player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -604,7 +604,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChatBroadcastToSpecificPlayers|
 |:----|:----|
 |Tag Format:|`[ChatBroadcastToSpecificPlayers:Value]`|
-|Description:|Configures chat broadcast to specific players.|
+|Description:|When <code>true</code>, activates chat broadcast to specific players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -612,7 +612,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChatOverrideAudio|
 |:----|:----|
 |Tag Format:|`[ChatOverrideAudio:Value]`|
-|Description:|Configures chat override audio.|
+|Description:|List of values for chat override audio.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -620,7 +620,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChatOverrideAuthor|
 |:----|:----|
 |Tag Format:|`[ChatOverrideAuthor:Value]`|
-|Description:|Configures chat override author.|
+|Description:|Text value for chat override author.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -628,7 +628,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChatOverrideColor|
 |:----|:----|
 |Tag Format:|`[ChatOverrideColor:Value]`|
-|Description:|Configures chat override color.|
+|Description:|Text value for chat override color.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -636,7 +636,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChatOverrideMessage|
 |:----|:----|
 |Tag Format:|`[ChatOverrideMessage:Value]`|
-|Description:|Configures chat override message.|
+|Description:|List of values for chat override message.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -644,7 +644,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ChatOverrideType|
 |:----|:----|
 |Tag Format:|`[ChatOverrideType:Value]`|
-|Description:|Configures chat override type.|
+|Description:|Text value for chat override type.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -652,7 +652,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CommandProfileIds|
 |:----|:----|
 |Tag Format:|`[CommandProfileIds:Value]`|
-|Description:|Configures command profile ids.|
+|Description:|One or more command profile profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -660,7 +660,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CommandProfileOriginCoords|
 |:----|:----|
 |Tag Format:|`[CommandProfileOriginCoords:Value]`|
-|Description:|Configures command profile origin coords.|
+|Description:|Vector3D coordinates for command profile origin coords.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -668,7 +668,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionArgumentsBool|
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsBool:Value]`|
-|Description:|Configures custom action arguments bool.|
+|Description:|When <code>true</code>, activates custom action arguments bool.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -676,7 +676,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionArgumentsDouble|
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsDouble:Value]`|
-|Description:|Configures custom action arguments double.|
+|Description:|Numeric value for custom action arguments double.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -684,7 +684,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionArgumentsFloat|
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsFloat:Value]`|
-|Description:|Configures custom action arguments float.|
+|Description:|Numeric value for custom action arguments float.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -692,7 +692,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionArgumentsInt|
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsInt:Value]`|
-|Description:|Configures custom action arguments int.|
+|Description:|List of values for custom action arguments int.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -700,7 +700,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionArgumentsLong|
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsLong:Value]`|
-|Description:|Configures custom action arguments long.|
+|Description:|Numeric value for custom action arguments long.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -708,7 +708,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionArgumentsString|
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsString:Value]`|
-|Description:|Configures custom action arguments string.|
+|Description:|List of values for custom action arguments string.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -716,7 +716,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionArgumentsVector3D|
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsVector3D:Value]`|
-|Description:|Configures custom action arguments vector3 d.|
+|Description:|List of values for custom action arguments vector3 d.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -724,7 +724,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|CustomActionName|
 |:----|:----|
 |Tag Format:|`[CustomActionName:Value]`|
-|Description:|Configures custom action name.|
+|Description:|Text value for custom action name.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -732,7 +732,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|EventControllerNames|
 |:----|:----|
 |Tag Format:|`[EventControllerNames:Value]`|
-|Description:|Configures event controller names.|
+|Description:|One or more event controller profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -740,7 +740,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|EventControllersActive|
 |:----|:----|
 |Tag Format:|`[EventControllersActive:Value]`|
-|Description:|Configures event controllers active.|
+|Description:|When <code>true</code>, activates event controllers active.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -748,7 +748,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|EventControllersSetCurrentTime|
 |:----|:----|
 |Tag Format:|`[EventControllersSetCurrentTime:Value]`|
-|Description:|Configures event controllers set current time.|
+|Description:|When <code>true</code>, activates event controllers set current time.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -756,7 +756,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|GPSCoords|
 |:----|:----|
 |Tag Format:|`[GPSCoords:Value]`|
-|Description:|Configures gps coords.|
+|Description:|List of values for gps coords.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -764,7 +764,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|IncreaseRunCountEventIdAmount|
 |:----|:----|
 |Tag Format:|`[IncreaseRunCountEventIdAmount:Value]`|
-|Description:|Configures increase run count event id amount.|
+|Description:|Numeric amount for increase run count event id amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -772,7 +772,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|IncreaseRunCountEventIds|
 |:----|:----|
 |Tag Format:|`[IncreaseRunCountEventIds:Value]`|
-|Description:|Configures increase run count event ids.|
+|Description:|One or more increase run count event profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -780,7 +780,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|IncreaseRunCountEventTagAmount|
 |:----|:----|
 |Tag Format:|`[IncreaseRunCountEventTagAmount:Value]`|
-|Description:|Configures increase run count event tag amount.|
+|Description:|Numeric amount for increase run count event tag amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -788,7 +788,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|IncreaseRunCountEventTags|
 |:----|:----|
 |Tag Format:|`[IncreaseRunCountEventTags:Value]`|
-|Description:|Configures increase run count event tags.|
+|Description:|List of values for increase run count event tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -796,7 +796,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|IncreaseRunCountOfEvents|
 |:----|:----|
 |Tag Format:|`[IncreaseRunCountOfEvents:Value]`|
-|Description:|Configures increase run count of events.|
+|Description:|When <code>true</code>, enables or applies run count of events.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -804,7 +804,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|InstanceEventGroupId|
 |:----|:----|
 |Tag Format:|`[InstanceEventGroupId:Value]`|
-|Description:|Configures instance event group id.|
+|Description:|A instance event group profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -812,7 +812,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|InstanceEventGroupReplaceKeys|
 |:----|:----|
 |Tag Format:|`[InstanceEventGroupReplaceKeys:Value]`|
-|Description:|Configures instance event group replace keys.|
+|Description:|List of values for instance event group replace keys.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -820,7 +820,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|InstanceEventGroupReplaceValues|
 |:----|:----|
 |Tag Format:|`[InstanceEventGroupReplaceValues:Value]`|
-|Description:|Configures instance event group replace values.|
+|Description:|List of values for instance event group replace values.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -828,7 +828,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ItemIds|
 |:----|:----|
 |Tag Format:|`[ItemIds:Value]`|
-|Description:|Configures item ids.|
+|Description:|One or more item profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -836,7 +836,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|OverrideCommandCode|
 |:----|:----|
 |Tag Format:|`[OverrideCommandCode:Value]`|
-|Description:|Configures override command code.|
+|Description:|Text value for override command code.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -844,7 +844,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|OverridePlayerConditionPosition|
 |:----|:----|
 |Tag Format:|`[OverridePlayerConditionPosition:Value]`|
-|Description:|Configures override player condition position.|
+|Description:|When <code>true</code>, activates override player condition position.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -852,7 +852,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|OverridePosition|
 |:----|:----|
 |Tag Format:|`[OverridePosition:Value]`|
-|Description:|Configures override position.|
+|Description:|Vector3D coordinates for override position.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -860,7 +860,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|RemoveGPSNames|
 |:----|:----|
 |Tag Format:|`[RemoveGPSNames:Value]`|
-|Description:|Configures remove gps names.|
+|Description:|One or more remove gps profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -868,7 +868,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|RemoveGPSPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[RemoveGPSPlayerConditionIds:Value]`|
-|Description:|Configures remove gps player condition ids.|
+|Description:|One or more remove gps player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -876,7 +876,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|RemoveThisInstanceGroup|
 |:----|:----|
 |Tag Format:|`[RemoveThisInstanceGroup:Value]`|
-|Description:|Configures remove this instance group.|
+|Description:|When <code>true</code>, enables or applies this instance group.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -884,7 +884,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ReputationChangeAmount|
 |:----|:----|
 |Tag Format:|`[ReputationChangeAmount:Value]`|
-|Description:|Configures reputation change amount.|
+|Description:|Numeric amount for reputation change amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -892,7 +892,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ReputationChangeFactions|
 |:----|:----|
 |Tag Format:|`[ReputationChangeFactions:Value]`|
-|Description:|Configures reputation change factions.|
+|Description:|List of values for reputation change factions.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -900,7 +900,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ReputationChangesForAllRadiusPlayerFactionMembers|
 |:----|:----|
 |Tag Format:|`[ReputationChangesForAllRadiusPlayerFactionMembers:Value]`|
-|Description:|Configures reputation changes for all radius player faction members.|
+|Description:|When <code>true</code>, activates reputation changes for all radius player faction members.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -908,7 +908,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ReputationMaxCap|
 |:----|:----|
 |Tag Format:|`[ReputationMaxCap:Value]`|
-|Description:|Configures reputation max cap.|
+|Description:|Numeric value for reputation max cap.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -916,7 +916,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ReputationMinCap|
 |:----|:----|
 |Tag Format:|`[ReputationMinCap:Value]`|
-|Description:|Configures reputation min cap.|
+|Description:|Numeric value for reputation min cap.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -924,7 +924,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ReputationPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[ReputationPlayerConditionIds:Value]`|
-|Description:|Configures reputation player condition ids.|
+|Description:|One or more reputation player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -932,7 +932,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ResetUniqueSpawnGroup|
 |:----|:----|
 |Tag Format:|`[ResetUniqueSpawnGroup:Value]`|
-|Description:|Configures reset unique spawn group.|
+|Description:|When <code>true</code>, resets unique spawn group.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -940,7 +940,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|ResetUniqueSpawnGroupName|
 |:----|:----|
 |Tag Format:|`[ResetUniqueSpawnGroupName:Value]`|
-|Description:|Configures reset unique spawn group name.|
+|Description:|Text value for reset unique spawn group name.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -948,7 +948,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|SetEventControllers|
 |:----|:----|
 |Tag Format:|`[SetEventControllers:Value]`|
-|Description:|Configures set event controllers.|
+|Description:|When <code>true</code>, sets event controllers.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -956,7 +956,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|SpawnCoords|
 |:----|:----|
 |Tag Format:|`[SpawnCoords:Value]`|
-|Description:|Configures spawn coords.|
+|Description:|List of values for spawn coords.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -964,7 +964,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|SpawnReplaceKeys|
 |:----|:----|
 |Tag Format:|`[SpawnReplaceKeys:Value]`|
-|Description:|Configures spawn replace keys.|
+|Description:|List of values for spawn replace keys.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -972,7 +972,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|SpawnReplaceValues|
 |:----|:----|
 |Tag Format:|`[SpawnReplaceValues:Value]`|
-|Description:|Configures spawn replace values.|
+|Description:|List of values for spawn replace values.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -980,7 +980,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|TryContractFail|
 |:----|:----|
 |Tag Format:|`[TryContractFail:Value]`|
-|Description:|Configures try contract fail.|
+|Description:|When <code>true</code>, attempts contract fail.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -988,7 +988,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|TryContractSuccess|
 |:----|:----|
 |Tag Format:|`[TryContractSuccess:Value]`|
-|Description:|Configures try contract success.|
+|Description:|When <code>true</code>, attempts contract success.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -996,7 +996,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|UseChatOverrideAudio|
 |:----|:----|
 |Tag Format:|`[UseChatOverrideAudio:Value]`|
-|Description:|Configures use chat override audio.|
+|Description:|When <code>true</code>, uses chat override audio.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1004,7 +1004,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|UseChatOverrideAuthor|
 |:----|:----|
 |Tag Format:|`[UseChatOverrideAuthor:Value]`|
-|Description:|Configures use chat override author.|
+|Description:|When <code>true</code>, uses chat override author.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1012,7 +1012,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|UseChatOverrideColor|
 |:----|:----|
 |Tag Format:|`[UseChatOverrideColor:Value]`|
-|Description:|Configures use chat override color.|
+|Description:|When <code>true</code>, uses chat override color.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1020,7 +1020,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|UseChatOverrideMessage|
 |:----|:----|
 |Tag Format:|`[UseChatOverrideMessage:Value]`|
-|Description:|Configures use chat override message.|
+|Description:|When <code>true</code>, uses chat override message.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1028,7 +1028,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |Tag:|UseChatOverrideType|
 |:----|:----|
 |Tag Format:|`[UseChatOverrideType:Value]`|
-|Description:|Configures use chat override type.|
+|Description:|When <code>true</code>, uses chat override type.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

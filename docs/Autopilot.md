@@ -582,7 +582,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunBreakawayDistance|
 |:----|:----|
 |Tag Format:|`[AttackRunBreakawayDistance:Value]`|
-|Description:|Configures attack run breakaway distance.|
+|Description:|Rotation Settings setting: attack run breakaway distance.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -590,7 +590,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunDistancePlanet|
 |:----|:----|
 |Tag Format:|`[AttackRunDistancePlanet:Value]`|
-|Description:|Configures attack run distance planet.|
+|Description:|Rotation Settings setting: attack run distance planet.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -598,7 +598,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunDistanceSpace|
 |:----|:----|
 |Tag Format:|`[AttackRunDistanceSpace:Value]`|
-|Description:|Configures attack run distance space.|
+|Description:|Rotation Settings setting: attack run distance space.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -606,7 +606,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunOverrideDistance|
 |:----|:----|
 |Tag Format:|`[AttackRunOverrideDistance:Value]`|
-|Description:|Configures attack run override distance.|
+|Description:|Rotation Settings setting: attack run override distance.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -614,7 +614,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunOverrideTimerTrigger|
 |:----|:----|
 |Tag Format:|`[AttackRunOverrideTimerTrigger:Value]`|
-|Description:|Configures attack run override timer trigger.|
+|Description:|Rotation Settings setting: attack run override timer trigger.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -622,7 +622,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunOverrideWithDistanceAndTimer|
 |:----|:----|
 |Tag Format:|`[AttackRunOverrideWithDistanceAndTimer:Value]`|
-|Description:|Configures attack run override with distance and timer.|
+|Description:|Rotation Settings setting: attack run override with distance and timer.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -630,7 +630,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunUseCollisionEvasionPlanet|
 |:----|:----|
 |Tag Format:|`[AttackRunUseCollisionEvasionPlanet:Value]`|
-|Description:|Configures attack run use collision evasion planet.|
+|Description:|Rotation Settings setting: attack run use collision evasion planet.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -638,7 +638,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunUseCollisionEvasionSpace|
 |:----|:----|
 |Tag Format:|`[AttackRunUseCollisionEvasionSpace:Value]`|
-|Description:|Configures attack run use collision evasion space.|
+|Description:|Rotation Settings setting: attack run use collision evasion space.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -646,7 +646,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AttackRunUseSafePlanetPathing|
 |:----|:----|
 |Tag Format:|`[AttackRunUseSafePlanetPathing:Value]`|
-|Description:|Configures attack run use safe planet pathing.|
+|Description:|Rotation Settings setting: attack run use safe planet pathing.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -654,7 +654,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|AvoidPlayerCollisions|
 |:----|:----|
 |Tag Format:|`[AvoidPlayerCollisions:Value]`|
-|Description:|Configures avoid player collisions.|
+|Description:|Rotation Settings setting: avoid player collisions.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -662,7 +662,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CameraDetectionMaxRange|
 |:----|:----|
 |Tag Format:|`[CameraDetectionMaxRange:Value]`|
-|Description:|Configures camera detection max range.|
+|Description:|Rotation Settings setting: camera detection max range.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -670,7 +670,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CircleTargetAltitudeConstriction|
 |:----|:----|
 |Tag Format:|`[CircleTargetAltitudeConstriction:Value]`|
-|Description:|Configures circle target altitude constriction.|
+|Description:|Circle Target Config setting: circle target altitude constriction.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -678,7 +678,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CircleTargetAltitudeConstrictionAmount|
 |:----|:----|
 |Tag Format:|`[CircleTargetAltitudeConstrictionAmount:Value]`|
-|Description:|Configures circle target altitude constriction amount.|
+|Description:|Circle Target Config setting: circle target altitude constriction amount.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -686,7 +686,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CircleTargetClockwise|
 |:----|:----|
 |Tag Format:|`[CircleTargetClockwise:Value]`|
-|Description:|Configures circle target clockwise.|
+|Description:|Circle Target Config setting: circle target clockwise.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -694,7 +694,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CircleTargetDriftExemption|
 |:----|:----|
 |Tag Format:|`[CircleTargetDriftExemption:Value]`|
-|Description:|Configures circle target drift exemption.|
+|Description:|Circle Target Config setting: circle target drift exemption.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -702,7 +702,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CircleTargetRadiusConstriction|
 |:----|:----|
 |Tag Format:|`[CircleTargetRadiusConstriction:Value]`|
-|Description:|Configures circle target radius constriction.|
+|Description:|Circle Target Config setting: circle target radius constriction.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -710,7 +710,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CircleTargetRadiusConstrictionAmount|
 |:----|:----|
 |Tag Format:|`[CircleTargetRadiusConstrictionAmount:Value]`|
-|Description:|Configures circle target radius constriction amount.|
+|Description:|Circle Target Config setting: circle target radius constriction amount.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -718,7 +718,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CircleTargetUpAngleLimit|
 |:----|:----|
 |Tag Format:|`[CircleTargetUpAngleLimit:Value]`|
-|Description:|Configures circle target up angle limit.|
+|Description:|Circle Target Config setting: circle target up angle limit.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -726,7 +726,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CollisionEvasionWaypointCalculatedAwayFromEntity|
 |:----|:----|
 |Tag Format:|`[CollisionEvasionWaypointCalculatedAwayFromEntity:Value]`|
-|Description:|Configures collision evasion waypoint calculated away from entity.|
+|Description:|Collision Config setting: collision evasion waypoint calculated away from entity.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -734,7 +734,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|CollisionEvasionWaypointFromEntityMaxAngle|
 |:----|:----|
 |Tag Format:|`[CollisionEvasionWaypointFromEntityMaxAngle:Value]`|
-|Description:|Configures collision evasion waypoint from entity max angle.|
+|Description:|Collision Config setting: collision evasion waypoint from entity max angle.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -742,7 +742,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|DespawnCoordsMaxAltitude|
 |:----|:----|
 |Tag Format:|`[DespawnCoordsMaxAltitude:Value]`|
-|Description:|Configures despawn coords max altitude.|
+|Description:|Rotation Settings setting: despawn coords max altitude.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -750,7 +750,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|DespawnCoordsMaxDistance|
 |:----|:----|
 |Tag Format:|`[DespawnCoordsMaxDistance:Value]`|
-|Description:|Configures despawn coords max distance.|
+|Description:|Rotation Settings setting: despawn coords max distance.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -758,7 +758,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|DespawnCoordsMinAltitude|
 |:----|:----|
 |Tag Format:|`[DespawnCoordsMinAltitude:Value]`|
-|Description:|Configures despawn coords min altitude.|
+|Description:|Rotation Settings setting: despawn coords min altitude.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -766,7 +766,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|DespawnCoordsMinDistance|
 |:----|:----|
 |Tag Format:|`[DespawnCoordsMinDistance:Value]`|
-|Description:|Configures despawn coords min distance.|
+|Description:|Rotation Settings setting: despawn coords min distance.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -774,7 +774,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|DistanceToCheckEngagableTarget|
 |:----|:----|
 |Tag Format:|`[DistanceToCheckEngagableTarget:Value]`|
-|Description:|Configures distance to check engagable target.|
+|Description:|Rotation Settings setting: distance to check engagable target.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -782,7 +782,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|EngageOnCameraDetection|
 |:----|:----|
 |Tag Format:|`[EngageOnCameraDetection:Value]`|
-|Description:|Configures engage on camera detection.|
+|Description:|Rotation Settings setting: engage on camera detection.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -790,7 +790,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|EngageOnTargetLineOfSight|
 |:----|:----|
 |Tag Format:|`[EngageOnTargetLineOfSight:Value]`|
-|Description:|Configures engage on target line of sight.|
+|Description:|Rotation Settings setting: engage on target line of sight.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -798,7 +798,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|EngageOnWeaponActivation|
 |:----|:----|
 |Tag Format:|`[EngageOnWeaponActivation:Value]`|
-|Description:|Configures engage on weapon activation.|
+|Description:|Rotation Settings setting: engage on weapon activation.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -806,7 +806,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|ForceDampenersEnabled|
 |:----|:----|
 |Tag Format:|`[ForceDampenersEnabled:Value]`|
-|Description:|Configures force dampeners enabled.|
+|Description:|Rotation Settings setting: force dampeners enabled.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -814,7 +814,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|ForcedRotationDampeningAmount|
 |:----|:----|
 |Tag Format:|`[ForcedRotationDampeningAmount:Value]`|
-|Description:|Configures forced rotation dampening amount.|
+|Description:|Rotation Settings setting: forced rotation dampening amount.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -822,7 +822,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|HoverCliffAngle|
 |:----|:----|
 |Tag Format:|`[HoverCliffAngle:Value]`|
-|Description:|Configures hover cliff angle.|
+|Description:|Rotation Settings setting: hover cliff angle.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -830,7 +830,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|HoverUpAngle|
 |:----|:----|
 |Tag Format:|`[HoverUpAngle:Value]`|
-|Description:|Configures hover up angle.|
+|Description:|Rotation Settings setting: hover up angle.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -838,7 +838,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|LostTargetTimerTrigger|
 |:----|:----|
 |Tag Format:|`[LostTargetTimerTrigger:Value]`|
-|Description:|Configures lost target timer trigger.|
+|Description:|Rotation Settings setting: lost target timer trigger.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -846,7 +846,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|MaxGravity|
 |:----|:----|
 |Tag Format:|`[MaxGravity:Value]`|
-|Description:|Configures max gravity.|
+|Description:|Rotation Settings setting: max gravity.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -854,7 +854,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|MaxPlanetPathCheckDistance|
 |:----|:----|
 |Tag Format:|`[MaxPlanetPathCheckDistance:Value]`|
-|Description:|Configures max planet path check distance.|
+|Description:|Planet Config setting: max planet path check distance.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -862,7 +862,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|MaxSubgridThrustAngle|
 |:----|:----|
 |Tag Format:|`[MaxSubgridThrustAngle:Value]`|
-|Description:|Configures max subgrid thrust angle.|
+|Description:|Thrust Settings setting: max subgrid thrust angle.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -870,7 +870,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|MinGravity|
 |:----|:----|
 |Tag Format:|`[MinGravity:Value]`|
-|Description:|Configures min gravity.|
+|Description:|Rotation Settings setting: min gravity.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -878,7 +878,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|OffsetMaxAngleFromTarget|
 |:----|:----|
 |Tag Format:|`[OffsetMaxAngleFromTarget:Value]`|
-|Description:|Configures offset max angle from target.|
+|Description:|Offset Misc Config setting: offset max angle from target.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -886,7 +886,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|OffsetRecalculationTime|
 |:----|:----|
 |Tag Format:|`[OffsetRecalculationTime:Value]`|
-|Description:|Configures offset recalculation time.|
+|Description:|Rotation Settings setting: offset recalculation time.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -894,7 +894,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|RotateTowardsTargetWhileAtPosition|
 |:----|:----|
 |Tag Format:|`[RotateTowardsTargetWhileAtPosition:Value]`|
-|Description:|Configures rotate towards target while at position.|
+|Description:|Rotation Settings setting: rotate towards target while at position.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -902,7 +902,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|RotationBoostUpAmount|
 |:----|:----|
 |Tag Format:|`[RotationBoostUpAmount:Value]`|
-|Description:|Configures rotation boost up amount.|
+|Description:|Rotation Settings setting: rotation boost up amount.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -910,7 +910,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|RotationMultiplierPitch|
 |:----|:----|
 |Tag Format:|`[RotationMultiplierPitch:Value]`|
-|Description:|Configures rotation multiplier pitch.|
+|Description:|Rotation Settings setting: rotation multiplier pitch.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -918,7 +918,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|RotationMultiplierRoll|
 |:----|:----|
 |Tag Format:|`[RotationMultiplierRoll:Value]`|
-|Description:|Configures rotation multiplier roll.|
+|Description:|Rotation Settings setting: rotation multiplier roll.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -926,7 +926,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|RotationMultiplierYaw|
 |:----|:----|
 |Tag Format:|`[RotationMultiplierYaw:Value]`|
-|Description:|Configures rotation multiplier yaw.|
+|Description:|Rotation Settings setting: rotation multiplier yaw.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -934,7 +934,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|RotationSlowdownAngle|
 |:----|:----|
 |Tag Format:|`[RotationSlowdownAngle:Value]`|
-|Description:|Configures rotation slowdown angle.|
+|Description:|Rotation Settings setting: rotation slowdown angle.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -942,7 +942,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|TargetApproachTimer|
 |:----|:----|
 |Tag Format:|`[TargetApproachTimer:Value]`|
-|Description:|Configures target approach timer.|
+|Description:|Rotation Settings setting: target approach timer.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -950,7 +950,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|TargetEngageTimer|
 |:----|:----|
 |Tag Format:|`[TargetEngageTimer:Value]`|
-|Description:|Configures target engage timer.|
+|Description:|Rotation Settings setting: target engage timer.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -958,7 +958,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|TimeBetweenNewTargetChecks|
 |:----|:----|
 |Tag Format:|`[TimeBetweenNewTargetChecks:Value]`|
-|Description:|Configures time between new target checks.|
+|Description:|Rotation Settings setting: time between new target checks.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -966,7 +966,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|TryToLevelWithTarget|
 |:----|:----|
 |Tag Format:|`[TryToLevelWithTarget:Value]`|
-|Description:|Configures try to level with target.|
+|Description:|Rotation Settings setting: try to level with target.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -974,7 +974,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|Unused|
 |:----|:----|
 |Tag Format:|`[Unused:Value]`|
-|Description:|Configures unused.|
+|Description:|Collision Config setting: unused.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -982,7 +982,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|UseCollisionLeadPrediction|
 |:----|:----|
 |Tag Format:|`[UseCollisionLeadPrediction:Value]`|
-|Description:|Configures use collision lead prediction.|
+|Description:|Target Lead Config setting: use collision lead prediction.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -990,7 +990,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|UseForcedRotationDampening|
 |:----|:----|
 |Tag Format:|`[UseForcedRotationDampening:Value]`|
-|Description:|Configures use forced rotation dampening.|
+|Description:|Rotation Settings setting: use forced rotation dampening.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -998,7 +998,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|UseRotationBoostUp|
 |:----|:----|
 |Tag Format:|`[UseRotationBoostUp:Value]`|
-|Description:|Configures use rotation boost up.|
+|Description:|Rotation Settings setting: use rotation boost up.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -1006,7 +1006,7 @@ These tags add movement, pathing, and flight-control options for Autopilot profi
 |Tag:|UseSubgridThrust|
 |:----|:----|
 |Tag Format:|`[UseSubgridThrust:Value]`|
-|Description:|Configures use subgrid thrust.|
+|Description:|Thrust Settings setting: use subgrid thrust.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

@@ -440,7 +440,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |Tag:|UseVanillaTargetLocking|
 |:----|:----|
 |Tag Format:|`[UseVanillaTargetLocking:Value]`|
-|Description:|Configures use vanilla target locking.|
+|Description:|When <code>true</code>, uses Space Engineers vanilla turret/grid target locking.|
 |Allowed Values:|See MES source / enum definition|
 |Multiple Tag Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

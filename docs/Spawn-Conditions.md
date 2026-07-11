@@ -2065,7 +2065,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|AlignVoxelsToSpawnMatrix|
 |:----|:----|
 |Tag Format:|`[AlignVoxelsToSpawnMatrix:Value]`|
-|Description:|Configures align voxels to spawn matrix.|
+|Description:|When <code>true</code>, activates align voxels to spawn matrix.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2074,7 +2074,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|BehaviorSpawn|
 |:----|:----|
 |Tag Format:|`[BehaviorSpawn:Value]`|
-|Description:|Configures behavior spawn.|
+|Description:|When <code>true</code>, activates behavior spawn.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2083,7 +2083,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|BossMusicId|
 |:----|:----|
 |Tag Format:|`[BossMusicId:Value]`|
-|Description:|Configures boss music id.|
+|Description:|<strong>OBSOLETE.</strong> Implement //Doc.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2092,7 +2092,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|CanSpawnUnderwater|
 |:----|:----|
 |Tag Format:|`[CanSpawnUnderwater:Value]`|
-|Description:|Configures can spawn underwater.|
+|Description:|When <code>true</code>, enables or applies spawn underwater.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2101,7 +2101,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|CheckCustomSandboxCounters|
 |:----|:----|
 |Tag Format:|`[CheckCustomSandboxCounters:Value]`|
-|Description:|Configures check custom sandbox counters.|
+|Description:|When <code>true</code>, checks custom sandbox counters.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2110,7 +2110,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|CheckPrefabGravityProfiles|
 |:----|:----|
 |Tag Format:|`[CheckPrefabGravityProfiles:Value]`|
-|Description:|Configures check prefab gravity profiles.|
+|Description:|When <code>true</code>, checks prefab gravity profiles.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2119,7 +2119,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|CheckRequiredBlocks|
 |:----|:----|
 |Tag Format:|`[CheckRequiredBlocks:Value]`|
-|Description:|Configures check required blocks.|
+|Description:|When <code>true</code>, checks required blocks.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2128,7 +2128,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|CustomSandboxCounters|
 |:----|:----|
 |Tag Format:|`[CustomSandboxCounters:Value]`|
-|Description:|Configures custom sandbox counters.|
+|Description:|List of values for custom sandbox counters.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -2137,7 +2137,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|CustomSandboxCountersTargets|
 |:----|:----|
 |Tag Format:|`[CustomSandboxCountersTargets:Value]`|
-|Description:|Configures custom sandbox counters targets.|
+|Description:|List of values for custom sandbox counters targets.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2146,7 +2146,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|DateTimeDaysOfWeek|
 |:----|:----|
 |Tag Format:|`[DateTimeDaysOfWeek:Value]`|
-|Description:|Configures date time days of week.|
+|Description:|Enum value for date time days of week.|
 |Allowed Value(s):|See MES source / enum definition|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2155,7 +2155,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|DisallowedTerrainTypes|
 |:----|:----|
 |Tag Format:|`[DisallowedTerrainTypes:Value]`|
-|Description:|Configures disallowed terrain types.|
+|Description:|List of values for disallowed terrain types.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -2164,7 +2164,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|DoNotForceStaticGrid|
 |:----|:----|
 |Tag Format:|`[DoNotForceStaticGrid:Value]`|
-|Description:|Configures do not force static grid.|
+|Description:|When <code>true</code>, prevents force static grid.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2173,7 +2173,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|DroneEncounterChance|
 |:----|:----|
 |Tag Format:|`[DroneEncounterChance:Value]`|
-|Description:|Configures drone encounter chance.|
+|Description:|Numeric value for drone encounter chance.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2182,7 +2182,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|EventControllerId|
 |:----|:----|
 |Tag Format:|`[EventControllerId:Value]`|
-|Description:|Configures event controller id.|
+|Description:|A event controller profile or id value.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -2191,7 +2191,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|KnownPlayerLocationMustBeInside|
 |:----|:----|
 |Tag Format:|`[KnownPlayerLocationMustBeInside:Value]`|
-|Description:|Configures known player location must be inside.|
+|Description:|When <code>true</code>, activates known player location must be inside.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2200,7 +2200,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|MatchSignalName|
 |:----|:----|
 |Tag Format:|`[MatchSignalName:Value]`|
-|Description:|Configures match signal name.|
+|Description:|<strong>OBSOLETE.</strong> Implement //Doc.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2209,7 +2209,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|MaxWaterCoverage|
 |:----|:----|
 |Tag Format:|`[MaxWaterCoverage:Value]`|
-|Description:|Configures max water coverage.|
+|Description:|Maximum value for water coverage.|
 |Allowed Value(s):|Any Number Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2218,7 +2218,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|MinWaterCoverage|
 |:----|:----|
 |Tag Format:|`[MinWaterCoverage:Value]`|
-|Description:|Configures min water coverage.|
+|Description:|Minimum value for water coverage.|
 |Allowed Value(s):|Any Number Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2227,7 +2227,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|MustSpawnUnderwater|
 |:----|:----|
 |Tag Format:|`[MustSpawnUnderwater:Value]`|
-|Description:|Configures must spawn underwater.|
+|Description:|When <code>true</code>, requires spawn underwater.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2236,7 +2236,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|PlanetaryCargoShip|
 |:----|:----|
 |Tag Format:|`[PlanetaryCargoShip:Value]`|
-|Description:|Configures planetary cargo ship.|
+|Description:|When <code>true</code>, activates planetary cargo ship.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2245,7 +2245,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|PositionAtFirstCockpit|
 |:----|:----|
 |Tag Format:|`[PositionAtFirstCockpit:Value]`|
-|Description:|Configures position at first cockpit.|
+|Description:|When <code>true</code>, activates position at first cockpit.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2254,7 +2254,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|RandomNumberRoll|
 |:----|:----|
 |Tag Format:|`[RandomNumberRoll:Value]`|
-|Description:|Configures random number roll.|
+|Description:|Numeric value for random number roll.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2263,7 +2263,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|RegisterCreatureToPlanetGenerators|
 |:----|:----|
 |Tag Format:|`[RegisterCreatureToPlanetGenerators:Value]`|
-|Description:|Configures register creature to planet generators.|
+|Description:|When <code>true</code>, enables or applies creature to planet generators.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2272,7 +2272,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|RequiredBlockAnySubtypeId|
 |:----|:----|
 |Tag Format:|`[RequiredBlockAnySubtypeId:Value]`|
-|Description:|Configures required block any subtype id.|
+|Description:|A required block any subtype profile or id value.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2281,7 +2281,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|RequiredBlockCheckRange|
 |:----|:----|
 |Tag Format:|`[RequiredBlockCheckRange:Value]`|
-|Description:|Configures required block check range.|
+|Description:|Numeric value for required block check range.|
 |Allowed Value(s):|Any Number Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2290,7 +2290,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|RequiredBlockIncludeNPCGrids|
 |:----|:----|
 |Tag Format:|`[RequiredBlockIncludeNPCGrids:Value]`|
-|Description:|Configures required block include npc grids.|
+|Description:|When <code>true</code>, activates required block include npc grids.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2299,7 +2299,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|RequiredBlockSubtypeIds|
 |:----|:----|
 |Tag Format:|`[RequiredBlockSubtypeIds:Value]`|
-|Description:|Configures required block subtype ids.|
+|Description:|One or more required block subtype profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -2308,7 +2308,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|RivalAiSpawn|
 |:----|:----|
 |Tag Format:|`[RivalAiSpawn:Value]`|
-|Description:|Configures rival ai spawn.|
+|Description:|When <code>true</code>, activates rival ai spawn.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2317,7 +2317,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SandboxCounterCompareTypes|
 |:----|:----|
 |Tag Format:|`[SandboxCounterCompareTypes:Value]`|
-|Description:|Configures sandbox counter compare types.|
+|Description:|Enum value for sandbox counter compare types.|
 |Allowed Value(s):|See MES source / enum definition|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2326,7 +2326,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsAutoHeal|
 |:----|:----|
 |Tag Format:|`[SettingsAutoHeal:Value]`|
-|Description:|Configures settings auto heal.|
+|Description:|When <code>true</code>, sets tings auto heal.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2335,7 +2335,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsAutoRespawn|
 |:----|:----|
 |Tag Format:|`[SettingsAutoRespawn:Value]`|
-|Description:|Configures settings auto respawn.|
+|Description:|When <code>true</code>, sets tings auto respawn.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2344,7 +2344,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsBountyContracts|
 |:----|:----|
 |Tag Format:|`[SettingsBountyContracts:Value]`|
-|Description:|Configures settings bounty contracts.|
+|Description:|When <code>true</code>, sets tings bounty contracts.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2353,7 +2353,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsContainerDrops|
 |:----|:----|
 |Tag Format:|`[SettingsContainerDrops:Value]`|
-|Description:|Configures settings container drops.|
+|Description:|When <code>true</code>, sets tings container drops.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2362,7 +2362,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsCopyPaste|
 |:----|:----|
 |Tag Format:|`[SettingsCopyPaste:Value]`|
-|Description:|Configures settings copy paste.|
+|Description:|When <code>true</code>, sets tings copy paste.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2371,7 +2371,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsDestructibleBlocks|
 |:----|:----|
 |Tag Format:|`[SettingsDestructibleBlocks:Value]`|
-|Description:|Configures settings destructible blocks.|
+|Description:|When <code>true</code>, sets tings destructible blocks.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2380,7 +2380,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsEconomy|
 |:----|:----|
 |Tag Format:|`[SettingsEconomy:Value]`|
-|Description:|Configures settings economy.|
+|Description:|When <code>true</code>, sets tings economy.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2389,7 +2389,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsEnableDrones|
 |:----|:----|
 |Tag Format:|`[SettingsEnableDrones:Value]`|
-|Description:|Configures settings enable drones.|
+|Description:|When <code>true</code>, sets tings enable drones.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2398,7 +2398,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsIngameScripts|
 |:----|:----|
 |Tag Format:|`[SettingsIngameScripts:Value]`|
-|Description:|Configures settings ingame scripts.|
+|Description:|When <code>true</code>, sets tings ingame scripts.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2407,7 +2407,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsJetpack|
 |:----|:----|
 |Tag Format:|`[SettingsJetpack:Value]`|
-|Description:|Configures settings jetpack.|
+|Description:|When <code>true</code>, sets tings jetpack.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2416,7 +2416,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsOxygen|
 |:----|:----|
 |Tag Format:|`[SettingsOxygen:Value]`|
-|Description:|Configures settings oxygen.|
+|Description:|When <code>true</code>, sets tings oxygen.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2425,7 +2425,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsResearch|
 |:----|:----|
 |Tag Format:|`[SettingsResearch:Value]`|
-|Description:|Configures settings research.|
+|Description:|When <code>true</code>, sets tings research.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2434,7 +2434,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsSpawnWithTools|
 |:----|:----|
 |Tag Format:|`[SettingsSpawnWithTools:Value]`|
-|Description:|Configures settings spawn with tools.|
+|Description:|When <code>true</code>, sets tings spawn with tools.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2443,7 +2443,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsSpiders|
 |:----|:----|
 |Tag Format:|`[SettingsSpiders:Value]`|
-|Description:|Configures settings spiders.|
+|Description:|When <code>true</code>, sets tings spiders.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2452,7 +2452,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsSubgridDamage|
 |:----|:----|
 |Tag Format:|`[SettingsSubgridDamage:Value]`|
-|Description:|Configures settings subgrid damage.|
+|Description:|When <code>true</code>, sets tings subgrid damage.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2461,7 +2461,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsSunRotation|
 |:----|:----|
 |Tag Format:|`[SettingsSunRotation:Value]`|
-|Description:|Configures settings sun rotation.|
+|Description:|When <code>true</code>, sets tings sun rotation.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2470,7 +2470,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsSupergridding|
 |:----|:----|
 |Tag Format:|`[SettingsSupergridding:Value]`|
-|Description:|Configures settings supergridding.|
+|Description:|When <code>true</code>, sets tings supergridding.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2479,7 +2479,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsThrusterDamage|
 |:----|:----|
 |Tag Format:|`[SettingsThrusterDamage:Value]`|
-|Description:|Configures settings thruster damage.|
+|Description:|When <code>true</code>, sets tings thruster damage.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2488,7 +2488,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsVoxelDestruction|
 |:----|:----|
 |Tag Format:|`[SettingsVoxelDestruction:Value]`|
-|Description:|Configures settings voxel destruction.|
+|Description:|When <code>true</code>, sets tings voxel destruction.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2497,7 +2497,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsWeaponsEnabled|
 |:----|:----|
 |Tag Format:|`[SettingsWeaponsEnabled:Value]`|
-|Description:|Configures settings weapons enabled.|
+|Description:|When <code>true</code>, sets tings weapons enabled.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2506,7 +2506,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsWeather|
 |:----|:----|
 |Tag Format:|`[SettingsWeather:Value]`|
-|Description:|Configures settings weather.|
+|Description:|When <code>true</code>, sets tings weather.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2515,7 +2515,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|SettingsWolves|
 |:----|:----|
 |Tag Format:|`[SettingsWolves:Value]`|
-|Description:|Configures settings wolves.|
+|Description:|When <code>true</code>, sets tings wolves.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2533,7 +2533,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|TriggerCoords|
 |:----|:----|
 |Tag Format:|`[TriggerCoords:Value]`|
-|Description:|Configures trigger coords.|
+|Description:|Vector3D coordinates for trigger coords.|
 |Allowed Value(s):|See MES source / enum definition|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2542,7 +2542,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|TriggerRadius|
 |:----|:----|
 |Tag Format:|`[TriggerRadius:Value]`|
-|Description:|Configures trigger radius.|
+|Description:|Radius in meters for trigger.|
 |Allowed Value(s):|Any Number Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2551,7 +2551,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseBoundingBoxCheck|
 |:----|:----|
 |Tag Format:|`[UseBoundingBoxCheck:Value]`|
-|Description:|Configures use bounding box check.|
+|Description:|When <code>true</code>, uses bounding box check.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2560,7 +2560,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseDateTimeDaysOfWeek|
 |:----|:----|
 |Tag Format:|`[UseDateTimeDaysOfWeek:Value]`|
-|Description:|Configures use date time days of week.|
+|Description:|When <code>true</code>, uses date time days of week.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2569,7 +2569,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseEventController|
 |:----|:----|
 |Tag Format:|`[UseEventController:Value]`|
-|Description:|Configures use event controller.|
+|Description:|When <code>true</code>, uses event controller.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2578,7 +2578,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseGridOrigin|
 |:----|:----|
 |Tag Format:|`[UseGridOrigin:Value]`|
-|Description:|Configures use grid origin.|
+|Description:|When <code>true</code>, uses grid origin.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2587,7 +2587,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseRandomMilitaryFaction|
 |:----|:----|
 |Tag Format:|`[UseRandomMilitaryFaction:Value]`|
-|Description:|Configures use random military faction.|
+|Description:|When <code>true</code>, uses random military faction.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2596,7 +2596,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseRandomPirateFaction|
 |:----|:----|
 |Tag Format:|`[UseRandomPirateFaction:Value]`|
-|Description:|Configures use random pirate faction.|
+|Description:|When <code>true</code>, uses random pirate faction.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2605,7 +2605,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseSettingsCheck|
 |:----|:----|
 |Tag Format:|`[UseSettingsCheck:Value]`|
-|Description:|Configures use settings check.|
+|Description:|When <code>true</code>, uses settings check.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2614,7 +2614,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UseSpawnGroupPrefabSpawningMode|
 |:----|:----|
 |Tag Format:|`[UseSpawnGroupPrefabSpawningMode:Value]`|
-|Description:|Configures use spawn group prefab spawning mode.|
+|Description:|When <code>true</code>, uses spawn group prefab spawning mode.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -2623,7 +2623,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |Tag:|UsesAerodynamicModAdvLift|
 |:----|:----|
 |Tag Format:|`[UsesAerodynamicModAdvLift:Value]`|
-|Description:|Configures uses aerodynamic mod adv lift.|
+|Description:|When <code>true</code>, uses s aerodynamic mod adv lift.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|

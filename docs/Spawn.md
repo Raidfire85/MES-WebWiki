@@ -226,7 +226,7 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |Tag:|ProcessAsAdminSpawn|
 |:----|:----|
 |Tag Format:|`[ProcessAsAdminSpawn:Value]`|
-|Description:|Configures process as admin spawn.|
+|Description:|When <code>true</code>, treats the spawn action as an admin spawn (bypasses some spawn condition checks).|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 

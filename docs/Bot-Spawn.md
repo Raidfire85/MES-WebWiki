@@ -251,7 +251,7 @@ These tags add bot spawning, loadout, and deployment options for Bot Spawn profi
 |Tag:|LootContainerSubtypeId|
 |:----|:----|
 |Tag Format:|`[LootContainerSubtypeId:Value]`|
-|Description:|Configures loot container subtype id.|
+|Description:|A loot container subtype profile or id value.|
 |Allowed Value(s):|See MES source / enum definition|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -260,7 +260,7 @@ These tags add bot spawning, loadout, and deployment options for Bot Spawn profi
 |Tag:|Taunts|
 |:----|:----|
 |Tag Format:|`[Taunts:Value]`|
-|Description:|Configures taunts.|
+|Description:|When <code>true</code>, activates taunts.|
 |Allowed Value(s):|See MES source / enum definition|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -269,7 +269,7 @@ These tags add bot spawning, loadout, and deployment options for Bot Spawn profi
 |Tag:|UseAiEnabled|
 |:----|:----|
 |Tag Format:|`[UseAiEnabled:Value]`|
-|Description:|Configures use ai enabled.|
+|Description:|When <code>true</code>, uses ai enabled.|
 |Allowed Value(s):|See MES source / enum definition|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|

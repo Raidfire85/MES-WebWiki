@@ -637,7 +637,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|AllPlayersReputationMustMatch|
 |:----|:----|
 |Tag Format:|`[AllPlayersReputationMustMatch:Value]`|
-|Description:|Configures all players reputation must match.|
+|Description:|When <code>true</code>, activates all players reputation must match.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -645,7 +645,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|AllowAnyFalseBoolean|
 |:----|:----|
 |Tag Format:|`[AllowAnyFalseBoolean:Value]`|
-|Description:|Configures allow any false boolean.|
+|Description:|When <code>true</code>, allows any false boolean.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -653,7 +653,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|AllowAnyFalseSandboxBoolean|
 |:----|:----|
 |Tag Format:|`[AllowAnyFalseSandboxBoolean:Value]`|
-|Description:|Configures allow any false sandbox boolean.|
+|Description:|When <code>true</code>, allows any false sandbox boolean.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -661,7 +661,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|AltitudeCheckIgnoreWater|
 |:----|:----|
 |Tag Format:|`[AltitudeCheckIgnoreWater:Value]`|
-|Description:|Configures altitude check ignore water.|
+|Description:|When <code>true</code>, activates altitude check ignore water.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -669,7 +669,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|BehaviorModeCheck|
 |:----|:----|
 |Tag Format:|`[BehaviorModeCheck:Value]`|
-|Description:|Configures behavior mode check.|
+|Description:|When <code>true</code>, activates behavior mode check.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -677,7 +677,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|BehaviorSubclass|
 |:----|:----|
 |Tag Format:|`[BehaviorSubclass:Value]`|
-|Description:|Configures behavior subclass.|
+|Description:|Enum value for behavior subclass.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -685,7 +685,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|BehaviorSubclassCheck|
 |:----|:----|
 |Tag Format:|`[BehaviorSubclassCheck:Value]`|
-|Description:|Configures behavior subclass check.|
+|Description:|When <code>true</code>, activates behavior subclass check.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -693,7 +693,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckFalseBooleans|
 |:----|:----|
 |Tag Format:|`[CheckFalseBooleans:Value]`|
-|Description:|Configures check false booleans.|
+|Description:|When <code>true</code>, checks false booleans.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -701,7 +701,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckFalseSandboxBooleans|
 |:----|:----|
 |Tag Format:|`[CheckFalseSandboxBooleans:Value]`|
-|Description:|Configures check false sandbox booleans.|
+|Description:|When <code>true</code>, checks false sandbox booleans.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -709,7 +709,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckGridSize|
 |:----|:----|
 |Tag Format:|`[CheckGridSize:Value]`|
-|Description:|Configures check grid size.|
+|Description:|When <code>true</code>, checks grid size.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -717,7 +717,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckGridStatic|
 |:----|:----|
 |Tag Format:|`[CheckGridStatic:Value]`|
-|Description:|Configures check grid static.|
+|Description:|When <code>true</code>, checks grid static.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -725,7 +725,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckGridVerticalSpeed|
 |:----|:----|
 |Tag Format:|`[CheckGridVerticalSpeed:Value]`|
-|Description:|Configures check grid vertical speed.|
+|Description:|When <code>true</code>, checks grid vertical speed.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -733,7 +733,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckHealthPercentage|
 |:----|:----|
 |Tag Format:|`[CheckHealthPercentage:Value]`|
-|Description:|Configures check health percentage.|
+|Description:|When <code>true</code>, checks health percentage.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -741,7 +741,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckIfSpawnGroupExist|
 |:----|:----|
 |Tag Format:|`[CheckIfSpawnGroupExist:Value]`|
-|Description:|Configures check if spawn group exist.|
+|Description:|When <code>true</code>, checks if spawn group exist.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -749,7 +749,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckInSufficientUpwardThrust|
 |:----|:----|
 |Tag Format:|`[CheckInSufficientUpwardThrust:Value]`|
-|Description:|Configures check in sufficient upward thrust.|
+|Description:|When <code>true</code>, checks in sufficient upward thrust.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -757,7 +757,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckPlayerCondition|
 |:----|:----|
 |Tag Format:|`[CheckPlayerCondition:Value]`|
-|Description:|Configures check player condition.|
+|Description:|When <code>true</code>, checks player condition.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -765,7 +765,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckPlayerIdentitySandboxList|
 |:----|:----|
 |Tag Format:|`[CheckPlayerIdentitySandboxList:Value]`|
-|Description:|Configures check player identity sandbox list.|
+|Description:|When <code>true</code>, checks player identity sandbox list.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -773,7 +773,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckPlayerReputation|
 |:----|:----|
 |Tag Format:|`[CheckPlayerReputation:Value]`|
-|Description:|Configures check player reputation.|
+|Description:|When <code>true</code>, checks player reputation.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -781,7 +781,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckReputationwithFaction|
 |:----|:----|
 |Tag Format:|`[CheckReputationwithFaction:Value]`|
-|Description:|Configures check reputationwith faction.|
+|Description:|List of values for check reputationwith faction.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -789,7 +789,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckSufficientUpwardThrust|
 |:----|:----|
 |Tag Format:|`[CheckSufficientUpwardThrust:Value]`|
-|Description:|Configures check sufficient upward thrust.|
+|Description:|When <code>true</code>, checks sufficient upward thrust.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -797,7 +797,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckTargetChaseSpeed|
 |:----|:----|
 |Tag Format:|`[CheckTargetChaseSpeed:Value]`|
-|Description:|Configures check target chase speed.|
+|Description:|This can become negative. Neat.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -805,7 +805,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckTargetSpeed|
 |:----|:----|
 |Tag Format:|`[CheckTargetSpeed:Value]`|
-|Description:|Configures check target speed.|
+|Description:|When <code>true</code>, checks target speed.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -813,7 +813,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckThreatScore|
 |:----|:----|
 |Tag Format:|`[CheckThreatScore:Value]`|
-|Description:|Configures check threat score.|
+|Description:|When <code>true</code>, checks threat score.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -821,7 +821,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckThreatScoreFromClosestPlayerPosition|
 |:----|:----|
 |Tag Format:|`[CheckThreatScoreFromClosestPlayerPosition:Value]`|
-|Description:|Configures check threat score from closest player position.|
+|Description:|When <code>true</code>, checks threat score from closest player position.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -829,7 +829,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckThreatScoreFromTargetPosition|
 |:----|:----|
 |Tag Format:|`[CheckThreatScoreFromTargetPosition:Value]`|
-|Description:|Configures check threat score from target position.|
+|Description:|When <code>true</code>, checks threat score from target position.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -845,7 +845,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckThreatScoreIncludeOtherNpcOwners|
 |:----|:----|
 |Tag Format:|`[CheckThreatScoreIncludeOtherNpcOwners:Value]`|
-|Description:|Configures check threat score include other npc owners.|
+|Description:|When <code>true</code>, checks threat score include other npc owners.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -853,7 +853,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckThreatScoreMaximum|
 |:----|:----|
 |Tag Format:|`[CheckThreatScoreMaximum:Value]`|
-|Description:|Configures check threat score maximum.|
+|Description:|Numeric value for check threat score maximum.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -861,7 +861,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckThreatScoreMinimum|
 |:----|:----|
 |Tag Format:|`[CheckThreatScoreMinimum:Value]`|
-|Description:|Configures check threat score minimum.|
+|Description:|Numeric value for check threat score minimum.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -869,7 +869,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckThreatScoreRadius|
 |:----|:----|
 |Tag Format:|`[CheckThreatScoreRadius:Value]`|
-|Description:|Configures check threat score radius.|
+|Description:|Radius in meters for check threat score.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -877,7 +877,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckWaypointAngleFromForward|
 |:----|:----|
 |Tag Format:|`[CheckWaypointAngleFromForward:Value]`|
-|Description:|Configures check waypoint angle from forward.|
+|Description:|When <code>true</code>, checks waypoint angle from forward.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -885,7 +885,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CheckWeaponsPercentage|
 |:----|:----|
 |Tag Format:|`[CheckWeaponsPercentage:Value]`|
-|Description:|Configures check weapons percentage.|
+|Description:|When <code>true</code>, checks weapons percentage.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -893,7 +893,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CommandCheckFromParent|
 |:----|:----|
 |Tag Format:|`[CommandCheckFromParent:Value]`|
-|Description:|Configures command check from parent.|
+|Description:|When <code>true</code>, activates command check from parent.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -901,7 +901,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CommandCheckRelationSenderReceiver|
 |:----|:----|
 |Tag Format:|`[CommandCheckRelationSenderReceiver:Value]`|
-|Description:|Configures command check relation sender receiver.|
+|Description:|When <code>true</code>, activates command check relation sender receiver.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -909,7 +909,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CommandFromParent|
 |:----|:----|
 |Tag Format:|`[CommandFromParent:Value]`|
-|Description:|Configures command from parent.|
+|Description:|When <code>true</code>, activates command from parent.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -917,7 +917,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CommandRelation|
 |:----|:----|
 |Tag Format:|`[CommandRelation:Value]`|
-|Description:|Configures command relation.|
+|Description:|Enum value for command relation.|
 |Allowed Value(s):|MES enum value (see Threat Score / Target guides)|
 |Multiple Tags Allowed:|No|
 
@@ -925,7 +925,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScore|
 |:----|:----|
 |Tag Format:|`[CompareThreatScore:Value]`|
-|Description:|Configures compare threat score.|
+|Description:|When <code>true</code>, compares threat score.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -933,7 +933,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScoreFromTargetPosition|
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreFromTargetPosition:Value]`|
-|Description:|Configures compare threat score from target position.|
+|Description:|When <code>true</code>, compares threat score from target position.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -949,7 +949,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScoreIncludeOtherNpcOwners|
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreIncludeOtherNpcOwners:Value]`|
-|Description:|Configures compare threat score include other npc owners.|
+|Description:|When <code>true</code>, compares threat score include other npc owners.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -957,7 +957,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScoreMode|
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreMode:Value]`|
-|Description:|Configures compare threat score mode.|
+|Description:|Enum value for compare threat score mode.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -965,7 +965,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScoreRadius|
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreRadius:Value]`|
-|Description:|Configures compare threat score radius.|
+|Description:|Radius in meters for compare threat score.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -973,7 +973,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScoreSelfValueMultiplier|
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreSelfValueMultiplier:Value]`|
-|Description:|Configures compare threat score self value multiplier.|
+|Description:|Numeric value for compare threat score self value multiplier.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -981,7 +981,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScoreUseSelfValue|
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreUseSelfValue:Value]`|
-|Description:|Configures compare threat score use self value.|
+|Description:|When <code>true</code>, compares threat score use self value.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -989,7 +989,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CompareThreatScoreValue|
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreValue:Value]`|
-|Description:|Configures compare threat score value.|
+|Description:|Numeric value for compare threat score value.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -997,7 +997,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CurrentBehaviorMode|
 |:----|:----|
 |Tag Format:|`[CurrentBehaviorMode:Value]`|
-|Description:|Configures current behavior mode.|
+|Description:|Enum value for current behavior mode.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -1005,7 +1005,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CustomCountersTargetOverrideCommandScore|
 |:----|:----|
 |Tag Format:|`[CustomCountersTargetOverrideCommandScore:Value]`|
-|Description:|Configures custom counters target override command score.|
+|Description:|When <code>true</code>, activates custom counters target override command score.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1013,7 +1013,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|CustomCountersTargetOverrideSelfScore|
 |:----|:----|
 |Tag Format:|`[CustomCountersTargetOverrideSelfScore:Value]`|
-|Description:|Configures custom counters target override self score.|
+|Description:|When <code>true</code>, activates custom counters target override self score.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1029,7 +1029,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|ExistingSpawnGroupName|
 |:----|:----|
 |Tag Format:|`[ExistingSpawnGroupName:Value]`|
-|Description:|Configures existing spawn group name.|
+|Description:|Text value for existing spawn group name.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -1037,7 +1037,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|FalseBooleans|
 |:----|:----|
 |Tag Format:|`[FalseBooleans:Value]`|
-|Description:|Configures false booleans.|
+|Description:|List of values for false booleans.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1045,7 +1045,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|FalseSandboxBooleans|
 |:----|:----|
 |Tag Format:|`[FalseSandboxBooleans:Value]`|
-|Description:|Configures false sandbox booleans.|
+|Description:|List of values for false sandbox booleans.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1053,7 +1053,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|GravityCheck|
 |:----|:----|
 |Tag Format:|`[GravityCheck:Value]`|
-|Description:|Configures gravity check.|
+|Description:|When <code>true</code>, activates gravity check.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1061,7 +1061,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|GridSizeLarge|
 |:----|:----|
 |Tag Format:|`[GridSizeLarge:Value]`|
-|Description:|Configures grid size large.|
+|Description:|When <code>true</code>, activates grid size large.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1069,7 +1069,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|GridStatic|
 |:----|:----|
 |Tag Format:|`[GridStatic:Value]`|
-|Description:|Configures grid static.|
+|Description:|When <code>true</code>, activates grid static.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1077,7 +1077,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|HasAntennaForBroadcast|
 |:----|:----|
 |Tag Format:|`[HasAntennaForBroadcast:Value]`|
-|Description:|Configures has antenna for broadcast.|
+|Description:|When <code>true</code>, enables or applies antenna for broadcast.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1085,7 +1085,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|HasNoWeapons|
 |:----|:----|
 |Tag Format:|`[HasNoWeapons:Value]`|
-|Description:|Configures has no weapons.|
+|Description:|When <code>true</code>, enables or applies no weapons.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1093,7 +1093,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|HasTarget|
 |:----|:----|
 |Tag Format:|`[HasTarget:Value]`|
-|Description:|Configures has target.|
+|Description:|When <code>true</code>, enables or applies target.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1101,7 +1101,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|HasWeapons|
 |:----|:----|
 |Tag Format:|`[HasWeapons:Value]`|
-|Description:|Configures has weapons.|
+|Description:|When <code>true</code>, enables or applies weapons.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1109,7 +1109,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|InSufficientUpwardThrustDirection|
 |:----|:----|
 |Tag Format:|`[InSufficientUpwardThrustDirection:Value]`|
-|Description:|Configures in sufficient upward thrust direction.|
+|Description:|Enum value for in sufficient upward thrust direction.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -1117,7 +1117,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|InSufficientUpwardThrustTolerance|
 |:----|:----|
 |Tag Format:|`[InSufficientUpwardThrustTolerance:Value]`|
-|Description:|Configures in sufficient upward thrust tolerance.|
+|Description:|Numeric value for in sufficient upward thrust tolerance.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1125,7 +1125,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|IsOnDarkSide|
 |:----|:----|
 |Tag Format:|`[IsOnDarkSide:Value]`|
-|Description:|Configures is on dark side.|
+|Description:|When <code>true</code>, enables or applies on dark side.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1133,7 +1133,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|IsTargetGrid|
 |:----|:----|
 |Tag Format:|`[IsTargetGrid:Value]`|
-|Description:|Configures is target grid.|
+|Description:|When <code>true</code>, enables or applies target grid.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1141,7 +1141,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|IsTargetPlayer|
 |:----|:----|
 |Tag Format:|`[IsTargetPlayer:Value]`|
-|Description:|Configures is target player.|
+|Description:|When <code>true</code>, enables or applies target player.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1149,7 +1149,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|IsTargetStatic|
 |:----|:----|
 |Tag Format:|`[IsTargetStatic:Value]`|
-|Description:|Configures is target static.|
+|Description:|When <code>true</code>, enables or applies target static.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1157,7 +1157,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|IsUnderwater|
 |:----|:----|
 |Tag Format:|`[IsUnderwater:Value]`|
-|Description:|Configures is underwater.|
+|Description:|When <code>true</code>, enables or applies underwater.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1165,7 +1165,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MatchTerrainType|
 |:----|:----|
 |Tag Format:|`[MatchTerrainType:Value]`|
-|Description:|Configures match terrain type.|
+|Description:|When <code>true</code>, requires terrain type to match.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1173,7 +1173,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxAccumulatedDamage|
 |:----|:----|
 |Tag Format:|`[MaxAccumulatedDamage:Value]`|
-|Description:|Configures max accumulated damage.|
+|Description:|Maximum value for accumulated damage.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1181,7 +1181,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxDistanceUnderwater|
 |:----|:----|
 |Tag Format:|`[MaxDistanceUnderwater:Value]`|
-|Description:|Configures max distance underwater.|
+|Description:|Maximum value for distance underwater.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1189,7 +1189,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxGravity|
 |:----|:----|
 |Tag Format:|`[MaxGravity:Value]`|
-|Description:|Configures max gravity.|
+|Description:|Rotation Settings setting: max gravity.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1197,7 +1197,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxGridVerticalSpeed|
 |:----|:----|
 |Tag Format:|`[MaxGridVerticalSpeed:Value]`|
-|Description:|Configures max grid vertical speed.|
+|Description:|Maximum value for grid vertical speed.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1205,7 +1205,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxPercentageOfHealthRemaining|
 |:----|:----|
 |Tag Format:|`[MaxPercentageOfHealthRemaining:Value]`|
-|Description:|Configures max percentage of health remaining.|
+|Description:|Maximum value for percentage of health remaining.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -1213,7 +1213,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxPercentageOfWeaponsRemaining|
 |:----|:----|
 |Tag Format:|`[MaxPercentageOfWeaponsRemaining:Value]`|
-|Description:|Configures max percentage of weapons remaining.|
+|Description:|Maximum value for percentage of weapons remaining.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -1229,7 +1229,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxPlayerReputationDistanceCheck|
 |:----|:----|
 |Tag Format:|`[MaxPlayerReputationDistanceCheck:Value]`|
-|Description:|Configures max player reputation distance check.|
+|Description:|Maximum value for player reputation distance check.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1237,7 +1237,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxTargetAltitude|
 |:----|:----|
 |Tag Format:|`[MaxTargetAltitude:Value]`|
-|Description:|Configures max target altitude.|
+|Description:|Maximum value for target altitude.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1245,7 +1245,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxTargetChaseSpeed|
 |:----|:----|
 |Tag Format:|`[MaxTargetChaseSpeed:Value]`|
-|Description:|Configures max target chase speed.|
+|Description:|Maximum value for target chase speed.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1253,7 +1253,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxTargetDistanceUnderwater|
 |:----|:----|
 |Tag Format:|`[MaxTargetDistanceUnderwater:Value]`|
-|Description:|Configures max target distance underwater.|
+|Description:|Maximum value for target distance underwater.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1261,7 +1261,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxTargetSpeed|
 |:----|:----|
 |Tag Format:|`[MaxTargetSpeed:Value]`|
-|Description:|Configures max target speed.|
+|Description:|Maximum value for target speed.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1269,7 +1269,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MaxWaypointAngle|
 |:----|:----|
 |Tag Format:|`[MaxWaypointAngle:Value]`|
-|Description:|Configures max waypoint angle.|
+|Description:|Maximum value for waypoint angle.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1277,7 +1277,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinAccumulatedDamage|
 |:----|:----|
 |Tag Format:|`[MinAccumulatedDamage:Value]`|
-|Description:|Configures min accumulated damage.|
+|Description:|Minimum value for accumulated damage.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1285,7 +1285,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinDistanceUnderwater|
 |:----|:----|
 |Tag Format:|`[MinDistanceUnderwater:Value]`|
-|Description:|Configures min distance underwater.|
+|Description:|Minimum value for distance underwater.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1293,7 +1293,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinGravity|
 |:----|:----|
 |Tag Format:|`[MinGravity:Value]`|
-|Description:|Configures min gravity.|
+|Description:|Rotation Settings setting: min gravity.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1301,7 +1301,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinGridVerticalSpeed|
 |:----|:----|
 |Tag Format:|`[MinGridVerticalSpeed:Value]`|
-|Description:|Configures min grid vertical speed.|
+|Description:|Minimum value for grid vertical speed.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1309,7 +1309,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinPercentageOfHealthRemaining|
 |:----|:----|
 |Tag Format:|`[MinPercentageOfHealthRemaining:Value]`|
-|Description:|Configures min percentage of health remaining.|
+|Description:|Minimum value for percentage of health remaining.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -1317,7 +1317,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinPercentageOfWeaponsRemaining|
 |:----|:----|
 |Tag Format:|`[MinPercentageOfWeaponsRemaining:Value]`|
-|Description:|Configures min percentage of weapons remaining.|
+|Description:|Minimum value for percentage of weapons remaining.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -1333,7 +1333,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinTargetAltitude|
 |:----|:----|
 |Tag Format:|`[MinTargetAltitude:Value]`|
-|Description:|Configures min target altitude.|
+|Description:|Minimum value for target altitude.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1341,7 +1341,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinTargetChaseSpeed|
 |:----|:----|
 |Tag Format:|`[MinTargetChaseSpeed:Value]`|
-|Description:|Configures min target chase speed.|
+|Description:|Minimum value for target chase speed.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1349,7 +1349,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinTargetDistanceUnderwater|
 |:----|:----|
 |Tag Format:|`[MinTargetDistanceUnderwater:Value]`|
-|Description:|Configures min target distance underwater.|
+|Description:|Minimum value for target distance underwater.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1357,7 +1357,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinTargetSpeed|
 |:----|:----|
 |Tag Format:|`[MinTargetSpeed:Value]`|
-|Description:|Configures min target speed.|
+|Description:|Minimum value for target speed.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1365,7 +1365,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|MinWaypointAngle|
 |:----|:----|
 |Tag Format:|`[MinWaypointAngle:Value]`|
-|Description:|Configures min waypoint angle.|
+|Description:|Minimum value for waypoint angle.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1373,7 +1373,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|NoActiveContracts|
 |:----|:----|
 |Tag Format:|`[NoActiveContracts:Value]`|
-|Description:|Configures no active contracts.|
+|Description:|When <code>true</code>, enables or applies active contracts.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1381,7 +1381,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|NoTarget|
 |:----|:----|
 |Tag Format:|`[NoTarget:Value]`|
-|Description:|Configures no target.|
+|Description:|When <code>true</code>, enables or applies target.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1389,7 +1389,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|PlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[PlayerConditionIds:Value]`|
-|Description:|Configures player condition ids.|
+|Description:|When <code>true</code>, plays er condition ids.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1397,7 +1397,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|PlayerIdentityInSandboxList|
 |:----|:----|
 |Tag Format:|`[PlayerIdentityInSandboxList:Value]`|
-|Description:|Configures player identity in sandbox list.|
+|Description:|When <code>true</code>, plays er identity in sandbox list.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1405,7 +1405,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|PlayerIdentityMatches|
 |:----|:----|
 |Tag Format:|`[PlayerIdentityMatches:Value]`|
-|Description:|Configures player identity matches.|
+|Description:|When <code>true</code>, plays er identity matches.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1413,7 +1413,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|PlayerIdentitySandboxListId|
 |:----|:----|
 |Tag Format:|`[PlayerIdentitySandboxListId:Value]`|
-|Description:|Configures player identity sandbox list id.|
+|Description:|A player identity sandbox list profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -1421,7 +1421,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|SufficientUpwardThrustDirection|
 |:----|:----|
 |Tag Format:|`[SufficientUpwardThrustDirection:Value]`|
-|Description:|Configures sufficient upward thrust direction.|
+|Description:|Enum value for sufficient upward thrust direction.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -1429,7 +1429,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|SufficientUpwardThrustTolerance|
 |:----|:----|
 |Tag Format:|`[SufficientUpwardThrustTolerance:Value]`|
-|Description:|Configures sufficient upward thrust tolerance.|
+|Description:|Numeric value for sufficient upward thrust tolerance.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -1437,7 +1437,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|TargetAltitudeCheck|
 |:----|:----|
 |Tag Format:|`[TargetAltitudeCheck:Value]`|
-|Description:|Configures target altitude check.|
+|Description:|When <code>true</code>, activates target altitude check.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1445,7 +1445,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|TargetIsUnderwater|
 |:----|:----|
 |Tag Format:|`[TargetIsUnderwater:Value]`|
-|Description:|Configures target is underwater.|
+|Description:|When <code>true</code>, activates target is underwater.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1453,7 +1453,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|TargetUnderwaterCheck|
 |:----|:----|
 |Tag Format:|`[TargetUnderwaterCheck:Value]`|
-|Description:|Configures target underwater check.|
+|Description:|When <code>true</code>, activates target underwater check.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1461,7 +1461,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|TerrainTypeBlacklistNames|
 |:----|:----|
 |Tag Format:|`[TerrainTypeBlacklistNames:Value]`|
-|Description:|Configures terrain type blacklist names.|
+|Description:|One or more terrain type blacklist profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1469,7 +1469,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|TerrainTypeWhitelistNames|
 |:----|:----|
 |Tag Format:|`[TerrainTypeWhitelistNames:Value]`|
-|Description:|Configures terrain type whitelist names.|
+|Description:|One or more terrain type whitelist profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1477,7 +1477,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|UnderwaterCheck|
 |:----|:----|
 |Tag Format:|`[UnderwaterCheck:Value]`|
-|Description:|Configures underwater check.|
+|Description:|When <code>true</code>, activates underwater check.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1485,7 +1485,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|UseAccumulatedDamageWatcher|
 |:----|:----|
 |Tag Format:|`[UseAccumulatedDamageWatcher:Value]`|
-|Description:|Configures use accumulated damage watcher.|
+|Description:|When <code>true</code>, uses accumulated damage watcher.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

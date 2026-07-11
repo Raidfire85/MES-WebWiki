@@ -1,6 +1,7 @@
 # Mission
 
-Mission profiles define contract/mission data used by MES contract blocks.
+Mission profiles use the [MES Mission] header in SBC Description blocks.
+
 Profile header: `[MES Mission]`
 
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
@@ -9,7 +10,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|ActivateBooleanNameOnSucces|
 |:----|:----|
 |Tag Format:|`[ActivateBooleanNameOnSucces:Value]`|
-|Description:|Configures activate boolean name on succes.|
+|Description:|Text value for activate boolean name on succes.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -18,7 +19,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|Collateral|
 |:----|:----|
 |Tag Format:|`[Collateral:Value]`|
-|Description:|Configures collateral.|
+|Description:|Text value for collateral.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -27,7 +28,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|CustomApiMapping|
 |:----|:----|
 |Tag Format:|`[CustomApiMapping:Value]`|
-|Description:|Configures custom api mapping.|
+|Description:|List of values for custom api mapping.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -36,7 +37,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|Description|
 |:----|:----|
 |Tag Format:|`[Description:Value]`|
-|Description:|Configures description.|
+|Description:|Text value for description.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -45,7 +46,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|Duration|
 |:----|:----|
 |Tag Format:|`[Duration:Value]`|
-|Description:|Configures duration.|
+|Description:|Time in seconds for duration.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -54,7 +55,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|EventConditionIds|
 |:----|:----|
 |Tag Format:|`[EventConditionIds:Value]`|
-|Description:|Configures event condition ids.|
+|Description:|One or more event condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -63,7 +64,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|Exclusive|
 |:----|:----|
 |Tag Format:|`[Exclusive:Value]`|
-|Description:|Configures exclusive.|
+|Description:|When <code>true</code>, activates exclusive.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -72,7 +73,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|FailReputationPrice|
 |:----|:----|
 |Tag Format:|`[FailReputationPrice:Value]`|
-|Description:|Configures fail reputation price.|
+|Description:|Text value for fail reputation price.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -81,7 +82,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|InstanceEventGroupId|
 |:----|:----|
 |Tag Format:|`[InstanceEventGroupId:Value]`|
-|Description:|Configures instance event group id.|
+|Description:|A instance event group profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -90,7 +91,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|LeadPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[LeadPlayerConditionIds:Value]`|
-|Description:|Configures lead player condition ids.|
+|Description:|One or more lead player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -108,7 +109,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|OverrideFaction|
 |:----|:----|
 |Tag Format:|`[OverrideFaction:Value]`|
-|Description:|Configures override faction.|
+|Description:|Text value for override faction.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -117,7 +118,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|PersistantEventConditionIds|
 |:----|:----|
 |Tag Format:|`[PersistantEventConditionIds:Value]`|
-|Description:|Configures persistant event condition ids.|
+|Description:|One or more persistant event condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -126,7 +127,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|PlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[PlayerConditionIds:Value]`|
-|Description:|Configures player condition ids.|
+|Description:|When <code>true</code>, plays er condition ids.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -135,7 +136,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|ReplaceKeys|
 |:----|:----|
 |Tag Format:|`[ReplaceKeys:Value]`|
-|Description:|Configures replace keys.|
+|Description:|List of values for replace keys.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -144,7 +145,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|ReplacePairs|
 |:----|:----|
 |Tag Format:|`[ReplacePairs:Value]`|
-|Description:|Configures replace pairs.|
+|Description:|List of values for replace pairs.|
 |Allowed Value(s):|Comma-separated key,value pairs|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -153,7 +154,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|ReplaceValues|
 |:----|:----|
 |Tag Format:|`[ReplaceValues:Value]`|
-|Description:|Configures replace values.|
+|Description:|List of values for replace values.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -162,7 +163,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|ReputationReward|
 |:----|:----|
 |Tag Format:|`[ReputationReward:Value]`|
-|Description:|Configures reputation reward.|
+|Description:|Text value for reputation reward.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -171,7 +172,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|Reward|
 |:----|:----|
 |Tag Format:|`[Reward:Value]`|
-|Description:|Configures reward.|
+|Description:|Text value for reward.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -180,7 +181,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|SoloMission|
 |:----|:----|
 |Tag Format:|`[SoloMission:Value]`|
-|Description:|Configures solo mission.|
+|Description:|When <code>true</code>, activates solo mission.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -189,7 +190,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|StoreProfileId|
 |:----|:----|
 |Tag Format:|`[StoreProfileId:Value]`|
-|Description:|Configures store profile id.|
+|Description:|A store profile profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -198,7 +199,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|Tags|
 |:----|:----|
 |Tag Format:|`[Tags:Value]`|
-|Description:|Configures tags.|
+|Description:|When <code>true</code>, activates tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -207,7 +208,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|Title|
 |:----|:----|
 |Tag Format:|`[Title:Value]`|
-|Description:|Configures title.|
+|Description:|Text value for title.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -216,7 +217,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|UseAnyPassingEventCondition|
 |:----|:----|
 |Tag Format:|`[UseAnyPassingEventCondition:Value]`|
-|Description:|Configures use any passing event condition.|
+|Description:|When <code>true</code>, uses any passing event condition.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|

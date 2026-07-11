@@ -226,7 +226,7 @@ These tags add broadcast, message, and player-notification options for Chat prof
 |Tag:|GPSOffset|
 |:----|:----|
 |Tag Format:|`[GPSOffset:Value]`|
-|Description:|Configures gps offset.|
+|Description:|When <code>true</code>, activates gps offset.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 

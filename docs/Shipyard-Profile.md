@@ -1,6 +1,7 @@
 # Shipyard
 
-Shipyard profiles configure NPC shipyard blocks (blueprint building, repairs, scrap, grid takeover).
+Shipyard profiles configure NPC terminals for blueprint building, scrap sales, repairs and construction, paid block replacement, and grid takeover purchases.
+
 Profile header: `[MES Shipyard]`
 
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
@@ -9,7 +10,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|AllowBlueprintBuilding|
 |:----|:----|
 |Tag Format:|`[AllowBlueprintBuilding:Value]`|
-|Description:|Configures allow blueprint building.|
+|Description:|When <code>true</code>, players can build grids from blueprints at this shipyard terminal.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -18,7 +19,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|AllowCustomReplacement|
 |:----|:----|
 |Tag Format:|`[AllowCustomReplacement:Value]`|
-|Description:|Configures allow custom replacement.|
+|Description:|When <code>true</code>, players can pay to replace blocks using <code>OldBlock</code>/<code>NewBlock</code> or <code>BlockReplacementProfileIds</code>.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -27,7 +28,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|AllowGridTakeover|
 |:----|:----|
 |Tag Format:|`[AllowGridTakeover:Value]`|
-|Description:|Configures allow grid takeover.|
+|Description:|When <code>true</code>, players can purchase ownership of an NPC grid through this shipyard.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -36,7 +37,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|AllowRepairAndConstruction|
 |:----|:----|
 |Tag Format:|`[AllowRepairAndConstruction:Value]`|
-|Description:|Configures allow repair and construction.|
+|Description:|When <code>true</code>, players can repair and weld incomplete blocks at this shipyard.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -45,7 +46,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|AllowScrapPurchasing|
 |:----|:----|
 |Tag Format:|`[AllowScrapPurchasing:Value]`|
-|Description:|Configures allow scrap purchasing.|
+|Description:|When <code>true</code>, players can sell scrap grids to this shipyard.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -54,7 +55,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|BlockName|
 |:----|:----|
 |Tag Format:|`[BlockName:Value]`|
-|Description:|Configures block name.|
+|Description:|SubtypeId or name of the shipyard terminal block this profile applies to.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -63,7 +64,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|BlockReplacementProfileIds|
 |:----|:----|
 |Tag Format:|`[BlockReplacementProfileIds:Value]`|
-|Description:|Configures block replacement profile ids.|
+|Description:|One or more block replacement profile profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -72,7 +73,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|BlueprintBuildingCommissionPercentage|
 |:----|:----|
 |Tag Format:|`[BlueprintBuildingCommissionPercentage:Value]`|
-|Description:|Configures blueprint building commission percentage.|
+|Description:|Blueprint build price multiplier percentage (100 = raw cost). Source default: <code>115</code>.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -81,7 +82,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|BlueprintBuildingLargeGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[BlueprintBuildingLargeGridBlockLimit:Value]`|
-|Description:|Configures blueprint building large grid block limit.|
+|Description:|Numeric value for blueprint building large grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -90,7 +91,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|BlueprintBuildingReputationDiscount|
 |:----|:----|
 |Tag Format:|`[BlueprintBuildingReputationDiscount:Value]`|
-|Description:|Configures blueprint building reputation discount.|
+|Description:|Numeric value for blueprint building reputation discount.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -99,7 +100,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|BlueprintBuildingSmallGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[BlueprintBuildingSmallGridBlockLimit:Value]`|
-|Description:|Configures blueprint building small grid block limit.|
+|Description:|Numeric value for blueprint building small grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -108,7 +109,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|CustomReplacementCommissionPercentage|
 |:----|:----|
 |Tag Format:|`[CustomReplacementCommissionPercentage:Value]`|
-|Description:|Configures custom replacement commission percentage.|
+|Description:|Numeric amount for custom replacement commission percentage.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -117,7 +118,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|CustomReplacementLargeGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[CustomReplacementLargeGridBlockLimit:Value]`|
-|Description:|Configures custom replacement large grid block limit.|
+|Description:|Numeric value for custom replacement large grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -126,7 +127,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|CustomReplacementReputationDiscount|
 |:----|:----|
 |Tag Format:|`[CustomReplacementReputationDiscount:Value]`|
-|Description:|Configures custom replacement reputation discount.|
+|Description:|Numeric value for custom replacement reputation discount.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -135,7 +136,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|CustomReplacementSmallGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[CustomReplacementSmallGridBlockLimit:Value]`|
-|Description:|Configures custom replacement small grid block limit.|
+|Description:|Numeric value for custom replacement small grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -144,7 +145,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|GridTakeoverLargeGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[GridTakeoverLargeGridBlockLimit:Value]`|
-|Description:|Configures grid takeover large grid block limit.|
+|Description:|Numeric value for grid takeover large grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -153,7 +154,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|GridTakeoverPricePerComputerMultiplier|
 |:----|:----|
 |Tag Format:|`[GridTakeoverPricePerComputerMultiplier:Value]`|
-|Description:|Configures grid takeover price per computer multiplier.|
+|Description:|Price multiplier per computer block when taking over a grid. Source default: <code>100</code>.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -162,7 +163,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|GridTakeoverReputationDiscount|
 |:----|:----|
 |Tag Format:|`[GridTakeoverReputationDiscount:Value]`|
-|Description:|Configures grid takeover reputation discount.|
+|Description:|Numeric value for grid takeover reputation discount.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -171,7 +172,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|GridTakeoverSmallGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[GridTakeoverSmallGridBlockLimit:Value]`|
-|Description:|Configures grid takeover small grid block limit.|
+|Description:|Numeric value for grid takeover small grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -180,7 +181,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|InteractionRadius|
 |:----|:----|
 |Tag Format:|`[InteractionRadius:Value]`|
-|Description:|Configures interaction radius.|
+|Description:|Radius in meters around the shipyard block where players can interact. Source default: <code>250</code>.|
 |Allowed Value(s):|Any Number Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -189,7 +190,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|MinReputation|
 |:----|:----|
 |Tag Format:|`[MinReputation:Value]`|
-|Description:|Configures min reputation.|
+|Description:|Minimum faction reputation required (may be unused in current MES build). Source default: <code>-500</code>.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -216,7 +217,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|RepairAndConstructionCommissionPercentage|
 |:----|:----|
 |Tag Format:|`[RepairAndConstructionCommissionPercentage:Value]`|
-|Description:|Configures repair and construction commission percentage.|
+|Description:|Numeric amount for repair and construction commission percentage.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -225,7 +226,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|RepairAndConstructionExcludedComponentIds|
 |:----|:----|
 |Tag Format:|`[RepairAndConstructionExcludedComponentIds:Value]`|
-|Description:|Configures repair and construction excluded component ids.|
+|Description:|One or more repair and construction excluded component profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -234,7 +235,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|RepairAndConstructionLargeGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[RepairAndConstructionLargeGridBlockLimit:Value]`|
-|Description:|Configures repair and construction large grid block limit.|
+|Description:|Numeric value for repair and construction large grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -243,7 +244,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|RepairAndConstructionReputationDiscount|
 |:----|:----|
 |Tag Format:|`[RepairAndConstructionReputationDiscount:Value]`|
-|Description:|Configures repair and construction reputation discount.|
+|Description:|Numeric value for repair and construction reputation discount.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -252,7 +253,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|RepairAndConstructionSmallGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[RepairAndConstructionSmallGridBlockLimit:Value]`|
-|Description:|Configures repair and construction small grid block limit.|
+|Description:|Numeric value for repair and construction small grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -261,7 +262,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|ReplaceBlockReference|
 |:----|:----|
 |Tag Format:|`[ReplaceBlockReference:Value]`|
-|Description:|Configures replace block reference.|
+|Description:|List of values for replace block reference.|
 |Allowed Value(s):|See MES source / enum definition|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -270,7 +271,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|ReputationNeededForDiscount|
 |:----|:----|
 |Tag Format:|`[ReputationNeededForDiscount:Value]`|
-|Description:|Configures reputation needed for discount.|
+|Description:|Faction reputation at or above this value unlocks reputation-based discounts. Source default: <code>501</code>.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -279,7 +280,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|ScrapPurchasingIncludeInventory|
 |:----|:----|
 |Tag Format:|`[ScrapPurchasingIncludeInventory:Value]`|
-|Description:|Configures scrap purchasing include inventory.|
+|Description:|When <code>true</code>, activates scrap purchasing include inventory.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -288,7 +289,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|ScrapPurchasingLargeGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[ScrapPurchasingLargeGridBlockLimit:Value]`|
-|Description:|Configures scrap purchasing large grid block limit.|
+|Description:|Numeric value for scrap purchasing large grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -297,7 +298,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|ScrapPurchasingMaxPercentageValue|
 |:----|:----|
 |Tag Format:|`[ScrapPurchasingMaxPercentageValue:Value]`|
-|Description:|Configures scrap purchasing max percentage value.|
+|Description:|Base percentage of scrap value paid to the player. Source default: <code>75</code>.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -306,7 +307,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|ScrapPurchasingReputationDiscount|
 |:----|:----|
 |Tag Format:|`[ScrapPurchasingReputationDiscount:Value]`|
-|Description:|Configures scrap purchasing reputation discount.|
+|Description:|Numeric value for scrap purchasing reputation discount.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -315,7 +316,7 @@ Below are the tags you can use in your Shipyard profiles.
 |Tag:|ScrapPurchasingSmallGridBlockLimit|
 |:----|:----|
 |Tag Format:|`[ScrapPurchasingSmallGridBlockLimit:Value]`|
-|Description:|Configures scrap purchasing small grid block limit.|
+|Description:|Numeric value for scrap purchasing small grid block limit.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|

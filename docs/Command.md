@@ -147,7 +147,7 @@ These tags extend the orders and control options a Command profile can issue to 
 |Tag:|CheckRelationSenderReceiver|
 |:----|:----|
 |Tag Format:|`[CheckRelationSenderReceiver:Value]`|
-|Description:|Configures check relation sender receiver.|
+|Description:|When <code>true</code>, checks relation sender receiver.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -187,7 +187,7 @@ These tags extend the orders and control options a Command profile can issue to 
 |Tag:|Relation|
 |:----|:----|
 |Tag Format:|`[Relation:Value]`|
-|Description:|Configures relation.|
+|Description:|When <code>true</code>, activates relation.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 

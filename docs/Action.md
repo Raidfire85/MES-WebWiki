@@ -1774,7 +1774,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ActivateAssertiveAntennas|
 |:----|:----|
 |Tag Format:|`[ActivateAssertiveAntennas:Value]`|
-|Description:|Configures activate assertive antennas.|
+|Description:|When <code>true</code>, enables assertive antenna behavior on the NPC grid (antennas actively broadcast/track).|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1782,7 +1782,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ActivateEvent|
 |:----|:----|
 |Tag Format:|`[ActivateEvent:Value]`|
-|Description:|Configures activate event.|
+|Description:|When <code>true</code>, activates MES events whose ids or tags match <code>ActivateEventIds</code> / <code>ActivateEventTags</code>.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1790,7 +1790,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ActivateEventIds|
 |:----|:----|
 |Tag Format:|`[ActivateEventIds:Value]`|
-|Description:|Configures activate event ids.|
+|Description:|One or more activate event profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1798,7 +1798,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ActivateEventTags|
 |:----|:----|
 |Tag Format:|`[ActivateEventTags:Value]`|
-|Description:|Configures activate event tags.|
+|Description:|List of values for activate event tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1806,7 +1806,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddCustomCountersVariablesFromCommand|
 |:----|:----|
 |Tag Format:|`[AddCustomCountersVariablesFromCommand:Value]`|
-|Description:|Configures add custom counters variables from command.|
+|Description:|When <code>true</code>, enables or applies custom counters variables from command.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1814,7 +1814,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddCustomStringsFromCommand|
 |:----|:----|
 |Tag Format:|`[AddCustomStringsFromCommand:Value]`|
-|Description:|Configures add custom strings from command.|
+|Description:|When <code>true</code>, enables or applies custom strings from command.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1822,7 +1822,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddGPSPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[AddGPSPlayerConditionIds:Value]`|
-|Description:|Configures add gps player condition ids.|
+|Description:|One or more add gps player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1830,7 +1830,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddGPSPlayerOverridePositionInPlayerCondition|
 |:----|:----|
 |Tag Format:|`[AddGPSPlayerOverridePositionInPlayerCondition:Value]`|
-|Description:|Configures add gps player override position in player condition.|
+|Description:|When <code>true</code>, enables or applies gps player override position in player condition.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1838,7 +1838,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddGPSToPlayers|
 |:----|:----|
 |Tag Format:|`[AddGPSToPlayers:Value]`|
-|Description:|Configures add gps to players.|
+|Description:|When <code>true</code>, enables or applies gps to players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1846,7 +1846,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddInstanceEventGroup|
 |:----|:----|
 |Tag Format:|`[AddInstanceEventGroup:Value]`|
-|Description:|Configures add instance event group.|
+|Description:|When <code>true</code>, enables or applies instance event group.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1854,7 +1854,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddResearchPoints|
 |:----|:----|
 |Tag Format:|`[AddResearchPoints:Value]`|
-|Description:|Configures add research points.|
+|Description:|When <code>true</code>, enables or applies research points.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1862,7 +1862,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AddTagsToPlayers|
 |:----|:----|
 |Tag Format:|`[AddTagsToPlayers:Value]`|
-|Description:|Configures add tags to players.|
+|Description:|When <code>true</code>, enables or applies tags to players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1870,7 +1870,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AntennaHudText|
 |:----|:----|
 |Tag Format:|`[AntennaHudText:Value]`|
-|Description:|Configures antenna hud text.|
+|Description:|Text value for antenna hud text.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -1878,7 +1878,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AntennaHudTextSuffix|
 |:----|:----|
 |Tag Format:|`[AntennaHudTextSuffix:Value]`|
-|Description:|Configures antenna hud text suffix.|
+|Description:|Text value for antenna hud text suffix.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -1886,7 +1886,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|AppendAntennaHudText|
 |:----|:----|
 |Tag Format:|`[AppendAntennaHudText:Value]`|
-|Description:|Configures append antenna hud text.|
+|Description:|When <code>true</code>, enables or applies antenna hud text.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1894,7 +1894,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ApplyContractProfiles|
 |:----|:----|
 |Tag Format:|`[ApplyContractProfiles:Value]`|
-|Description:|Configures apply contract profiles.|
+|Description:|When <code>true</code>, enables or applies contract profiles.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1902,7 +1902,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ApplyStoreProfiles|
 |:----|:----|
 |Tag Format:|`[ApplyStoreProfiles:Value]`|
-|Description:|Configures apply store profiles.|
+|Description:|When <code>true</code>, enables or applies store profiles.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1910,7 +1910,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|BehaviorSpecificEventA|
 |:----|:----|
 |Tag Format:|`[BehaviorSpecificEventA:Value]`|
-|Description:|Configures behavior specific event a.|
+|Description:|When <code>true</code>, activates behavior specific event a.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1918,7 +1918,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|BlockNamesShareModeAll|
 |:----|:----|
 |Tag Format:|`[BlockNamesShareModeAll:Value]`|
-|Description:|Configures block names share mode all.|
+|Description:|List of values for block names share mode all.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1926,7 +1926,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|BroadcastCurrentTarget|
 |:----|:----|
 |Tag Format:|`[BroadcastCurrentTarget:Value]`|
-|Description:|Configures broadcast current target.|
+|Description:|When <code>true</code>, broadcasts current target.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1934,7 +1934,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|BroadcastDamagerTarget|
 |:----|:----|
 |Tag Format:|`[BroadcastDamagerTarget:Value]`|
-|Description:|Configures broadcast damager target.|
+|Description:|When <code>true</code>, broadcasts damager target.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1942,7 +1942,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|BroadcastGenericCommand|
 |:----|:----|
 |Tag Format:|`[BroadcastGenericCommand:Value]`|
-|Description:|Configures broadcast generic command.|
+|Description:|When <code>true</code>, broadcasts generic command.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1950,7 +1950,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|BroadcastSendCode|
 |:----|:----|
 |Tag Format:|`[BroadcastSendCode:Value]`|
-|Description:|Configures broadcast send code.|
+|Description:|Text value for broadcast send code.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -1958,7 +1958,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeAntennaHudText|
 |:----|:----|
 |Tag Format:|`[ChangeAntennaHudText:Value]`|
-|Description:|Configures change antenna hud text.|
+|Description:|When <code>true</code>, changes antenna hud text.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1966,7 +1966,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeAttackersFactionAccount|
 |:----|:----|
 |Tag Format:|`[ChangeAttackersFactionAccount:Value]`|
-|Description:|Configures change attackers faction account.|
+|Description:|When <code>true</code>, changes attackers faction account.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1974,7 +1974,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeAttackersFactionAccountByAmount|
 |:----|:----|
 |Tag Format:|`[ChangeAttackersFactionAccountByAmount:Value]`|
-|Description:|Configures change attackers faction account by amount.|
+|Description:|Numeric amount for change attackers faction account by amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -1982,7 +1982,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeAutopilotMinAltitude|
 |:----|:----|
 |Tag Format:|`[ChangeAutopilotMinAltitude:Value]`|
-|Description:|Configures change autopilot min altitude.|
+|Description:|When <code>true</code>, changes autopilot min altitude.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1990,7 +1990,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeBlockDamageMultipliers|
 |:----|:----|
 |Tag Format:|`[ChangeBlockDamageMultipliers:Value]`|
-|Description:|Configures change block damage multipliers.|
+|Description:|When <code>true</code>, changes block damage multipliers.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -1998,7 +1998,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeBlocksShareModeAll|
 |:----|:----|
 |Tag Format:|`[ChangeBlocksShareModeAll:Value]`|
-|Description:|Configures change blocks share mode all.|
+|Description:|When <code>true</code>, changes blocks share mode all.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2006,7 +2006,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeGridOwnership|
 |:----|:----|
 |Tag Format:|`[ChangeGridOwnership:Value]`|
-|Description:|Configures change grid ownership.|
+|Description:|When <code>true</code>, changes grid ownership.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2014,7 +2014,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeNpcFactionCredits|
 |:----|:----|
 |Tag Format:|`[ChangeNpcFactionCredits:Value]`|
-|Description:|Configures change npc faction credits.|
+|Description:|When <code>true</code>, changes npc faction credits.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2022,7 +2022,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeNpcFactionCreditsAmount|
 |:----|:----|
 |Tag Format:|`[ChangeNpcFactionCreditsAmount:Value]`|
-|Description:|Configures change npc faction credits amount.|
+|Description:|Numeric amount for change npc faction credits amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2030,7 +2030,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeNpcFactionCreditsTag|
 |:----|:----|
 |Tag Format:|`[ChangeNpcFactionCreditsTag:Value]`|
-|Description:|Configures change npc faction credits tag.|
+|Description:|Text value for change npc faction credits tag.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2038,7 +2038,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangePlayerCredits|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCredits:Value]`|
-|Description:|Configures change player credits.|
+|Description:|When <code>true</code>, changes player credits.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2046,7 +2046,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangePlayerCreditsAmount|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCreditsAmount:Value]`|
-|Description:|Configures change player credits amount.|
+|Description:|Numeric amount for change player credits amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2054,7 +2054,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangePlayerCreditsIncludeSavedPlayerIdentity|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCreditsIncludeSavedPlayerIdentity:Value]`|
-|Description:|Configures change player credits include saved player identity.|
+|Description:|When <code>true</code>, changes player credits include saved player identity.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2062,7 +2062,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangePlayerCreditsOverridePositionInPlayerCondition|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCreditsOverridePositionInPlayerCondition:Value]`|
-|Description:|Configures change player credits override position in player condition.|
+|Description:|When <code>true</code>, changes player credits override position in player condition.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2070,7 +2070,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangePlayerCreditsPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[ChangePlayerCreditsPlayerConditionIds:Value]`|
-|Description:|Configures change player credits player condition ids.|
+|Description:|One or more change player credits player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2078,7 +2078,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeReputationBetweenFactions|
 |:----|:----|
 |Tag Format:|`[ChangeReputationBetweenFactions:Value]`|
-|Description:|Configures change reputation between factions.|
+|Description:|When <code>true</code>, changes reputation between factions.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2086,7 +2086,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeReputationFactionsAmounts|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsAmounts:Value]`|
-|Description:|Configures change reputation factions amounts.|
+|Description:|List of values for change reputation factions amounts.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2094,7 +2094,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeReputationFactionsFrom|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsFrom:Value]`|
-|Description:|Configures change reputation factions from.|
+|Description:|List of values for change reputation factions from.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2102,7 +2102,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeReputationFactionsTargets|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsTargets:Value]`|
-|Description:|Configures change reputation factions targets.|
+|Description:|List of values for change reputation factions targets.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2110,7 +2110,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeReputationFactionsTo|
 |:----|:----|
 |Tag Format:|`[ChangeReputationFactionsTo:Value]`|
-|Description:|Configures change reputation factions to.|
+|Description:|List of values for change reputation factions to.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2118,7 +2118,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeReputationPropagatesToPlayers|
 |:----|:----|
 |Tag Format:|`[ChangeReputationPropagatesToPlayers:Value]`|
-|Description:|Configures change reputation propagates to players.|
+|Description:|When <code>true</code>, changes reputation propagates to players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2126,7 +2126,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ChangeTurretTargetingParameters|
 |:----|:----|
 |Tag Format:|`[ChangeTurretTargetingParameters:Value]`|
-|Description:|Configures change turret targeting parameters.|
+|Description:|<strong>OBSOLETE.</strong> Implement|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2134,7 +2134,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ClearAntennaThoughtBubble|
 |:----|:----|
 |Tag Format:|`[ClearAntennaThoughtBubble:Value]`|
-|Description:|Configures clear antenna thought bubble.|
+|Description:|When <code>true</code>, clears antenna thought bubble.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2142,7 +2142,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ClearContractContentsFirst|
 |:----|:----|
 |Tag Format:|`[ClearContractContentsFirst:Value]`|
-|Description:|Configures clear contract contents first.|
+|Description:|When <code>true</code>, clears contract contents first.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2150,7 +2150,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ClearStoreContentsFirst|
 |:----|:----|
 |Tag Format:|`[ClearStoreContentsFirst:Value]`|
-|Description:|Configures clear store contents first.|
+|Description:|When <code>true</code>, clears store contents first.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2158,7 +2158,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ContractBlockProfiles|
 |:----|:----|
 |Tag Format:|`[ContractBlockProfiles:Value]`|
-|Description:|Configures contract block profiles.|
+|Description:|One or more contract block profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2166,7 +2166,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ContractBlocks|
 |:----|:----|
 |Tag Format:|`[ContractBlocks:Value]`|
-|Description:|Configures contract blocks.|
+|Description:|List of values for contract blocks.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2174,7 +2174,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ContractProfiles|
 |:----|:----|
 |Tag Format:|`[ContractProfiles:Value]`|
-|Description:|Configures contract profiles.|
+|Description:|One or more contract profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2182,7 +2182,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|CreateSafeZone|
 |:----|:----|
 |Tag Format:|`[CreateSafeZone:Value]`|
-|Description:|Configures create safe zone.|
+|Description:|When <code>true</code>, enables or applies safe zone.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2206,7 +2206,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DamageMultiplierBlockNames|
 |:----|:----|
 |Tag Format:|`[DamageMultiplierBlockNames:Value]`|
-|Description:|Configures damage multiplier block names.|
+|Description:|One or more damage multiplier block profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2214,7 +2214,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DamageMultiplierValues|
 |:----|:----|
 |Tag Format:|`[DamageMultiplierValues:Value]`|
-|Description:|Configures damage multiplier values.|
+|Description:|List of values for damage multiplier values.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2222,7 +2222,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DebugMessage|
 |:----|:----|
 |Tag Format:|`[DebugMessage:Value]`|
-|Description:|Configures debug message.|
+|Description:|Debug Message.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2230,7 +2230,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DecreaseAntennaThoughtBubblePercentage|
 |:----|:----|
 |Tag Format:|`[DecreaseAntennaThoughtBubblePercentage:Value]`|
-|Description:|Configures decrease antenna thought bubble percentage.|
+|Description:|When <code>true</code>, enables or applies antenna thought bubble percentage.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2238,7 +2238,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DecreaseAntennaThoughtBubblePercentageAmount|
 |:----|:----|
 |Tag Format:|`[DecreaseAntennaThoughtBubblePercentageAmount:Value]`|
-|Description:|Configures decrease antenna thought bubble percentage amount.|
+|Description:|Numeric amount for decrease antenna thought bubble percentage amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2246,7 +2246,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DecreaseCountersAmount|
 |:----|:----|
 |Tag Format:|`[DecreaseCountersAmount:Value]`|
-|Description:|Configures decrease counters amount.|
+|Description:|Numeric amount for decrease counters amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2254,7 +2254,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DecreaseCountersAmountVariable|
 |:----|:----|
 |Tag Format:|`[DecreaseCountersAmountVariable:Value]`|
-|Description:|Configures decrease counters amount variable.|
+|Description:|Text value for decrease counters amount variable.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2262,7 +2262,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DecreaseCountersUseAmountVariable|
 |:----|:----|
 |Tag Format:|`[DecreaseCountersUseAmountVariable:Value]`|
-|Description:|Configures decrease counters use amount variable.|
+|Description:|When <code>true</code>, enables or applies counters use amount variable.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2270,7 +2270,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DecreaseCountersUseCommandScore|
 |:----|:----|
 |Tag Format:|`[DecreaseCountersUseCommandScore:Value]`|
-|Description:|Configures decrease counters use command score.|
+|Description:|When <code>true</code>, enables or applies counters use command score.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2278,7 +2278,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DialogueCueId|
 |:----|:----|
 |Tag Format:|`[DialogueCueId:Value]`|
-|Description:|Configures dialogue cue id.|
+|Description:|A dialogue cue profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2286,7 +2286,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DisableAutopilot|
 |:----|:----|
 |Tag Format:|`[DisableAutopilot:Value]`|
-|Description:|Configures disable autopilot.|
+|Description:|When <code>true</code>, disables autopilot.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2294,7 +2294,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DisableTriggerIds|
 |:----|:----|
 |Tag Format:|`[DisableTriggerIds:Value]`|
-|Description:|Configures disable trigger ids.|
+|Description:|One or more disable trigger profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2302,7 +2302,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|DisableTriggerTags|
 |:----|:----|
 |Tag Format:|`[DisableTriggerTags:Value]`|
-|Description:|Configures disable trigger tags.|
+|Description:|List of values for disable trigger tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2310,7 +2310,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|EnableAutopilot|
 |:----|:----|
 |Tag Format:|`[EnableAutopilot:Value]`|
-|Description:|Configures enable autopilot.|
+|Description:|When <code>true</code>, enables autopilot.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2318,7 +2318,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|EnableTriggerIds|
 |:----|:----|
 |Tag Format:|`[EnableTriggerIds:Value]`|
-|Description:|Configures enable trigger ids.|
+|Description:|One or more enable trigger profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2326,7 +2326,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|EnableTriggerTags|
 |:----|:----|
 |Tag Format:|`[EnableTriggerTags:Value]`|
-|Description:|Configures enable trigger tags.|
+|Description:|List of values for enable trigger tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2334,7 +2334,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|EndAntennaThoughtBubblePercentage|
 |:----|:----|
 |Tag Format:|`[EndAntennaThoughtBubblePercentage:Value]`|
-|Description:|Configures end antenna thought bubble percentage.|
+|Description:|When <code>true</code>, enables or applies antenna thought bubble percentage.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2342,7 +2342,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|GPSColors|
 |:----|:----|
 |Tag Format:|`[GPSColors:Value]`|
-|Description:|Configures gps colors.|
+|Description:|List of values for gps colors.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -2350,7 +2350,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|GPSCoords|
 |:----|:----|
 |Tag Format:|`[GPSCoords:Value]`|
-|Description:|Configures gps coords.|
+|Description:|List of values for gps coords.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -2358,7 +2358,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|GPSDescriptions|
 |:----|:----|
 |Tag Format:|`[GPSDescriptions:Value]`|
-|Description:|Configures gps descriptions.|
+|Description:|List of values for gps descriptions.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2366,7 +2366,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|GPSNames|
 |:----|:----|
 |Tag Format:|`[GPSNames:Value]`|
-|Description:|Configures gps names.|
+|Description:|One or more gps profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2374,7 +2374,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|GPSVector3Ds|
 |:----|:----|
 |Tag Format:|`[GPSVector3Ds:Value]`|
-|Description:|Configures gps vector3 ds.|
+|Description:|List of values for gps vector3 ds.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -2382,7 +2382,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|HeavyYaw|
 |:----|:----|
 |Tag Format:|`[HeavyYaw:Value]`|
-|Description:|Configures heavy yaw.|
+|Description:|When <code>true</code>, activates heavy yaw.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2390,7 +2390,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|HighlightBlockModes|
 |:----|:----|
 |Tag Format:|`[HighlightBlockModes:Value]`|
-|Description:|Configures highlight block modes.|
+|Description:|When <code>true</code>, enables or applies block modes.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2398,7 +2398,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|HighlightBlockNames|
 |:----|:----|
 |Tag Format:|`[HighlightBlockNames:Value]`|
-|Description:|Configures highlight block names.|
+|Description:|One or more highlight block profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2406,7 +2406,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|HighlightBlocks|
 |:----|:----|
 |Tag Format:|`[HighlightBlocks:Value]`|
-|Description:|Configures highlight blocks.|
+|Description:|When <code>true</code>, enables or applies blocks.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2414,7 +2414,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|IgnoreOtherSafeZonesDuringCreation|
 |:----|:----|
 |Tag Format:|`[IgnoreOtherSafeZonesDuringCreation:Value]`|
-|Description:|Configures ignore other safe zones during creation.|
+|Description:|When <code>true</code>, enables or applies other safe zones during creation.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2422,7 +2422,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|IncreaseAntennaThoughtBubblePercentage|
 |:----|:----|
 |Tag Format:|`[IncreaseAntennaThoughtBubblePercentage:Value]`|
-|Description:|Configures increase antenna thought bubble percentage.|
+|Description:|When <code>true</code>, enables or applies antenna thought bubble percentage.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2430,7 +2430,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|IncreaseAntennaThoughtBubblePercentageAmount|
 |:----|:----|
 |Tag Format:|`[IncreaseAntennaThoughtBubblePercentageAmount:Value]`|
-|Description:|Configures increase antenna thought bubble percentage amount.|
+|Description:|Numeric amount for increase antenna thought bubble percentage amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2438,7 +2438,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|IncreaseCountersAmount|
 |:----|:----|
 |Tag Format:|`[IncreaseCountersAmount:Value]`|
-|Description:|Configures increase counters amount.|
+|Description:|Numeric amount for increase counters amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2446,7 +2446,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|IncreaseCountersAmountVariable|
 |:----|:----|
 |Tag Format:|`[IncreaseCountersAmountVariable:Value]`|
-|Description:|Configures increase counters amount variable.|
+|Description:|Text value for increase counters amount variable.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2454,7 +2454,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|IncreaseCountersUseAmountVariable|
 |:----|:----|
 |Tag Format:|`[IncreaseCountersUseAmountVariable:Value]`|
-|Description:|Configures increase counters use amount variable.|
+|Description:|When <code>true</code>, enables or applies counters use amount variable.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2462,7 +2462,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|IncreaseCountersUseCommandScore|
 |:----|:----|
 |Tag Format:|`[IncreaseCountersUseCommandScore:Value]`|
-|Description:|Configures increase counters use command score.|
+|Description:|When <code>true</code>, enables or applies counters use command score.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2470,7 +2470,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|InstanceEventGroupId|
 |:----|:----|
 |Tag Format:|`[InstanceEventGroupId:Value]`|
-|Description:|Configures instance event group id.|
+|Description:|A instance event group profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2478,7 +2478,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|InstanceEventGroupReplaceKeys|
 |:----|:----|
 |Tag Format:|`[InstanceEventGroupReplaceKeys:Value]`|
-|Description:|Configures instance event group replace keys.|
+|Description:|List of values for instance event group replace keys.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2486,7 +2486,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|InstanceEventGroupReplaceValues|
 |:----|:----|
 |Tag Format:|`[InstanceEventGroupReplaceValues:Value]`|
-|Description:|Configures instance event group replace values.|
+|Description:|List of values for instance event group replace values.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2494,7 +2494,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|KnownPlayerAreaMinThreatForAvoidingAbandonment|
 |:----|:----|
 |Tag Format:|`[KnownPlayerAreaMinThreatForAvoidingAbandonment:Value]`|
-|Description:|Configures known player area min threat for avoiding abandonment.|
+|Description:|Numeric value for known player area min threat for avoiding abandonment.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2502,7 +2502,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|LinkSafeZoneToRemoteControl|
 |:----|:----|
 |Tag Format:|`[LinkSafeZoneToRemoteControl:Value]`|
-|Description:|Configures link safe zone to remote control.|
+|Description:|When <code>true</code>, enables or applies safe zone to remote control.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2510,7 +2510,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|LocationSandboxVariableName|
 |:----|:----|
 |Tag Format:|`[LocationSandboxVariableName:Value]`|
-|Description:|Configures location sandbox variable name.|
+|Description:|Text value for location sandbox variable name.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2518,7 +2518,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ManuallyActivatedTriggerTags|
 |:----|:----|
 |Tag Format:|`[ManuallyActivatedTriggerTags:Value]`|
-|Description:|Configures manually activated trigger tags.|
+|Description:|List of values for manually activated trigger tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2526,7 +2526,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|MaxBlocksToRepair|
 |:----|:----|
 |Tag Format:|`[MaxBlocksToRepair:Value]`|
-|Description:|Configures max blocks to repair.|
+|Description:|Maximum value for blocks to repair.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2534,7 +2534,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|NewAutopilotMinAltitude|
 |:----|:----|
 |Tag Format:|`[NewAutopilotMinAltitude:Value]`|
-|Description:|Configures new autopilot min altitude.|
+|Description:|New value used for autopilot min altitude.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2542,7 +2542,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|NewBehavior|
 |:----|:----|
 |Tag Format:|`[NewBehavior:Value]`|
-|Description:|Configures new behavior.|
+|Description:|<strong>OBSOLETE.</strong> Companion tag for deprecated <code>SwitchToBehavior</code>. Use <code>NewBehaviorSubclass</code> instead.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2550,7 +2550,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|NewTargetProfile|
 |:----|:----|
 |Tag Format:|`[NewTargetProfile:Value]`|
-|Description:|Configures new target profile.|
+|Description:|<strong>OBSOLETE.</strong> Obsolete|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2558,7 +2558,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|OldBlockSkins|
 |:----|:----|
 |Tag Format:|`[OldBlockSkins:Value]`|
-|Description:|Configures old block skins.|
+|Description:|Previous value used for block skins.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2566,7 +2566,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|OverwriteAutopilotId|
 |:----|:----|
 |Tag Format:|`[OverwriteAutopilotId:Value]`|
-|Description:|Configures overwrite autopilot id.|
+|Description:|A overwrite autopilot profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2582,7 +2582,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|OverwriteAutopilotProfile|
 |:----|:----|
 |Tag Format:|`[OverwriteAutopilotProfile:Value]`|
-|Description:|Configures overwrite autopilot profile.|
+|Description:|When <code>true</code>, enables or applies autopilot profile.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2590,7 +2590,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ParentGridNameRequirement|
 |:----|:----|
 |Tag Format:|`[ParentGridNameRequirement:Value]`|
-|Description:|Configures parent grid name requirement.|
+|Description:|Text value for parent grid name requirement.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2598,7 +2598,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ParticleEffectColor|
 |:----|:----|
 |Tag Format:|`[ParticleEffectColor:Value]`|
-|Description:|Configures particle effect color.|
+|Description:|Vector3D coordinates for particle effect color.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -2606,7 +2606,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ParticleEffectId|
 |:----|:----|
 |Tag Format:|`[ParticleEffectId:Value]`|
-|Description:|Configures particle effect id.|
+|Description:|A particle effect profile or id value.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2614,7 +2614,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ParticleEffectMaxTime|
 |:----|:----|
 |Tag Format:|`[ParticleEffectMaxTime:Value]`|
-|Description:|Configures particle effect max time.|
+|Description:|Numeric value for particle effect max time.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -2622,7 +2622,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ParticleEffectOffset|
 |:----|:----|
 |Tag Format:|`[ParticleEffectOffset:Value]`|
-|Description:|Configures particle effect offset.|
+|Description:|Vector3D coordinates for particle effect offset.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -2630,7 +2630,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ParticleEffectScale|
 |:----|:----|
 |Tag Format:|`[ParticleEffectScale:Value]`|
-|Description:|Configures particle effect scale.|
+|Description:|Numeric value for particle effect scale.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -2638,7 +2638,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PlanetIgnoreSafeLocation|
 |:----|:----|
 |Tag Format:|`[PlanetIgnoreSafeLocation:Value]`|
-|Description:|Configures planet ignore safe location.|
+|Description:|<strong>OBSOLETE.</strong> Implement //Doc.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2646,7 +2646,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PlayDialogueCue|
 |:----|:----|
 |Tag Format:|`[PlayDialogueCue:Value]`|
-|Description:|Configures play dialogue cue.|
+|Description:|Playsound cue.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2654,7 +2654,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PlayDialogueOverridePositionInPlayerCondition|
 |:----|:----|
 |Tag Format:|`[PlayDialogueOverridePositionInPlayerCondition:Value]`|
-|Description:|Configures play dialogue override position in player condition.|
+|Description:|When <code>true</code>, plays dialogue override position in player condition.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2662,7 +2662,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PlayDialoguePlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[PlayDialoguePlayerConditionIds:Value]`|
-|Description:|Configures play dialogue player condition ids.|
+|Description:|One or more play dialogue player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2670,7 +2670,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PlayDialogueToSpecificPlayers|
 |:----|:----|
 |Tag Format:|`[PlayDialogueToSpecificPlayers:Value]`|
-|Description:|Configures play dialogue to specific players.|
+|Description:|When <code>true</code>, plays dialogue to specific players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2678,7 +2678,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PlayParticleEffectAtRemote|
 |:----|:----|
 |Tag Format:|`[PlayParticleEffectAtRemote:Value]`|
-|Description:|Configures play particle effect at remote.|
+|Description:|When <code>true</code>, plays particle effect at remote.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2686,7 +2686,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PreserveSettingsOnBehaviorSwitch|
 |:----|:----|
 |Tag Format:|`[PreserveSettingsOnBehaviorSwitch:Value]`|
-|Description:|Configures preserve settings on behavior switch.|
+|Description:|<strong>OBSOLETE.</strong> Obsolete.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2694,7 +2694,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PreserveTargetDataOnBehaviorSwitch|
 |:----|:----|
 |Tag Format:|`[PreserveTargetDataOnBehaviorSwitch:Value]`|
-|Description:|Configures preserve target data on behavior switch.|
+|Description:|<strong>OBSOLETE.</strong> Obsolete.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2702,7 +2702,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|PreserveTriggersOnBehaviorSwitch|
 |:----|:----|
 |Tag Format:|`[PreserveTriggersOnBehaviorSwitch:Value]`|
-|Description:|Configures preserve triggers on behavior switch.|
+|Description:|<strong>OBSOLETE.</strong> Obsolete.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2710,7 +2710,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ProcessStaticEncountersAtLocation|
 |:----|:----|
 |Tag Format:|`[ProcessStaticEncountersAtLocation:Value]`|
-|Description:|Configures process static encounters at location.|
+|Description:|When <code>true</code>, processes static encounters at location.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2718,7 +2718,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ProcessStaticEncountersLocation|
 |:----|:----|
 |Tag Format:|`[ProcessStaticEncountersLocation:Value]`|
-|Description:|Configures process static encounters location.|
+|Description:|Vector3D coordinates for process static encounters location.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -2726,7 +2726,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|RemovePlayerIdentity|
 |:----|:----|
 |Tag Format:|`[RemovePlayerIdentity:Value]`|
-|Description:|Configures remove player identity.|
+|Description:|When <code>true</code>, enables or applies player identity.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2734,7 +2734,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|RepairBlocks|
 |:----|:----|
 |Tag Format:|`[RepairBlocks:Value]`|
-|Description:|Configures repair blocks.|
+|Description:|When <code>true</code>, repairs blocks.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2742,7 +2742,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|RepairBlocksIncludeSubgrids|
 |:----|:----|
 |Tag Format:|`[RepairBlocksIncludeSubgrids:Value]`|
-|Description:|Configures repair blocks include subgrids.|
+|Description:|When <code>true</code>, repairs blocks include subgrids.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2750,7 +2750,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ReputationPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[ReputationPlayerConditionIds:Value]`|
-|Description:|Configures reputation player condition ids.|
+|Description:|One or more reputation player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2758,7 +2758,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ResearchPointsAmount|
 |:----|:----|
 |Tag Format:|`[ResearchPointsAmount:Value]`|
-|Description:|Configures research points amount.|
+|Description:|Numeric amount for research points amount.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2766,7 +2766,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ResetCooldownTimeOfEvents|
 |:----|:----|
 |Tag Format:|`[ResetCooldownTimeOfEvents:Value]`|
-|Description:|Configures reset cooldown time of events.|
+|Description:|When <code>true</code>, resets cooldown time of events.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2774,7 +2774,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ResetEventCooldownIds|
 |:----|:----|
 |Tag Format:|`[ResetEventCooldownIds:Value]`|
-|Description:|Configures reset event cooldown ids.|
+|Description:|One or more reset event cooldown profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2782,7 +2782,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ResetEventCooldownTags|
 |:----|:----|
 |Tag Format:|`[ResetEventCooldownTags:Value]`|
-|Description:|Configures reset event cooldown tags.|
+|Description:|List of values for reset event cooldown tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2790,7 +2790,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ResetThisStaticEncounter|
 |:----|:----|
 |Tag Format:|`[ResetThisStaticEncounter:Value]`|
-|Description:|Configures reset this static encounter.|
+|Description:|When <code>true</code>, resets this static encounter.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2798,7 +2798,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ResetTriggerCooldownTags|
 |:----|:----|
 |Tag Format:|`[ResetTriggerCooldownTags:Value]`|
-|Description:|Configures reset trigger cooldown tags.|
+|Description:|List of values for reset trigger cooldown tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2806,7 +2806,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SafeZonePositionGridCenter|
 |:----|:----|
 |Tag Format:|`[SafeZonePositionGridCenter:Value]`|
-|Description:|Configures safe zone position grid center.|
+|Description:|When <code>true</code>, activates safe zone position grid center.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2814,7 +2814,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SafeZonePositionTerrainSurface|
 |:----|:----|
 |Tag Format:|`[SafeZonePositionTerrainSurface:Value]`|
-|Description:|Configures safe zone position terrain surface.|
+|Description:|When <code>true</code>, activates safe zone position terrain surface.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2822,7 +2822,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SafeZoneProfile|
 |:----|:----|
 |Tag Format:|`[SafeZoneProfile:Value]`|
-|Description:|Configures safe zone profile.|
+|Description:|Text value for safe zone profile.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2830,7 +2830,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SaveLocationToSandboxVariable|
 |:----|:----|
 |Tag Format:|`[SaveLocationToSandboxVariable:Value]`|
-|Description:|Configures save location to sandbox variable.|
+|Description:|When <code>true</code>, enables or applies location to sandbox variable.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2838,7 +2838,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SavePlayerIdentity|
 |:----|:----|
 |Tag Format:|`[SavePlayerIdentity:Value]`|
-|Description:|Configures save player identity.|
+|Description:|SaveSavePlayerIdentity.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2846,7 +2846,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SendCommandWithoutAntenna|
 |:----|:----|
 |Tag Format:|`[SendCommandWithoutAntenna:Value]`|
-|Description:|Configures send command without antenna.|
+|Description:|When <code>true</code>, activates send command without antenna.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2854,7 +2854,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SendCommandWithoutAntennaRadius|
 |:----|:----|
 |Tag Format:|`[SendCommandWithoutAntennaRadius:Value]`|
-|Description:|Configures send command without antenna radius.|
+|Description:|Radius in meters for send command without antenna.|
 |Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
@@ -2862,7 +2862,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetAntennaThoughtBubble|
 |:----|:----|
 |Tag Format:|`[SetAntennaThoughtBubble:Value]`|
-|Description:|Configures set antenna thought bubble.|
+|Description:|When <code>true</code>, sets antenna thought bubble.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2870,7 +2870,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetAntennaThoughtBubbleName|
 |:----|:----|
 |Tag Format:|`[SetAntennaThoughtBubbleName:Value]`|
-|Description:|Configures set antenna thought bubble name.|
+|Description:|Text value for set antenna thought bubble name.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2878,7 +2878,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetCountersAmountVariable|
 |:----|:----|
 |Tag Format:|`[SetCountersAmountVariable:Value]`|
-|Description:|Configures set counters amount variable.|
+|Description:|Text value for set counters amount variable.|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -2886,7 +2886,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetCountersUseAmountVariable|
 |:----|:----|
 |Tag Format:|`[SetCountersUseAmountVariable:Value]`|
-|Description:|Configures set counters use amount variable.|
+|Description:|When <code>true</code>, sets counters use amount variable.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2894,7 +2894,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetCustomCountersVariables|
 |:----|:----|
 |Tag Format:|`[SetCustomCountersVariables:Value]`|
-|Description:|Configures set custom counters variables.|
+|Description:|When <code>true</code>, sets custom counters variables.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2902,7 +2902,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetCustomStrings|
 |:----|:----|
 |Tag Format:|`[SetCustomStrings:Value]`|
-|Description:|Configures set custom strings.|
+|Description:|When <code>true</code>, sets custom strings.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2910,7 +2910,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetGridToDynamic|
 |:----|:----|
 |Tag Format:|`[SetGridToDynamic:Value]`|
-|Description:|Configures set grid to dynamic.|
+|Description:|When <code>true</code>, sets grid to dynamic.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2918,7 +2918,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SetGridToStatic|
 |:----|:----|
 |Tag Format:|`[SetGridToStatic:Value]`|
-|Description:|Configures set grid to static.|
+|Description:|When <code>true</code>, sets grid to static.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2926,7 +2926,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|StartAntennaThoughtBubblePercentage|
 |:----|:----|
 |Tag Format:|`[StartAntennaThoughtBubblePercentage:Value]`|
-|Description:|Configures start antenna thought bubble percentage.|
+|Description:|When <code>true</code>, enables or applies antenna thought bubble percentage.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2934,7 +2934,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|StartAntennaThoughtBubblePercentageValue|
 |:----|:----|
 |Tag Format:|`[StartAntennaThoughtBubblePercentageValue:Value]`|
-|Description:|Configures start antenna thought bubble percentage value.|
+|Description:|Numeric value for start antenna thought bubble percentage value.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -2942,7 +2942,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|StoreBlocks|
 |:----|:----|
 |Tag Format:|`[StoreBlocks:Value]`|
-|Description:|Configures store blocks.|
+|Description:|List of values for store blocks.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2950,7 +2950,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|StoreProfiles|
 |:----|:----|
 |Tag Format:|`[StoreProfiles:Value]`|
-|Description:|Configures store profiles.|
+|Description:|One or more store profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2958,7 +2958,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|Strafe|
 |:----|:----|
 |Tag Format:|`[Strafe:Value]`|
-|Description:|Configures strafe.|
+|Description:|Strafe - Implement Post Release.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2966,7 +2966,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SwitchTargetProfile|
 |:----|:----|
 |Tag Format:|`[SwitchTargetProfile:Value]`|
-|Description:|Configures switch target profile.|
+|Description:|<strong>OBSOLETE.</strong> Obsolete|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2974,7 +2974,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SwitchTargetToDamager|
 |:----|:----|
 |Tag Format:|`[SwitchTargetToDamager:Value]`|
-|Description:|Configures switch target to damager.|
+|Description:|When <code>true</code>, switches target to damager.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2982,7 +2982,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|SwitchToBehavior|
 |:----|:----|
 |Tag Format:|`[SwitchToBehavior:Value]`|
-|Description:|Configures switch to behavior.|
+|Description:|<strong>OBSOLETE.</strong> Do not use. MES skips re-registering an already-registered Remote Control. Use <code>[ChangeBehaviorSubclass:true]</code> and <code>[NewBehaviorSubclass:Value]</code> instead.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -2990,7 +2990,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TeleportPlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[TeleportPlayerConditionIds:Value]`|
-|Description:|Configures teleport player condition ids.|
+|Description:|One or more teleport player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -2998,7 +2998,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TeleportPlayerCoords|
 |:----|:----|
 |Tag Format:|`[TeleportPlayerCoords:Value]`|
-|Description:|Configures teleport player coords.|
+|Description:|Vector3D coordinates for teleport player coords.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -3006,7 +3006,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TeleportPlayerOverridePositionInPlayerCondition|
 |:----|:----|
 |Tag Format:|`[TeleportPlayerOverridePositionInPlayerCondition:Value]`|
-|Description:|Configures teleport player override position in player condition.|
+|Description:|When <code>true</code>, teleports player override position in player condition.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3014,7 +3014,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TeleportPlayers|
 |:----|:----|
 |Tag Format:|`[TeleportPlayers:Value]`|
-|Description:|Configures teleport players.|
+|Description:|When <code>true</code>, teleports players.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3022,7 +3022,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TeleportPlayersIncludeSavedPlayerIdentity|
 |:----|:----|
 |Tag Format:|`[TeleportPlayersIncludeSavedPlayerIdentity:Value]`|
-|Description:|Configures teleport players include saved player identity.|
+|Description:|When <code>true</code>, teleports players include saved player identity.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3030,7 +3030,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ToggleEventIdModes|
 |:----|:----|
 |Tag Format:|`[ToggleEventIdModes:Value]`|
-|Description:|Configures toggle event id modes.|
+|Description:|When <code>true</code>, activates toggle event id modes.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3038,7 +3038,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ToggleEventIds|
 |:----|:----|
 |Tag Format:|`[ToggleEventIds:Value]`|
-|Description:|Configures toggle event ids.|
+|Description:|One or more toggle event profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -3046,7 +3046,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ToggleEventTagModes|
 |:----|:----|
 |Tag Format:|`[ToggleEventTagModes:Value]`|
-|Description:|Configures toggle event tag modes.|
+|Description:|When <code>true</code>, activates toggle event tag modes.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3054,7 +3054,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ToggleEventTags|
 |:----|:----|
 |Tag Format:|`[ToggleEventTags:Value]`|
-|Description:|Configures toggle event tags.|
+|Description:|List of values for toggle event tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -3062,7 +3062,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ToggleEvents|
 |:----|:----|
 |Tag Format:|`[ToggleEvents:Value]`|
-|Description:|Configures toggle events.|
+|Description:|When <code>true</code>, activates toggle events.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3070,7 +3070,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TryToDespawnThisGridOnly|
 |:----|:----|
 |Tag Format:|`[TryToDespawnThisGridOnly:Value]`|
-|Description:|Configures try to despawn this grid only.|
+|Description:|When <code>true</code>, attempts to despawn this grid only.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3078,7 +3078,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TurretSubtypesForTargetChange|
 |:----|:----|
 |Tag Format:|`[TurretSubtypesForTargetChange:Value]`|
-|Description:|Configures turret subtypes for target change.|
+|Description:|<strong>OBSOLETE.</strong> Implement|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -3086,7 +3086,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TurretTargetType|
 |:----|:----|
 |Tag Format:|`[TurretTargetType:Value]`|
-|Description:|Configures turret target type.|
+|Description:|<strong>OBSOLETE.</strong> Implement|
 |Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
@@ -3094,7 +3094,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|TurretTypesForTargetChanges|
 |:----|:----|
 |Tag Format:|`[TurretTypesForTargetChanges:Value]`|
-|Description:|Configures turret types for target changes.|
+|Description:|<strong>OBSOLETE.</strong> Implement|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -3102,7 +3102,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|UseGPSObjective|
 |:----|:----|
 |Tag Format:|`[UseGPSObjective:Value]`|
-|Description:|Configures use gps objective.|
+|Description:|When <code>true</code>, uses gps objective.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3110,7 +3110,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|UseRandomNameGenerator|
 |:----|:----|
 |Tag Format:|`[UseRandomNameGenerator:Value]`|
-|Description:|Configures use random name generator.|
+|Description:|When <code>true</code>, uses random name generator.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3118,7 +3118,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ZoneCustomBoolChangeUseKPL|
 |:----|:----|
 |Tag Format:|`[ZoneCustomBoolChangeUseKPL:Value]`|
-|Description:|Configures zone custom bool change use kpl.|
+|Description:|When <code>true</code>, activates zone custom bool change use kpl.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3126,7 +3126,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ZoneCustomCounterChange|
 |:----|:----|
 |Tag Format:|`[ZoneCustomCounterChange:Value]`|
-|Description:|Configures zone custom counter change.|
+|Description:|When <code>true</code>, activates zone custom counter change.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3134,7 +3134,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ZoneCustomCounterChangeUseKPL|
 |:----|:----|
 |Tag Format:|`[ZoneCustomCounterChangeUseKPL:Value]`|
-|Description:|Configures zone custom counter change use kpl.|
+|Description:|When <code>true</code>, activates zone custom counter change use kpl.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -3142,7 +3142,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |Tag:|ZoneToggleActiveMode|
 |:----|:----|
 |Tag Format:|`[ZoneToggleActiveMode:Value]`|
-|Description:|Configures zone toggle active mode.|
+|Description:|When <code>true</code>, activates zone toggle active mode.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

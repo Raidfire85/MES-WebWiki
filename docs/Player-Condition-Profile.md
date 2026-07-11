@@ -175,7 +175,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|AllowAnyExcludedPlayerTag|
 |:----|:----|
 |Tag Format:|`[AllowAnyExcludedPlayerTag:Value]`|
-|Description:|Configures allow any excluded player tag.|
+|Description:|When <code>true</code>, allows any excluded player tag.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -183,7 +183,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|AllowAnyIncludedPlayerTag|
 |:----|:----|
 |Tag Format:|`[AllowAnyIncludedPlayerTag:Value]`|
-|Description:|Configures allow any included player tag.|
+|Description:|When <code>true</code>, allows any included player tag.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -191,7 +191,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|CheckPlayerCreditBalance|
 |:----|:----|
 |Tag Format:|`[CheckPlayerCreditBalance:Value]`|
-|Description:|Configures check player credit balance.|
+|Description:|When <code>true</code>, checks player credit balance.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -199,7 +199,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|CheckPlayerInActiveZone|
 |:----|:----|
 |Tag Format:|`[CheckPlayerInActiveZone:Value]`|
-|Description:|Configures check player in active zone.|
+|Description:|When <code>true</code>, checks player in active zone.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -207,7 +207,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|CheckPlayerInZone|
 |:----|:----|
 |Tag Format:|`[CheckPlayerInZone:Value]`|
-|Description:|Configures check player in zone.|
+|Description:|When <code>true</code>, checks player in zone.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -215,7 +215,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|ExcludedPlayerTags|
 |:----|:----|
 |Tag Format:|`[ExcludedPlayerTags:Value]`|
-|Description:|Configures excluded player tags.|
+|Description:|List of values for excluded player tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -223,7 +223,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|IncludedPlayerTags|
 |:----|:----|
 |Tag Format:|`[IncludedPlayerTags:Value]`|
-|Description:|Configures included player tags.|
+|Description:|List of values for included player tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -231,7 +231,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|MaxPlayerCreditBalance|
 |:----|:----|
 |Tag Format:|`[MaxPlayerCreditBalance:Value]`|
-|Description:|Configures max player credit balance.|
+|Description:|Maximum value for player credit balance.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -239,7 +239,7 @@ These tags add player-state checks and requirements for Player Condition profile
 |Tag:|MinPlayerCreditBalance|
 |:----|:----|
 |Tag Format:|`[MinPlayerCreditBalance:Value]`|
-|Description:|Configures min player credit balance.|
+|Description:|Minimum value for player credit balance.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 

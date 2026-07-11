@@ -469,7 +469,7 @@ These tags add extra trigger types, timing options, and checks that can start or
 |Tag:|AllowUniqueCommandCodeSenderOnly|
 |:----|:----|
 |Tag Format:|`[AllowUniqueCommandCodeSenderOnly:Value]`|
-|Description:|Configures allow unique command code sender only.|
+|Description:|When <code>true</code>, allows unique command code sender only.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -485,7 +485,7 @@ These tags add extra trigger types, timing options, and checks that can start or
 |Tag:|GlobalPosition|
 |:----|:----|
 |Tag Format:|`[GlobalPosition:Value]`|
-|Description:|Configures global position.|
+|Description:|When <code>true</code>, activates global position.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -493,7 +493,7 @@ These tags add extra trigger types, timing options, and checks that can start or
 |Tag:|PlayerConditionProfileIds|
 |:----|:----|
 |Tag Format:|`[PlayerConditionProfileIds:Value]`|
-|Description:|Configures player condition profile ids.|
+|Description:|When <code>true</code>, plays er condition profile ids.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -501,7 +501,7 @@ These tags add extra trigger types, timing options, and checks that can start or
 |Tag:|Tags|
 |:----|:----|
 |Tag Format:|`[Tags:Value]`|
-|Description:|Configures tags.|
+|Description:|When <code>true</code>, activates tags.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -517,7 +517,7 @@ These tags add extra trigger types, timing options, and checks that can start or
 |Tag:|UsePlayerConditionProfile|
 |:----|:----|
 |Tag Format:|`[UsePlayerConditionProfile:Value]`|
-|Description:|Configures use player condition profile.|
+|Description:|When <code>true</code>, the trigger uses <code>PlayerConditionProfileIds</code> to filter which players can activate it.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

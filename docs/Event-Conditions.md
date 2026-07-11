@@ -230,7 +230,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|AddExcludedPlayerTag|
 |:----|:----|
 |Tag Format:|`[AddExcludedPlayerTag:Value]`|
-|Description:|Configures add excluded player tag.|
+|Description:|List of values for add excluded player tag.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -238,7 +238,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|AddIncludedPlayerTags|
 |:----|:----|
 |Tag Format:|`[AddIncludedPlayerTags:Value]`|
-|Description:|Configures add included player tags.|
+|Description:|List of values for add included player tags.|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -246,7 +246,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|AddPlayerConditionPlayerTags|
 |:----|:----|
 |Tag Format:|`[AddPlayerConditionPlayerTags:Value]`|
-|Description:|Configures add player condition player tags.|
+|Description:|When <code>true</code>, enables or applies player condition player tags.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -254,7 +254,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|CheckMainEventDaysPassed|
 |:----|:----|
 |Tag Format:|`[CheckMainEventDaysPassed:Value]`|
-|Description:|Configures check main event days passed.|
+|Description:|When <code>true</code>, checks main event days passed.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -262,7 +262,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|CheckPlayerCondition|
 |:----|:----|
 |Tag Format:|`[CheckPlayerCondition:Value]`|
-|Description:|Configures check player condition.|
+|Description:|When <code>true</code>, checks player condition.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -270,7 +270,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|DaysPassed|
 |:----|:----|
 |Tag Format:|`[DaysPassed:Value]`|
-|Description:|Configures days passed.|
+|Description:|Numeric value for days passed.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
@@ -278,7 +278,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|OverridePlayerConditionPosition|
 |:----|:----|
 |Tag Format:|`[OverridePlayerConditionPosition:Value]`|
-|Description:|Configures override player condition position.|
+|Description:|When <code>true</code>, activates override player condition position.|
 |Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
@@ -286,7 +286,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|OverridePosition|
 |:----|:----|
 |Tag Format:|`[OverridePosition:Value]`|
-|Description:|Configures override position.|
+|Description:|Vector3D coordinates for override position.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -294,7 +294,7 @@ These tags add checks and prerequisites an Event Condition profile can use befor
 |Tag:|PlayerNearMinDistanceFromCoords|
 |:----|:----|
 |Tag Format:|`[PlayerNearMinDistanceFromCoords:Value]`|
-|Description:|Configures player near min distance from coords.|
+|Description:|Numeric value for player near min distance from coords.|
 |Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

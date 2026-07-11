@@ -1,6 +1,7 @@
 # Store
 
-Store profiles configure economy store block offers and orders.
+Store profiles use the [MES Store] header in SBC Description blocks.
+
 Profile header: `[MES Store]`
 
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
@@ -9,7 +10,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|AddedItemsAveragePrice|
 |:----|:----|
 |Tag Format:|`[AddedItemsAveragePrice:Value]`|
-|Description:|Configures added items average price.|
+|Description:|When <code>true</code>, enables or applies ed items average price.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -18,7 +19,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|AddedItemsCombineQuantity|
 |:----|:----|
 |Tag Format:|`[AddedItemsCombineQuantity:Value]`|
-|Description:|Configures added items combine quantity.|
+|Description:|When <code>true</code>, enables or applies ed items combine quantity.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -27,7 +28,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|EqualizeOffersAndOrders|
 |:----|:----|
 |Tag Format:|`[EqualizeOffersAndOrders:Value]`|
-|Description:|Configures equalize offers and orders.|
+|Description:|When <code>true</code>, activates equalize offers and orders.|
 |Allowed Value(s):|`true` `false`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -36,7 +37,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|FileSource|
 |:----|:----|
 |Tag Format:|`[FileSource:Value]`|
-|Description:|Configures file source.|
+|Description:|Text value for file source.|
 |Allowed Value(s):|Any String Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -45,7 +46,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|MaxOfferItems|
 |:----|:----|
 |Tag Format:|`[MaxOfferItems:Value]`|
-|Description:|Configures max offer items.|
+|Description:|Maximum value for offer items.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -54,7 +55,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|MaxOrderItems|
 |:----|:----|
 |Tag Format:|`[MaxOrderItems:Value]`|
-|Description:|Configures max order items.|
+|Description:|Maximum value for order items.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -63,7 +64,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|MinOfferItems|
 |:----|:----|
 |Tag Format:|`[MinOfferItems:Value]`|
-|Description:|Configures min offer items.|
+|Description:|Minimum value for offer items.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -72,7 +73,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|MinOrderItems|
 |:----|:----|
 |Tag Format:|`[MinOrderItems:Value]`|
-|Description:|Configures min order items.|
+|Description:|Minimum value for order items.|
 |Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
@@ -81,7 +82,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|Offers|
 |:----|:----|
 |Tag Format:|`[Offers:Value]`|
-|Description:|Configures offers.|
+|Description:|List of values for offers.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -90,7 +91,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|Orders|
 |:----|:----|
 |Tag Format:|`[Orders:Value]`|
-|Description:|Configures orders.|
+|Description:|List of values for orders.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -99,7 +100,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|RequiredOffers|
 |:----|:----|
 |Tag Format:|`[RequiredOffers:Value]`|
-|Description:|Configures required offers.|
+|Description:|List of values for required offers.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|
@@ -108,7 +109,7 @@ Below are the tags you can use in your Store profiles.
 |Tag:|RequiredOrders|
 |:----|:----|
 |Tag Format:|`[RequiredOrders:Value]`|
-|Description:|Configures required orders.|
+|Description:|List of values for required orders.|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|

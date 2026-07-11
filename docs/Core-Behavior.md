@@ -552,7 +552,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|CustomWaypoints|
 |:----|:----|
 |Tag Format:|`[CustomWaypoints:Value]`|
-|Description:|Configures custom waypoints.|
+|Description:|When <code>true</code>, activates custom waypoints.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -560,7 +560,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterDisengageDistancePlanet|
 |:----|:----|
 |Tag Format:|`[FighterDisengageDistancePlanet:Value]`|
-|Description:|Configures fighter disengage distance planet.|
+|Description:|When <code>true</code>, activates fighter disengage distance planet.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -568,7 +568,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterDisengageDistanceSpace|
 |:----|:----|
 |Tag Format:|`[FighterDisengageDistanceSpace:Value]`|
-|Description:|Configures fighter disengage distance space.|
+|Description:|When <code>true</code>, activates fighter disengage distance space.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -576,7 +576,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterEngageDistancePlanet|
 |:----|:----|
 |Tag Format:|`[FighterEngageDistancePlanet:Value]`|
-|Description:|Configures fighter engage distance planet.|
+|Description:|When <code>true</code>, activates fighter engage distance planet.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -584,7 +584,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterEngageDistanceSpace|
 |:----|:----|
 |Tag Format:|`[FighterEngageDistanceSpace:Value]`|
-|Description:|Configures fighter engage distance space.|
+|Description:|When <code>true</code>, activates fighter engage distance space.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -592,7 +592,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterPlaneBeginPlanetAttackRunDistance|
 |:----|:----|
 |Tag Format:|`[FighterPlaneBeginPlanetAttackRunDistance:Value]`|
-|Description:|Configures fighter plane begin planet attack run distance.|
+|Description:|Distance in meters for fighter plane begin planet attack run.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -600,7 +600,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterPlaneBeginSpaceAttackRunDistance|
 |:----|:----|
 |Tag Format:|`[FighterPlaneBeginSpaceAttackRunDistance:Value]`|
-|Description:|Configures fighter plane begin space attack run distance.|
+|Description:|Distance in meters for fighter plane begin space attack run.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -608,7 +608,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterPlaneBreakawayDistance|
 |:----|:----|
 |Tag Format:|`[FighterPlaneBreakawayDistance:Value]`|
-|Description:|Configures fighter plane breakaway distance.|
+|Description:|Distance in meters for fighter plane breakaway.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -616,7 +616,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterPlaneEngageUseSafePlanetPathing|
 |:----|:----|
 |Tag Format:|`[FighterPlaneEngageUseSafePlanetPathing:Value]`|
-|Description:|Configures fighter plane engage use safe planet pathing.|
+|Description:|When <code>true</code>, activates fighter plane engage use safe planet pathing.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -624,7 +624,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|FighterPlaneOffsetRecalculationTime|
 |:----|:----|
 |Tag Format:|`[FighterPlaneOffsetRecalculationTime:Value]`|
-|Description:|Configures fighter plane offset recalculation time.|
+|Description:|When <code>true</code>, activates fighter plane offset recalculation time.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -632,7 +632,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|GetSpeedFromSpawnGroup|
 |:----|:----|
 |Tag Format:|`[GetSpeedFromSpawnGroup:Value]`|
-|Description:|Configures get speed from spawn group.|
+|Description:|When <code>true</code>, activates get speed from spawn group.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -640,7 +640,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseFighterDisengageDistancePlanet|
 |:----|:----|
 |Tag Format:|`[HorseFighterDisengageDistancePlanet:Value]`|
-|Description:|Configures horse fighter disengage distance planet.|
+|Description:|When <code>true</code>, activates horse fighter disengage distance planet.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -648,7 +648,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseFighterDisengageDistanceSpace|
 |:----|:----|
 |Tag Format:|`[HorseFighterDisengageDistanceSpace:Value]`|
-|Description:|Configures horse fighter disengage distance space.|
+|Description:|When <code>true</code>, activates horse fighter disengage distance space.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -656,7 +656,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseFighterEngageDistancePlanet|
 |:----|:----|
 |Tag Format:|`[HorseFighterEngageDistancePlanet:Value]`|
-|Description:|Configures horse fighter engage distance planet.|
+|Description:|When <code>true</code>, activates horse fighter engage distance planet.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -664,7 +664,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseFighterEngageDistanceSpace|
 |:----|:----|
 |Tag Format:|`[HorseFighterEngageDistanceSpace:Value]`|
-|Description:|Configures horse fighter engage distance space.|
+|Description:|When <code>true</code>, activates horse fighter engage distance space.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -672,7 +672,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseFighterWaypointAbandonTimeTrigger|
 |:----|:----|
 |Tag Format:|`[HorseFighterWaypointAbandonTimeTrigger:Value]`|
-|Description:|Configures horse fighter waypoint abandon time trigger.|
+|Description:|Time in seconds for horse fighter waypoint abandon time trigger.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -680,7 +680,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseFighterWaypointWaitTimeTrigger|
 |:----|:----|
 |Tag Format:|`[HorseFighterWaypointWaitTimeTrigger:Value]`|
-|Description:|Configures horse fighter waypoint wait time trigger.|
+|Description:|Time in seconds for horse fighter waypoint wait time trigger.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -688,7 +688,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseNauticalWaypointAbandonTimeTrigger|
 |:----|:----|
 |Tag Format:|`[HorseNauticalWaypointAbandonTimeTrigger:Value]`|
-|Description:|Configures horse nautical waypoint abandon time trigger.|
+|Description:|Time in seconds for horse nautical waypoint abandon time trigger.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -696,7 +696,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseNauticalWaypointWaitTimeTrigger|
 |:----|:----|
 |Tag Format:|`[HorseNauticalWaypointWaitTimeTrigger:Value]`|
-|Description:|Configures horse nautical waypoint wait time trigger.|
+|Description:|Time in seconds for horse nautical waypoint wait time trigger.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -704,7 +704,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseflyWaypointAbandonTimeTrigger|
 |:----|:----|
 |Tag Format:|`[HorseflyWaypointAbandonTimeTrigger:Value]`|
-|Description:|Configures horsefly waypoint abandon time trigger.|
+|Description:|Remote Control tag. Seconds before abandoning the current offset waypoint and generating a new one.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -712,7 +712,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|HorseflyWaypointWaitTimeTrigger|
 |:----|:----|
 |Tag Format:|`[HorseflyWaypointWaitTimeTrigger:Value]`|
-|Description:|Configures horsefly waypoint wait time trigger.|
+|Description:|Remote Control tag. Seconds the Horsefly waits at an offset waypoint before moving again. Overrides autopilot <code>WaypointWaitTimeTrigger</code> when greater than zero.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -720,7 +720,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|Routes|
 |:----|:----|
 |Tag Format:|`[Routes:Value]`|
-|Description:|Configures routes.|
+|Description:|When <code>true</code>, activates routes.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 
@@ -728,7 +728,7 @@ These tags add behavior modes, movement settings, and encounter rules for Core B
 |Tag:|UsePauseAutopilotFromSpawnGroup|
 |:----|:----|
 |Tag Format:|`[UsePauseAutopilotFromSpawnGroup:Value]`|
-|Description:|Configures use pause autopilot from spawn group.|
+|Description:|When <code>true</code>, uses pause autopilot from spawn group.|
 |Allowed Value(s):|See MES source / enum definition|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->
