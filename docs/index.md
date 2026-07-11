@@ -19,12 +19,6 @@ If you are having issues with the mod framework, or any of the mods that utilize
 <div class="mes-wiki-updates-history-entry">
 <p class="mes-wiki-updates-history-date">July 11, 2026</p>
 <ul>
-<li><a href="Shipyard-Profile/">Shipyard</a>, <a href="Mission-Profile/">Mission</a>, <a href="Safezone-Profile/">Safezone</a>, and 4 more pages — 102 new tags documented.</li>
-</ul>
-</div>
-<div class="mes-wiki-updates-history-entry">
-<p class="mes-wiki-updates-history-date">July 11, 2026</p>
-<ul>
 <li><a href="Shipyard-Profile/">Shipyard</a>, <a href="Mission-Profile/">Mission</a>, <a href="Safezone-Profile/">Safezone</a>, and 6 more pages — 108 new tags documented.</li>
 </ul>
 </div>
@@ -32,14 +26,8 @@ If you are having issues with the mod framework, or any of the mods that utilize
 <p class="mes-wiki-updates-history-date">July 9, 2026</p>
 <ul>
 <li>Sidebar navigation updated for new profile pages.</li>
-</ul>
-</div>
-<div class="mes-wiki-updates-history-entry">
-<p class="mes-wiki-updates-history-date">July 9, 2026</p>
-<ul>
 <li>New <a href="Block-Replacement/">Block Replacement</a> profile page — 3 tags documented., <a href="Contract-Block-Profile/">Contract Block</a> profile page — 3 tags documented., <a href="Faction-Icon-Profile/">Faction Icon</a> profile page — 3 tags documented., <a href="Mission-Profile/">Mission</a> profile page — 24 tags documented., and <a href="Prefab-Gravity-Profile/">Prefab Gravity</a> profile page — 3 tags documented., and 4 more profile pages.</li>
 <li><a href="Action/">Action</a>, <a href="Condition/">Condition</a>, <a href="Event-Action/">Event Action</a>, and 13 more pages — 567 new tags documented.</li>
-<li>Sidebar navigation updated for new profile pages.</li>
 </ul>
 </div>
 </details>
