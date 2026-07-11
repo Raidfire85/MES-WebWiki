@@ -469,6 +469,45 @@ td {
   font-family: 'JetBrains Mono', ui-monospace, monospace;
 }
 
+/* --- Mobile / narrow screens (ReadTheDocs ≤768px) --- */
+@media screen and (max-width: 768px) {
+  /*
+   * RTD hides the sidebar with left: -300px but our sidebar is 320px wide,
+   * so ~20px (border + search box) peeks on the left when the menu is closed.
+   */
+  .wy-nav-side {
+    width: 85%;
+    max-width: var(--mes-sidebar-width);
+    left: -100%;
+    border-right: none;
+  }
+
+  .wy-nav-side.shift {
+    left: 0;
+    border-right: 1px solid var(--mes-border);
+  }
+
+  .wy-nav-content-wrap {
+    margin-left: 0 !important;
+    width: 100%;
+  }
+
+  .wy-nav-content {
+    max-width: none;
+    padding: 1.25rem 1rem 2rem;
+  }
+
+  .wy-table-responsive {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .wy-breadcrumbs li.wy-breadcrumbs-aside {
+    display: block;
+    margin-top: 0.35rem;
+  }
+}
+
 /* --- Admonitions / notes --- */
 .rst-content .note,
 .rst-content .warning,
