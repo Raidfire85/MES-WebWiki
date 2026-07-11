@@ -6,11 +6,11 @@ Unofficial, auto-synced wiki for [Modular Encounters Systems](https://github.com
 
 **Official wiki:** https://meridiusix.github.io/Modular-Encounters-Systems/
 
-This repo contains MeridiusIX’s original `WebWiki/` markdown plus an embedded sync tool (`publisher/`). Wiki pages keep Meridius’s prose and structure; the tool adds missing tags and profiles from the current MES C# source.
+This repo contains MeridiusIX's original `WebWiki/` markdown plus an embedded sync tool (`publisher/`). Wiki pages keep Meridius's prose and structure; the tool adds missing tags and profiles from the current MES C# source.
 
 ## Not official
 
-This is **not** maintained by MeridiusIX. Original wiki prose and structure credit MeridiusIX. Sync tooling and hosting are maintained here.
+This is **not** maintained by MeridiusIX. Credit for the original wiki prose and structure goes to MeridiusIX. Sync tooling and hosting are maintained here.
 
 ## Layout
 
@@ -29,9 +29,9 @@ LICENSE            MIT (tooling); wiki content credited to MeridiusIX (see below
 
 GitHub Actions (`.github/workflows/webwiki-sync-deploy.yml`):
 
-1. Fetches latest `Data/Scripts/ModularEncountersSystems` from MeridiusIX/MES
+1. Fetches the latest `Data/Scripts/ModularEncountersSystems` from MeridiusIX/MES
 2. Runs `publisher/publish.cjs --write` against `docs/`
-3. Commits doc updates to `main` when the source changed
+3. Commits doc updates to `main` when the MES source has changed
 4. Builds MkDocs and publishes HTML to **`gh-pages`**
 
 **Triggers:**
@@ -40,15 +40,15 @@ GitHub Actions (`.github/workflows/webwiki-sync-deploy.yml`):
 - **Weekly** — Sundays at 08:00 UTC (`0 8 * * 0`)
 - Manual **Run workflow**
 
-The homepage **Last synced** line updates every run; **What's new** bullets appear only when profiles, tags, or nav actually change.
+The homepage **Last synced** line updates on every run; **What's new** bullets appear only when profiles, tags, or navigation actually change.
 
 ## Mobile-friendly
 
-The site uses the ReadTheDocs MkDocs theme with a custom dark stylesheet. On phones and narrow screens (≤768px), the sidebar is hidden behind the **☰ menu** at the top; the main content uses the full width. Desktop layout is unchanged above that breakpoint.
+The site uses the ReadTheDocs MkDocs theme with a custom dark stylesheet. On phones and narrow screens (≤768px), the sidebar is hidden behind the **☰ menu** at the top; the main content uses the full width. The desktop layout is unchanged above that breakpoint.
 
 ## Local preview
 
-Requires Node 20+, Python 3, and git.
+Requires Node 20+, Python 3, and Git.
 
 ```powershell
 git clone https://github.com/Raidfire85/MES-WebWiki.git
@@ -78,13 +78,13 @@ Open http://127.0.0.1:8000
 
 ## Sync tool source
 
-Developed in [MES-WebWiki-Sync](https://github.com/Raidfire85/MES-WebWiki-Sync). Copy `publisher/` updates from there when the tool changes.
+The sync tool is developed in [MES-WebWiki-Sync](https://github.com/Raidfire85/MES-WebWiki-Sync). Copy `publisher/` updates from that repo whenever the tool changes.
 
 ## License and attribution
 
 - **Sync tooling, theme, GitHub Actions, and site automation** in this repo are licensed under the [MIT License](./LICENSE) (Copyright Raidfire85, 2026).
-- **Wiki markdown under `docs/`** is derived from [MeridiusIX's WebWiki](https://github.com/MeridiusIX/Modular-Encounters-Systems/tree/master/WebWiki). Original prose and structure credit MeridiusIX and MES contributors — not relicensed as original work by this project.
-- **Tag and profile metadata** synced from [Modular Encounters Systems](https://github.com/MeridiusIX/Modular-Encounters-Systems) C# source remains attributed to MeridiusIX and upstream contributors.
+- **Wiki markdown under `docs/`** is derived from [MeridiusIX's WebWiki](https://github.com/MeridiusIX/Modular-Encounters-Systems/tree/master/WebWiki). Original prose and structure are credited to MeridiusIX and MES contributors — not relicensed as original work by this project.
+- **Tag and profile metadata** synced from [Modular Encounters Systems](https://github.com/MeridiusIX/Modular-Encounters-Systems) C# source is attributed to MeridiusIX and upstream contributors.
 - This is an **unofficial community mirror**. Official wiki: https://meridiusix.github.io/Modular-Encounters-Systems/
 
-Same licensing approach as [MES-Reference-Library](https://github.com/Raidfire85/MES-Reference-Library).
+This project follows the same licensing approach as [MES-Reference-Library](https://github.com/Raidfire85/MES-Reference-Library).
