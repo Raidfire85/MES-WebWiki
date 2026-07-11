@@ -9,13 +9,19 @@ If you are having issues with the mod framework, or any of the mods that utilize
 <div class="mes-wiki-updates">
 <p class="mes-wiki-updates-label">What's new</p>
 <p class="mes-wiki-updates-summary">Recent changes to profile pages, tags, and sidebar navigation from the MES framework.</p>
-<p class="mes-wiki-updates-meta"><strong>Last synced:</strong> July 11, 2026 — MES master branch</p>
 <p class="mes-wiki-updates-meta"><strong>Last updated:</strong> July 11, 2026</p>
 <ul class="mes-wiki-updates-latest">
-<li><a href="Block-Replacement/">Block Replacement</a> — 3 new tags documented.</li>
+<li><a href="Faction-Icon-Profile/">Faction Icon</a> — 3 new tags documented.</li>
+<li><a href="Safezone-Profile/">Safezone</a> — 18 new tags documented.</li>
 </ul>
 <details class="mes-wiki-updates-history">
 <summary>Earlier updates</summary>
+<div class="mes-wiki-updates-history-entry">
+<p class="mes-wiki-updates-history-date">July 11, 2026</p>
+<ul>
+<li><a href="Block-Replacement/">Block Replacement</a> — 3 new tags documented.</li>
+</ul>
+</div>
 <div class="mes-wiki-updates-history-entry">
 <p class="mes-wiki-updates-history-date">July 11, 2026</p>
 <ul>

@@ -2534,7 +2534,7 @@ These tags add spawn filters, limits, and placement rules for Spawn Condition pr
 |:----|:----|
 |Tag Format:|`[TriggerCoords:Value]`|
 |Description:|Vector3D coordinates for trigger coords.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 

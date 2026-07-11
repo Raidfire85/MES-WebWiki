@@ -44,16 +44,16 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[AllowedActions:Value]`|
 |Description:|Enum value for allowed actions.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`None` `Damage` `Shooting` `Drilling` `Welding` `Grinding` `VoxelHand` `Building` `LandingGearLock` `ConvertToStation` `BuildingProjections` `All` `AdminIgnore`|
 |Default Value(s):|`N/A`|
-|Multiple Tags Allowed:|No|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|Color|
 |:----|:----|
 |Tag Format:|`[Color:Value]`|
 |Description:|Configures color.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3 value (RGB color or coordinates) eg: `{X:0 Y:0 Z:0}`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -62,7 +62,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[Coordinates:Value]`|
 |Description:|Configures coordinates.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -80,7 +80,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[FactionAccess:Value]`|
 |Description:|Enum value for faction access.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Whitelist` `Blacklist`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -89,7 +89,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[FloatingObjectAccess:Value]`|
 |Description:|Enum value for floating object access.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Whitelist` `Blacklist`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -98,7 +98,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[GridAccess:Value]`|
 |Description:|Enum value for grid access.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Whitelist` `Blacklist`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -125,7 +125,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[Offset:Value]`|
 |Description:|Configures offset.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -143,7 +143,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[PlayerAccess:Value]`|
 |Description:|Enum value for player access.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Whitelist` `Blacklist`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -170,7 +170,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[Shape:Value]`|
 |Description:|Enum value for shape.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Sphere` `Box`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -179,7 +179,7 @@ Below are the tags you can use in your Safezone profiles.
 |:----|:----|
 |Tag Format:|`[Size:Value]`|
 |Description:|Vector3D coordinates for size.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 

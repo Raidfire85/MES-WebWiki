@@ -41,7 +41,7 @@ Below are the tags you can use in your Faction Icon profiles.
 |:----|:----|
 |Tag Format:|`[Background:Value]`|
 |Description:|Vector3D coordinates for background.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -50,7 +50,7 @@ Below are the tags you can use in your Faction Icon profiles.
 |:----|:----|
 |Tag Format:|`[Color:Value]`|
 |Description:|Configures color.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 

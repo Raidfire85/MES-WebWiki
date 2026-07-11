@@ -2599,7 +2599,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |:----|:----|
 |Tag Format:|`[ParticleEffectColor:Value]`|
 |Description:|Vector3D coordinates for particle effect color.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 
@@ -2623,7 +2623,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |:----|:----|
 |Tag Format:|`[ParticleEffectOffset:Value]`|
 |Description:|Vector3D coordinates for particle effect offset.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 
@@ -2719,7 +2719,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |:----|:----|
 |Tag Format:|`[ProcessStaticEncountersLocation:Value]`|
 |Description:|Vector3D coordinates for process static encounters location.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 
@@ -2999,7 +2999,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |:----|:----|
 |Tag Format:|`[TeleportPlayerCoords:Value]`|
 |Description:|Vector3D coordinates for teleport player coords.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 

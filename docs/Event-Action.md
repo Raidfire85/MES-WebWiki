@@ -661,7 +661,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |:----|:----|
 |Tag Format:|`[CommandProfileOriginCoords:Value]`|
 |Description:|Vector3D coordinates for command profile origin coords.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 
@@ -853,7 +853,7 @@ These tags add actions and world effects that an Event Action profile can run wh
 |:----|:----|
 |Tag Format:|`[OverridePosition:Value]`|
 |Description:|Vector3D coordinates for override position.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 
