@@ -20,6 +20,7 @@ mkdocs.yml         Sidebar navigation and site settings
 docs/style.css     Dark theme and sidebar UX
 docs/js/           Site scripts (e.g. sidebar scroll behavior)
 publisher/         Sync tool (Node/TypeScript) — runs in GitHub Actions
+LOG.md             Full sync changelog — tags, profiles, nav, and sections by name (auto-appended each run)
 .github/workflows/ Weekly sync + deploy to GitHub Pages
 readme.txt         Original Meridius WebWiki readme
 LICENSE            MIT (tooling); wiki content credited to MeridiusIX (see below)
