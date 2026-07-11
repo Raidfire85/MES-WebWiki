@@ -2,6 +2,43 @@
   "version": 2,
   "runs": [
     {
+      "date": "2026-07-11",
+      "source": "MES master branch",
+      "highlights": [
+        {
+          "segments": [
+            {
+              "type": "link",
+              "title": "Shipyard",
+              "mdFile": "Shipyard-Profile.md"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "type": "link",
+              "title": "Mission",
+              "mdFile": "Mission-Profile.md"
+            },
+            {
+              "type": "text",
+              "value": ", "
+            },
+            {
+              "type": "link",
+              "title": "Safezone",
+              "mdFile": "Safezone-Profile.md"
+            },
+            {
+              "type": "text",
+              "value": ", and 6 more pages — 108 new tags documented."
+            }
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-07-09",
       "source": "GitHub master",
       "highlights": [

@@ -268,8 +268,8 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="safezone">Safezone</h1>
-<p>Safezone profiles define safe zones spawned or linked via MES actions.
-Profile header: <code>[MES SafeZone]</code></p>
+<p>Safezone profiles use the [MES SafeZone] header in SBC Description blocks.</p>
+<p>Profile header: <code>[MES SafeZone]</code></p>
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 <p>Below are the tags you can use in your Safezone profiles.</p>
 <table>
@@ -286,7 +286,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures allowed actions.</td>
+<td style="text-align: left;">Enum value for allowed actions.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -376,7 +376,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures enabled.</td>
+<td style="text-align: left;">When <code>true</code>, enables d.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -406,7 +406,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures faction access.</td>
+<td style="text-align: left;">Enum value for faction access.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -436,7 +436,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures floating object access.</td>
+<td style="text-align: left;">Enum value for floating object access.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -466,7 +466,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures grid access.</td>
+<td style="text-align: left;">Enum value for grid access.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -496,7 +496,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures is visible.</td>
+<td style="text-align: left;">When <code>true</code>, enables or applies visible.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -526,7 +526,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures link to parent entity.</td>
+<td style="text-align: left;">When <code>true</code>, enables or applies to parent entity.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -586,7 +586,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures parent entity radius multiplier.</td>
+<td style="text-align: left;">Numeric value for parent entity radius multiplier.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -616,7 +616,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures player access.</td>
+<td style="text-align: left;">Enum value for player access.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -676,7 +676,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures radius from parent entity.</td>
+<td style="text-align: left;">When <code>true</code>, activates radius from parent entity.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -706,7 +706,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures shape.</td>
+<td style="text-align: left;">Enum value for shape.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -736,7 +736,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures size.</td>
+<td style="text-align: left;">Vector3D coordinates for size.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -766,7 +766,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures texture.</td>
+<td style="text-align: left;">Text value for texture.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -796,7 +796,7 @@ Profile header: <code>[MES SafeZone]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures use diamond box orientation.</td>
+<td style="text-align: left;">When <code>true</code>, uses diamond box orientation.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>

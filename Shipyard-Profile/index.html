@@ -268,8 +268,8 @@
             <div class="section" itemprop="articleBody">
               
                 <h1 id="shipyard">Shipyard</h1>
-<p>Shipyard profiles configure NPC shipyard blocks (blueprint building, repairs, scrap, grid takeover).
-Profile header: <code>[MES Shipyard]</code></p>
+<p>Shipyard profiles configure NPC terminals for blueprint building, scrap sales, repairs and construction, paid block replacement, and grid takeover purchases.</p>
+<p>Profile header: <code>[MES Shipyard]</code></p>
 <!-- MES-WEBWIKI-SOURCE-SYNC-START -->
 <p>Below are the tags you can use in your Shipyard profiles.</p>
 <table>
@@ -286,7 +286,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures allow blueprint building.</td>
+<td style="text-align: left;">When <code>true</code>, players can build grids from blueprints at this shipyard terminal.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -316,7 +316,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures allow custom replacement.</td>
+<td style="text-align: left;">When <code>true</code>, players can pay to replace blocks using <code>OldBlock</code>/<code>NewBlock</code> or <code>BlockReplacementProfileIds</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -346,7 +346,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures allow grid takeover.</td>
+<td style="text-align: left;">When <code>true</code>, players can purchase ownership of an NPC grid through this shipyard.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -376,7 +376,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures allow repair and construction.</td>
+<td style="text-align: left;">When <code>true</code>, players can repair and weld incomplete blocks at this shipyard.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -406,7 +406,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures allow scrap purchasing.</td>
+<td style="text-align: left;">When <code>true</code>, players can sell scrap grids to this shipyard.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -436,7 +436,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures block name.</td>
+<td style="text-align: left;">SubtypeId or name of the shipyard terminal block this profile applies to.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -466,7 +466,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures block replacement profile ids.</td>
+<td style="text-align: left;">One or more block replacement profile profile or id values (comma-separated).</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -496,7 +496,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures blueprint building commission percentage.</td>
+<td style="text-align: left;">Blueprint build price multiplier percentage (100 = raw cost). Source default: <code>115</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -526,7 +526,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures blueprint building large grid block limit.</td>
+<td style="text-align: left;">Numeric value for blueprint building large grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -556,7 +556,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures blueprint building reputation discount.</td>
+<td style="text-align: left;">Numeric value for blueprint building reputation discount.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -586,7 +586,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures blueprint building small grid block limit.</td>
+<td style="text-align: left;">Numeric value for blueprint building small grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -616,7 +616,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures custom replacement commission percentage.</td>
+<td style="text-align: left;">Numeric amount for custom replacement commission percentage.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -646,7 +646,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures custom replacement large grid block limit.</td>
+<td style="text-align: left;">Numeric value for custom replacement large grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -676,7 +676,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures custom replacement reputation discount.</td>
+<td style="text-align: left;">Numeric value for custom replacement reputation discount.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -706,7 +706,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures custom replacement small grid block limit.</td>
+<td style="text-align: left;">Numeric value for custom replacement small grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -736,7 +736,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures grid takeover large grid block limit.</td>
+<td style="text-align: left;">Numeric value for grid takeover large grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -766,7 +766,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures grid takeover price per computer multiplier.</td>
+<td style="text-align: left;">Price multiplier per computer block when taking over a grid. Source default: <code>100</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -796,7 +796,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures grid takeover reputation discount.</td>
+<td style="text-align: left;">Numeric value for grid takeover reputation discount.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -826,7 +826,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures grid takeover small grid block limit.</td>
+<td style="text-align: left;">Numeric value for grid takeover small grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -856,7 +856,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures interaction radius.</td>
+<td style="text-align: left;">Radius in meters around the shipyard block where players can interact. Source default: <code>250</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -886,7 +886,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures min reputation.</td>
+<td style="text-align: left;">Minimum faction reputation required (may be unused in current MES build). Source default: <code>-500</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -976,7 +976,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures repair and construction commission percentage.</td>
+<td style="text-align: left;">Numeric amount for repair and construction commission percentage.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1006,7 +1006,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures repair and construction excluded component ids.</td>
+<td style="text-align: left;">One or more repair and construction excluded component profile or id values (comma-separated).</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1036,7 +1036,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures repair and construction large grid block limit.</td>
+<td style="text-align: left;">Numeric value for repair and construction large grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1066,7 +1066,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures repair and construction reputation discount.</td>
+<td style="text-align: left;">Numeric value for repair and construction reputation discount.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1096,7 +1096,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures repair and construction small grid block limit.</td>
+<td style="text-align: left;">Numeric value for repair and construction small grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1126,7 +1126,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures replace block reference.</td>
+<td style="text-align: left;">List of values for replace block reference.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1156,7 +1156,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures reputation needed for discount.</td>
+<td style="text-align: left;">Faction reputation at or above this value unlocks reputation-based discounts. Source default: <code>501</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1186,7 +1186,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures scrap purchasing include inventory.</td>
+<td style="text-align: left;">When <code>true</code>, activates scrap purchasing include inventory.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1216,7 +1216,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures scrap purchasing large grid block limit.</td>
+<td style="text-align: left;">Numeric value for scrap purchasing large grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1246,7 +1246,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures scrap purchasing max percentage value.</td>
+<td style="text-align: left;">Base percentage of scrap value paid to the player. Source default: <code>75</code>.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1276,7 +1276,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures scrap purchasing reputation discount.</td>
+<td style="text-align: left;">Numeric value for scrap purchasing reputation discount.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
@@ -1306,7 +1306,7 @@ Profile header: <code>[MES Shipyard]</code></p>
 </tr>
 <tr>
 <td style="text-align: left;">Description:</td>
-<td style="text-align: left;">Configures scrap purchasing small grid block limit.</td>
+<td style="text-align: left;">Numeric value for scrap purchasing small grid block limit.</td>
 </tr>
 <tr>
 <td style="text-align: left;">Allowed Value(s):</td>
