@@ -32,11 +32,11 @@ GitHub Actions (`.github/workflows/webwiki-sync-deploy.yml`):
 
 Triggers: push to `main` (docs/publisher), weekly schedule, or manual **Run workflow**.
 
+# PC and Cellphone friendly
+
 ## Local preview
 
 Requires Node 20+, Python 3, and git.
-
-# PC and Cellphone friendly
 
 ```powershell
 git clone https://github.com/Raidfire85/MES-WebWiki.git
