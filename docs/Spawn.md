@@ -179,23 +179,23 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |:----|:----|
 |Tag Format:|`[CustomCountersVariables:Value]`|
 |Description:|Configures custom counters variables.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated key,value pairs|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|CustomCountersVariablesReferences|
 |:----|:----|
 |Tag Format:|`[CustomCountersVariablesReferences:Value]`|
 |Description:|Configures custom counters variables references.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated key,value pairs|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|CustomRelativeForward|
 |:----|:----|
 |Tag Format:|`[CustomRelativeForward:Value]`|
 |Description:|Configures custom relative forward.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`None` `Forward` `Backward` `Up` `Down` `Left` `Right`|
 |Multiple Tags Allowed:|No|
 
 
@@ -203,7 +203,7 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |:----|:----|
 |Tag Format:|`[CustomRelativeUp:Value]`|
 |Description:|Configures custom relative up.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`None` `Forward` `Backward` `Up` `Down` `Left` `Right`|
 |Multiple Tags Allowed:|No|
 
 
@@ -211,7 +211,7 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |:----|:----|
 |Tag Format:|`[FirstSpawnTimeMs:Value]`|
 |Description:|Configures first spawn time ms.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Any Number Value|
 |Multiple Tags Allowed:|No|
 
 
@@ -219,7 +219,7 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |:----|:----|
 |Tag Format:|`[ForceSameFactionOwnership:Value]`|
 |Description:|Configures force same faction ownership.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -227,7 +227,7 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |:----|:----|
 |Tag Format:|`[ProcessAsAdminSpawn:Value]`|
 |Description:|When <code>true</code>, treats the spawn action as an admin spawn (bypasses some spawn condition checks).|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -235,15 +235,15 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |:----|:----|
 |Tag Format:|`[TransferCustomCountersVariables:Value]`|
 |Description:|Configures transfer custom counters variables.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated list of values|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|UseWaypoint|
 |:----|:----|
 |Tag Format:|`[UseWaypoint:Value]`|
 |Description:|Configures use waypoint.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -251,6 +251,6 @@ These tags add spawning rules and reinforcement options that a Spawn profile can
 |:----|:----|
 |Tag Format:|`[Waypoint:Value]`|
 |Description:|Configures waypoint.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

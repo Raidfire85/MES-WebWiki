@@ -134,7 +134,7 @@ Below are the tags you can use in your Mission profiles.
 |:----|:----|
 |Tag Format:|`[MissionType:Value]`|
 |Description:|Configures mission type.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Custom` `Acquisition`|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -160,7 +160,7 @@ Below are the tags you can use in your Mission profiles.
 |Tag:|PlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[PlayerConditionIds:Value]`|
-|Description:|When <code>true</code>, plays er condition ids.|
+|Description:|One or more player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|Yes|

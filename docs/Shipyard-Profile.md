@@ -233,18 +233,18 @@ Below are the tags you can use in your Shipyard profiles.
 |:----|:----|
 |Tag Format:|`[NewBlock:Value]`|
 |Description:|Configures new block.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Block definition ID (subtype/name) eg: `LargeBlockSmallGenerator`|
 |Default Value(s):|`N/A`|
-|Multiple Tags Allowed:|No|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|OldBlock|
 |:----|:----|
 |Tag Format:|`[OldBlock:Value]`|
 |Description:|Configures old block.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Block definition ID (subtype/name) eg: `LargeBlockSmallGenerator`|
 |Default Value(s):|`N/A`|
-|Multiple Tags Allowed:|No|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|RepairAndConstructionCommissionPercentage|
@@ -296,7 +296,7 @@ Below are the tags you can use in your Shipyard profiles.
 |:----|:----|
 |Tag Format:|`[ReplaceBlockReference:Value]`|
 |Description:|List of values for replace block reference.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Comma-separated oldBlock,newBlock definition ID pairs|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 

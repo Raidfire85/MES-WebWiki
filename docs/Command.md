@@ -148,7 +148,7 @@ These tags extend the orders and control options a Command profile can issue to 
 |:----|:----|
 |Tag Format:|`[CheckRelationSenderReceiver:Value]`|
 |Description:|When <code>true</code>, checks relation sender receiver.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -156,47 +156,47 @@ These tags extend the orders and control options a Command profile can issue to 
 |:----|:----|
 |Tag Format:|`[CustomCountersVariables:Value]`|
 |Description:|Configures custom counters variables.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated key,value pairs|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|CustomCountersVariablesReferences|
 |:----|:----|
 |Tag Format:|`[CustomCountersVariablesReferences:Value]`|
 |Description:|Configures custom counters variables references.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated key,value pairs|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|CustomStrings|
 |:----|:----|
 |Tag Format:|`[CustomStrings:Value]`|
 |Description:|Configures custom strings.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated key,value pairs|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|CustomStringsReferences|
 |:----|:----|
 |Tag Format:|`[CustomStringsReferences:Value]`|
 |Description:|Configures custom strings references.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated key,value pairs|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|Relation|
 |:----|:----|
 |Tag Format:|`[Relation:Value]`|
 |Description:|When <code>true</code>, activates relation.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|`None` `Enemy` `Neutral` `Friends` `Faction`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|RequestEscortSlot|
 |:----|:----|
 |Tag Format:|`[RequestEscortSlot:Value]`|
 |Description:|Configures request escort slot.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -204,7 +204,7 @@ These tags extend the orders and control options a Command profile can issue to 
 |:----|:----|
 |Tag Format:|`[ReturnToSender:Value]`|
 |Description:|Configures return to sender.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -212,7 +212,7 @@ These tags extend the orders and control options a Command profile can issue to 
 |:----|:----|
 |Tag Format:|`[SendScoreValue:Value]`|
 |Description:|Configures send score value.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -220,7 +220,7 @@ These tags extend the orders and control options a Command profile can issue to 
 |:----|:----|
 |Tag Format:|`[SendSelfAsTargetEntityId:Value]`|
 |Description:|Configures send self as target entity id.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -228,6 +228,6 @@ These tags extend the orders and control options a Command profile can issue to 
 |:----|:----|
 |Tag Format:|`[TransmissionType:Value]`|
 |Description:|Configures transmission type.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`None` `Greeting` `Warning` `Taunt` `Attack` `Relent` `Retreat`|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

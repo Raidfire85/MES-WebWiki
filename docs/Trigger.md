@@ -470,7 +470,7 @@ These tags add extra trigger types, timing options, and checks that can start or
 |:----|:----|
 |Tag Format:|`[AllowUniqueCommandCodeSenderOnly:Value]`|
 |Description:|When <code>true</code>, allows unique command code sender only.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -478,7 +478,7 @@ These tags add extra trigger types, timing options, and checks that can start or
 |:----|:----|
 |Tag Format:|`[FactionTag:Value]`|
 |Description:|Configures faction tag.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Any String Value|
 |Multiple Tags Allowed:|No|
 
 
@@ -486,31 +486,31 @@ These tags add extra trigger types, timing options, and checks that can start or
 |:----|:----|
 |Tag Format:|`[GlobalPosition:Value]`|
 |Description:|When <code>true</code>, activates global position.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 
 |Tag:|PlayerConditionProfileIds|
 |:----|:----|
 |Tag Format:|`[PlayerConditionProfileIds:Value]`|
-|Description:|When <code>true</code>, plays er condition profile ids.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Description:|One or more player condition profile profile or id values (comma-separated).|
+|Allowed Value(s):|Comma-separated list of values|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|Tags|
 |:----|:----|
 |Tag Format:|`[Tags:Value]`|
 |Description:|When <code>true</code>, activates tags.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated list of values|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|UseCustomFactionTag|
 |:----|:----|
 |Tag Format:|`[UseCustomFactionTag:Value]`|
 |Description:|Configures use custom faction tag.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -518,6 +518,6 @@ These tags add extra trigger types, timing options, and checks that can start or
 |:----|:----|
 |Tag Format:|`[UsePlayerConditionProfile:Value]`|
 |Description:|When <code>true</code>, the trigger uses <code>PlayerConditionProfileIds</code> to filter which players can activate it.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

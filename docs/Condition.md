@@ -678,7 +678,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[BehaviorSubclass:Value]`|
 |Description:|Enum value for behavior subclass.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`None` `CoreBehavior` `Fighter` `Horsefly` `HorseFighter` `Strike` `Passive` `Hunter` `Scout` `Sniper` `Nautical` `CargoShip` `Escort` `Patrol` `Tunneller` `Vulture` `FighterPlane` `NauticalRoutes` `HorseNautical`|
 |Multiple Tags Allowed:|No|
 
 
@@ -838,7 +838,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[CheckThreatScoreGridConfiguration:Value]`|
 |Description:|Configures check threat score grid configuration.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`All` `Static` `Dynamic`|
 |Multiple Tags Allowed:|No|
 
 
@@ -918,8 +918,8 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[CommandRelation:Value]`|
 |Description:|Enum value for command relation.|
-|Allowed Value(s):|MES enum value (see Threat Score / Target guides)|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|`None` `Enemy` `Neutral` `Friends` `Faction`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|CompareThreatScore|
@@ -942,7 +942,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreGridConfiguration:Value]`|
 |Description:|Configures compare threat score grid configuration.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`All` `Static` `Dynamic`|
 |Multiple Tags Allowed:|No|
 
 
@@ -958,7 +958,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[CompareThreatScoreMode:Value]`|
 |Description:|Enum value for compare threat score mode.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`GreaterOrEqual` `Greater` `Equal` `NotEqual` `Less` `LessOrEqual`|
 |Multiple Tags Allowed:|No|
 
 
@@ -998,7 +998,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[CurrentBehaviorMode:Value]`|
 |Description:|Enum value for current behavior mode.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Init` `ApproachTarget` `ApproachWaypoint` `BarrelRoll` `CustomModeA` `CustomModeB` `CustomModeC` `EngageTarget` `EvadeCollision` `Idle` `KamikazeCollision` `Retreat` `WaitAtWaypoint` `WaitingForTarget`|
 |Multiple Tags Allowed:|No|
 
 
@@ -1110,7 +1110,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[InSufficientUpwardThrustDirection:Value]`|
 |Description:|Enum value for in sufficient upward thrust direction.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`None` `Forward` `Backward` `Up` `Down` `Left` `Right`|
 |Multiple Tags Allowed:|No|
 
 
@@ -1389,7 +1389,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |Tag:|PlayerConditionIds|
 |:----|:----|
 |Tag Format:|`[PlayerConditionIds:Value]`|
-|Description:|When <code>true</code>, plays er condition ids.|
+|Description:|One or more player condition profile or id values (comma-separated).|
 |Allowed Value(s):|Comma-separated list of values|
 |Multiple Tags Allowed:|Yes|
 
@@ -1422,7 +1422,7 @@ These tags add extra requirements a Condition profile can evaluate before an Act
 |:----|:----|
 |Tag Format:|`[SufficientUpwardThrustDirection:Value]`|
 |Description:|Enum value for sufficient upward thrust direction.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`None` `Forward` `Backward` `Up` `Down` `Left` `Right`|
 |Multiple Tags Allowed:|No|
 
 

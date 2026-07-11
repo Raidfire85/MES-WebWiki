@@ -2343,16 +2343,16 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |:----|:----|
 |Tag Format:|`[GPSColors:Value]`|
 |Description:|List of values for gps colors.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated Vector3D values eg: `{X:0 Y:0 Z:0},{X:1 Y:1 Z:1}`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|GPSCoords|
 |:----|:----|
 |Tag Format:|`[GPSCoords:Value]`|
 |Description:|List of values for gps coords.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated Vector3D values eg: `{X:0 Y:0 Z:0},{X:1 Y:1 Z:1}`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|GPSDescriptions|
@@ -2375,8 +2375,8 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |:----|:----|
 |Tag Format:|`[GPSVector3Ds:Value]`|
 |Description:|List of values for gps vector3 ds.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated Vector3D values eg: `{X:0 Y:0 Z:0},{X:1 Y:1 Z:1}`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|HeavyYaw|
@@ -2575,7 +2575,7 @@ These tags add behaviors and effects that an Action profile can run when its lin
 |:----|:----|
 |Tag Format:|`[OverwriteAutopilotMode:Value]`|
 |Description:|Configures overwrite autopilot mode.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`Primary` `Secondary` `Tertiary`|
 |Multiple Tags Allowed:|No|
 
 

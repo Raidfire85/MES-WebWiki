@@ -129,7 +129,7 @@ These tags extend weapon control, targeting, and combat-system options for Weapo
 |:----|:----|
 |Tag Format:|`[AllowHomingWeaponMultiTargeting:Value]`|
 |Description:|When <code>true</code>, allows homing weapon multi targeting.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -137,7 +137,7 @@ These tags extend weapon control, targeting, and combat-system options for Weapo
 |:----|:----|
 |Tag Format:|`[MultiTargetCheckCooldown:Value]`|
 |Description:|Time in seconds for multi target check cooldown.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Any Integer Value|
 |Multiple Tags Allowed:|No|
 
 
@@ -145,7 +145,7 @@ These tags extend weapon control, targeting, and combat-system options for Weapo
 |:----|:----|
 |Tag Format:|`[UseAntiSmartWeapons:Value]`|
 |Description:|When <code>true</code>, uses anti smart weapons.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -153,6 +153,6 @@ These tags extend weapon control, targeting, and combat-system options for Weapo
 |:----|:----|
 |Tag Format:|`[WeaponsSystem:Value]`|
 |Description:|SubtypeId of the MES weapons system profile attached to this behavior.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|MES weapons system profile subtype ID (e.g. `MES-Weapons-GenericStandard`)|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

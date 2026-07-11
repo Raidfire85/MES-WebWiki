@@ -78,7 +78,7 @@ These tags add prefab targeting, scoring, and modification rules for Prefab Data
 |:----|:----|
 |Tag Format:|`[Score:Value]`|
 |Description:|Used in Commands,Event Conditions. Doing this on prefab saves a lot of triggers/actions for me - CPTARTHUR.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

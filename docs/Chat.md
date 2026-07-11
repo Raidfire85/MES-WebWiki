@@ -219,15 +219,15 @@ These tags add broadcast, message, and player-notification options for Chat prof
 |:----|:----|
 |Tag Format:|`[ChatAvatar:Value]`|
 |Description:|Configures chat avatar.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated list of values|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|GPSOffset|
 |:----|:----|
 |Tag Format:|`[GPSOffset:Value]`|
 |Description:|When <code>true</code>, activates gps offset.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Vector3D coordinates eg: `{X:0 Y:0 Z:0}`|
 |Multiple Tags Allowed:|No|
 
 
@@ -235,7 +235,7 @@ These tags add broadcast, message, and player-notification options for Chat prof
 |:----|:----|
 |Tag Format:|`[SendToCommandPlayer:Value]`|
 |Description:|Configures send to command player.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -243,7 +243,7 @@ These tags add broadcast, message, and player-notification options for Chat prof
 |:----|:----|
 |Tag Format:|`[SendToSpecificPlayers:Value]`|
 |Description:|Configures send to specific players.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 
 
@@ -251,6 +251,6 @@ These tags add broadcast, message, and player-notification options for Chat prof
 |:----|:----|
 |Tag Format:|`[UseRandomNameGeneratorFromMES:Value]`|
 |Description:|Configures use random name generator from mes.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|`true` `false`|
 |Multiple Tags Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

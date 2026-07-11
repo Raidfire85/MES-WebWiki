@@ -41,7 +41,7 @@ Below are the tags you can use to swap blocks on spawned grids during manipulati
 |:----|:----|
 |Tag Format:|`[Limit:Value]`|
 |Description:|Configures limit.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Any Integer Value|
 |Default Value(s):|`N/A`|
 |Multiple Tags Allowed:|No|
 
@@ -50,16 +50,16 @@ Below are the tags you can use to swap blocks on spawned grids during manipulati
 |:----|:----|
 |Tag Format:|`[NewBlock:Value]`|
 |Description:|Configures new block.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Block definition ID (subtype/name) eg: `LargeBlockSmallGenerator`|
 |Default Value(s):|`N/A`|
-|Multiple Tags Allowed:|No|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|OldBlock|
 |:----|:----|
 |Tag Format:|`[OldBlock:Value]`|
 |Description:|Configures old block.|
-|Allowed Value(s):|See MES source / enum definition|
+|Allowed Value(s):|Block definition ID (subtype/name) eg: `LargeBlockSmallGenerator`|
 |Default Value(s):|`N/A`|
-|Multiple Tags Allowed:|No|
+|Multiple Tags Allowed:|Yes|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->

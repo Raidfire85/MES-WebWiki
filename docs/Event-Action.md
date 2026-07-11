@@ -717,8 +717,8 @@ These tags add actions and world effects that an Event Action profile can run wh
 |:----|:----|
 |Tag Format:|`[CustomActionArgumentsVector3D:Value]`|
 |Description:|List of values for custom action arguments vector3 d.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated Vector3D values eg: `{X:0 Y:0 Z:0},{X:1 Y:1 Z:1}`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|CustomActionName|
@@ -757,8 +757,8 @@ These tags add actions and world effects that an Event Action profile can run wh
 |:----|:----|
 |Tag Format:|`[GPSCoords:Value]`|
 |Description:|List of values for gps coords.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated Vector3D values eg: `{X:0 Y:0 Z:0},{X:1 Y:1 Z:1}`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|IncreaseRunCountEventIdAmount|
@@ -957,8 +957,8 @@ These tags add actions and world effects that an Event Action profile can run wh
 |:----|:----|
 |Tag Format:|`[SpawnCoords:Value]`|
 |Description:|List of values for spawn coords.|
-|Allowed Value(s):|See MES source / enum definition|
-|Multiple Tags Allowed:|No|
+|Allowed Value(s):|Comma-separated Vector3D values eg: `{X:0 Y:0 Z:0},{X:1 Y:1 Z:1}`|
+|Multiple Tags Allowed:|Yes|
 
 
 |Tag:|SpawnReplaceKeys|

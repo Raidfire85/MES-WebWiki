@@ -353,7 +353,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[ActivateTargetLockAfterPlayerDamage:Value]`|
 |Description:|Configures activate target lock after player damage.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|`true` `false`|
 |Multiple Tag Allowed:|No|
 
 
@@ -361,7 +361,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[BroadcastOnlyAntenna:Value]`|
 |Description:|Configures broadcast only antenna.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|`true` `false`|
 |Multiple Tag Allowed:|No|
 
 
@@ -369,7 +369,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[GetTargetLockBy:Value]`|
 |Description:|Configures get target lock by.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|`Random` `ClosestDistance` `FurthestDistance` `HighestTargetValue` `LowestTargetValue`|
 |Multiple Tag Allowed:|No|
 
 
@@ -377,7 +377,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[ManualTargetLockOnly:Value]`|
 |Description:|Configures manual target lock only.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|`true` `false`|
 |Multiple Tag Allowed:|No|
 
 
@@ -385,7 +385,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[MaxAirDensity:Value]`|
 |Description:|Configures max air density.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|Any Number Value|
 |Multiple Tag Allowed:|No|
 
 
@@ -393,7 +393,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[MaxTargetLockingDistance:Value]`|
 |Description:|Configures max target locking distance.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|Any Number Value|
 |Multiple Tag Allowed:|No|
 
 
@@ -401,7 +401,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[MaxUnderWaterDepth:Value]`|
 |Description:|Configures max under water depth.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|Any Number Value|
 |Multiple Tag Allowed:|No|
 
 
@@ -409,7 +409,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[MinAirDensity:Value]`|
 |Description:|Configures min air density.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|Any Number Value|
 |Multiple Tag Allowed:|No|
 
 
@@ -417,7 +417,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[MinUnderWaterDepth:Value]`|
 |Description:|Configures min under water depth.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|Any Number Value|
 |Multiple Tag Allowed:|No|
 
 
@@ -425,7 +425,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[TimeUntilTargetLockingRefresh:Value]`|
 |Description:|Configures time until target locking refresh.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|Any Integer Value|
 |Multiple Tag Allowed:|No|
 
 
@@ -433,7 +433,7 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[UseTargetLastKnownPosition:Value]`|
 |Description:|Configures use target last known position.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|`true` `false`|
 |Multiple Tag Allowed:|No|
 
 
@@ -441,6 +441,6 @@ These tags extend how a Target profile chooses, filters, and tracks entities for
 |:----|:----|
 |Tag Format:|`[UseVanillaTargetLocking:Value]`|
 |Description:|When <code>true</code>, uses Space Engineers vanilla turret/grid target locking.|
-|Allowed Values:|See MES source / enum definition|
+|Allowed Values:|`true` `false`|
 |Multiple Tag Allowed:|No|
 <!-- MES-WEBWIKI-SOURCE-SYNC-END -->
